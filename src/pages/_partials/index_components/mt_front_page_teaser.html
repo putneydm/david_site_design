@@ -10,15 +10,9 @@
 
 <article class="teaser-module clearfix">
     <h1 class="teaser-module-head"><a href="{{ post.url}}" rel="next">{{ post.title | markdownify | strip_html }}</a></h1>
-		<div class="teaser-module-abstract">
+		<!-- <div class="teaser-module-abstract"> -->
 		<h2 class="teaser-module-subhead">{{ post.myRole}}</h2>	
-		<p>	{{ post.project | truncatewords: 70 | strip_html }} <a href="{{post.url}}" rel="next" class="teaser-module-abstract-link">More
-			<svg class="teaser-arrow-icon">
-				  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-right"></use>
-				</svg></a></p>
-		</div>
 		<a href="{{post.url}}" rel="next">
-		<div class="teaser-module-art">
 		<figure class="teaser-module-mainart med-photo-overlay">
 			<picture>
 				<source data-srcset="/siteart/slides/large_{{ image }}.jpg" media="(min-width:900px)">
@@ -34,6 +28,15 @@
         </noscript>
 			</picture>
 		</figure>
-	</div>
-	</a>
+		</a>
+		<div class="teaser-module-abstract">
+		<p>	{{ post.project | truncatewords: 70 | strip_html }} <a href="{{post.url}}" rel="next" class="teaser-module-abstract-link">More
+			<svg class="teaser-arrow-icon">
+				  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-right"></use>
+				</svg></a></p>
+		</div>
+		<!-- <a href="{{post.url}}" rel="next"> -->
+		<div class="teaser-module-art">
+		</div>
+	<!-- </a> -->
 </article> 

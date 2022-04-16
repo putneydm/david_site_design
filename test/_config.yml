@@ -28,17 +28,14 @@ paginate: 10
 paginate_path: "/blog/page:num/"
 
 collections:
-  projects:
-    output: true
-    permalink: /projects/:path/
-    layout: page_layout
   about:
     output: true
     permalink: /about/:path/
     layout: page_layout
   design:
     output: true
-    permalink: /design/:path/
+  resume:
+    output: true
     layout: page_layout
 
 sitemap:

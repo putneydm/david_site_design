@@ -1,10 +1,14 @@
 ---
-layout: index_default
-heroArt: timp
-pagetype: index
+title: Design
+layout: portfolio_teasers
+heroArt: design
+pageType: index
+head: Design
+subhead: Hi. I’m David Putney, and this is my site. I'm a designer and developer of all things internet. And a few others. I work on apps, websites, content and hardware for companies in the Boston area and beyond.
+description: "I'm David Putney, a designer living in the Boston area. Here's some professional content-driven sites that I have built."
+keywords: ['Crux', 'Cruxnow.com', 'BDCwire', 'BDCwire.com', 'RadioBDC', 'RadioBDC.com']
 ---
-<!-- testing  here -->
-
-<section class="teaser-module-container">
-    @@include('_partials/index_components/mt_blog_module.html')
-</section>
+  {% assign collections = site.design | sort: 'sequence' %}
+  {% for post in collections %}
+    @@include('../pages/_partials/index_components/mt_front_page_teaser.html')
+  {% endfor %}

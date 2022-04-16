@@ -1,0 +1,23 @@
+---
+title: Resume
+layout: minimal_layout
+heroArt: snowy_clouds
+pagetype: resume
+head: Hello
+subhead: I'm David Putney. This is my site
+description: David Putney. My day job is a UI/UX designer and developer at a Boston internet consulting firm. I built this site to share examples of my work and to publish an occasional blog entry.
+keywords: [Jekyll, typography, UI/UX, blogging, blog, about]
+---
+<div class="about-container">
+{% for post in site.about %}
+  <article class="about-information">
+    <figure class="about-mugshot">
+      <noscript>
+        <img src="/siteart/{{post.image}}.jpg">
+      </noscript>
+			<img class="lazyload" data-src="/siteart/{{post.image}}.jpg" alt="David M. Putney mugshot">
+		</figure>
+      {{ post.content }}
+</article>
+{% endfor %}
+</div>

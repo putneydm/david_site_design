@@ -50,9 +50,10 @@ var pageFunctions = {
   },
   initializeIndex: function () {
     var self = this;
-    self.getElementsIndex();
+    // self.getElementsIndex();
     self.nameplateAnimate(); // animates nameplate
-    self.initScrollListener('index');
+    // self.initScrollListener('index');
+    console.log("init index")
   },
   initializePortfolio: function () {
     var self = this;
@@ -60,8 +61,8 @@ var pageFunctions = {
   },
   initializeHero: function () {
     var self = this;
-    self.getElementsHero();
-    self.setBackground(self.heroArt);
+    // self.getElementsHero();
+    // self.setBackground(self.heroArt);
     console.log("init hero y")
   },
   intializeMinimal: function () {

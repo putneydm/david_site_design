@@ -36,15 +36,15 @@
     .no-js .hero-art {
       background-image:url('/siteart/sm_hero_dark_{{page.heroArt}}.jpg');
     }
-	}
-
-    
+	} 
   {% endif %}
-  {% if page.pagetype == "index" %}
+  
+  {% assign pagetype = page.pageType %}
+  {% if pagetype == "index" %}
     {% include index_embeded_styles.css %}
-  {% elsif page.pagetype == "blog" or page.pagetype == "blog-entry" %}
+  {% elsif pagertype == "blog" or page.pagetype == "blog-entry" %}
     {% include blog_embedded_styles.css %}
-  {% elsif page.pagetype == "error" %}
+  {% elsif pagetype == "error" %}
     {% include error_page.css %}
   {% endif %}
   {% include main_embedded_styles.css %} 

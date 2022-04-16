@@ -1,62 +1,82 @@
 
 .teaser-module	{
 	@include spanner_too (12, 1100, 0, 12);
-	margin:0 0 rem(60) 0;
+	margin:0 0 rem(72) 0;
 	&::after {
-		content: "";
-		display: table;
-		clear: both;
+		display: block;
+		max-width:400px;
+		height:1px;
+		content:"";
+		border-bottom:1px solid $med;
+		margin:0 auto rem(72);
+	}
+	@media screen and (max-width:rem(700)) {
+		&::after {
+			margin:0 20% rem(72);
+		}	
+    }	
+	&:last-child {
+		&::after {
+			display: none;
+		}
 	}
 }
 .teaser-module-head	{
 	font-family:$sans;
-	font-size:em(24);
-	border-bottom:1px solid $light;
+	font-size:em(30);
 	font-weight:800;
 	margin:0 0 0 0;
-	padding:0 0 rem(2) 0;
-		a{
+	padding:0 0 rem(18) 0;
+	text-align:center;
+		a {
 		color:$body;
 		background-image:none;
 			&:hover {
-				color:$aqua;
-				background-image:none;
-			}
-			@media screen and (prefers-color-scheme: dark) {
 				color:$light-aqua;
-			} 	
+				background-image:none;
+			}	
 	}
 	@media screen and (prefers-color-scheme: dark) {
+		a {
 		color:$light-aqua;
-		border-bottom:1px solid $dark;
+		color:white;
+		}
 	} 
+	@media screen and (max-width:rem(1120)) {
+        font-size: rem(22);
+    }	
 	@media screen and (max-width:rem(500)) {
         font-size: rem(18);
     }	
 }
 .teaser-module-subhead	{
 	font-family:$sans;
-	font-size:em(16);
+	font-size:em(20);
 	font-weight:800;
-	margin:0 0 12px 0;
+	margin:0 12.5% rem(36);
 	padding:0;
+	text-align:center;
+	color:$med;
 	@media screen and (prefers-color-scheme: dark) {
-		color:white;
+		color:$light;
 	} 
+	@media screen and (max-width:rem(1120)) {
+        font-size: rem(18);
+		font-weight:800;
+		margin:0 0 rem(36);
+    }		
 	@media screen and (max-width:rem(500)) {
         font-size: rem(14);
     }	
 }
 .teaser-module-abstract {
-	@include spanner_too (12, 1100, 0, 4);
-	float:left;
-	margin:rem(5) 0 0 0;
+	margin:rem(5) 12.5% rem(60);
 	padding:0 rem(8) 0 0;
 		p {
 		font-size:em(18);
 		}
-	@media screen and (max-width:em(750)) {
-	@include spanner_too (12, 1100, 0, 12);
+	@media screen and (max-width:em(850)) {
+		margin:rem(5) 0 rem(60);
 	p {
 		font-size:em(16);
 		}
@@ -100,15 +120,13 @@
 		}
 }
 .teaser-module-mainart {
-	margin:0 0 0 0;
-	@include spanner_too (8, 678, 0, 8);
+	margin:0 0 rem(36) 0;
 	display:block;
-	float:left;
 	overflow:hidden;
 	padding:0;
 	position:relative;
 	@media screen and (max-width:em(750)) {
-		@include spanner_too (8, 750, 0, 8);
+		margin:0 0 rem(24) 0;
 		padding:rem(5) 0 0 0;
 		}
 		img {

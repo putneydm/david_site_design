@@ -77,12 +77,13 @@ a {
 }
 
 .page-subhead {
-    font-size: rem(22);
+    font-size: rem(24);
     text-align: center;
-    margin: 0 0 rem(50) 0;
+    margin: 0 12% rem(120);
     line-height: 140%;
     color: $med;
     @media screen and (max-width:em(1120)) {
+        font-size: rem(22);
         margin: 0 rem(20) rem(30);
     }
     @media screen and (max-width:rem(500)) {

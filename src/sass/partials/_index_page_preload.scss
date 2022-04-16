@@ -22,22 +22,25 @@
 	.nav-menu-button{ display:none; }
 }
 .main-header-logo--display {
-	fill:white;
+	fill:$aqua;
 	// to get height divide the width by 4
 	height:rem(125);
 	width:rem(500);
 	opacity:0;
 	transform: translateY(-50px);
-	filter: drop-shadow(0 0 12px $dark);
-			@media screen and (max-width:em(800)) {
-			height:rem(100);
-			width:rem(400);
-			}
-			@media screen and (max-width:em(430)) {
-			height:rem(70);
-			width:rem(280);
-			margin:rem(75) rem(30) rem(10);
-			}
+	// filter: drop-shadow(0 0 12px $dark);
+	@media screen and (max-width:em(800)) {
+		height:rem(100);
+		width:rem(400);
+	}
+	@media screen and (max-width:em(430)) {
+		height:rem(70);
+		width:rem(280);
+		margin:rem(75) rem(30) rem(10); 
+	}
+	@media (prefers-color-scheme: dark) {
+		fill:$light-aqua;
+	}	
 }
 .nav-list--display {
 	width:100%;
@@ -66,9 +69,13 @@
 			list-style-type: none;
 			a {
 				background-image:none;
-				color:white;
-				&:hover {color:$x-light-aqua;}
-			}
+				color:$aqua;
+				&:hover {color:$light-aqua;}
+				@media screen and (prefers-color-scheme: dark) {
+					color:$light-aqua;
+					&:hover {color:$x-light-aqua;}
+				} 
+			}		
 			.icn-search-button {
 				fill:white;
 				&:hover {fill:$x-light-aqua;}
@@ -77,13 +84,16 @@
 				content:'|';
 				display:inline-block;
 				margin:0 0 0 rem(12);
-				color:white;
+				color:$light;
 				letter-spacing:-.1em;
 				vertical-align: rem(1);
 				font-family:"HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue";
 				font-weight:300;
+				@media screen and (prefers-color-scheme: dark) {
+					color:white;
+				} 
 			}
-			&:nth-child(4) {
+			&:nth-child(3) {
 				padding-right:0;
 				&::after{content:'';display:none;}
 			}
