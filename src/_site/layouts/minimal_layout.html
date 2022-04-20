@@ -6,11 +6,10 @@
 	<div class="svg-import hidden" aria-hidden="true">
 			@@include('../svg/svgsprite.svg')
 	</div>
-	<header class="no-billboard">
 		@@include('partials/headers/fixed_header_inside.html')
-	</header>
 <main id="main">
 {{content}}
+<h1>foobar {{ page.pageType }}</h1>
 </main>
 	@@include('partials/footer/footer.html')
 	@@include('partials/js_links.html')

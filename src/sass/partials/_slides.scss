@@ -1,6 +1,5 @@
 .gallery-count {
     font-size:rem(14);
-    color: $light;
     font-weight:bold;
     font-family:$sans;
     text-align:right;
@@ -14,15 +13,17 @@
     } 
 }
 .gallery-wrapper {
-    width:100%;
+    width:100vw;
     position:relative;
-    @media screen and (min-width:rem(720)) {
+    margin: 0 0 rem(78);
+    max-width:rem(1800);
+    @media screen and (min-width:rem(940)) {
         width:90vw;
-        margin: 0 5vw;
-    } 
-    @media screen and (min-width:rem(1870)) {
-        max-width:rem(1800);
-        margin:0 auto;
+        margin: 0 5vw rem(48);
+    }  
+    @media screen and (min-width:rem(1850)) {
+        width:rem(1800);
+        margin: 0 0 rem(48);
     } 
     .gallery {
         width: 100%;

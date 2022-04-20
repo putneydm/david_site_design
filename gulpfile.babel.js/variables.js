@@ -37,7 +37,7 @@ const paths = {
     },
     styles: {
         input: 'src/sass/styles.scss',
-        inputInline: 'src/sass/inline_styles/{blog_embedded_styles.scss,index_embeded_styles.scss,main_embedded_styles.scss,error_page.scss,search_page.scss}',
+        inputInline: 'src/sass/inline_styles/{fixed_header_styles.scss,index_embeded_styles.scss,main_embedded_styles.scss,error_page.scss,portfolio_embedded_styles.scss}',
         outputInline: 'test/_includes',
         exclude: '!src/sass/partials/*.scss',
         testing: 'test/css/',

@@ -1,6 +1,7 @@
 ---
-head: About
+head: Hello
 image: about_mugshot
+subhead: I'm David. This is my site.
 ---
 I’m David Putney. I'm a UI/UX designer and front-end developer. Before that, I worked in newspapers in the U.S. and overseas for about 20 years. 
 

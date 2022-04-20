@@ -1,16 +1,15 @@
 ---
 title: About
-layout: page_layout
-heroArt: snowy_clouds
-pagetype: about
-head: Hello
-subhead: I'm David Putney. This is my site
+layout: minimal_layout
+pageType: text_page
 description: David Putney. My day job is a UI/UX designer and developer at a Boston internet consulting firm. I built this site to share examples of my work and to publish an occasional blog entry.
 keywords: [Jekyll, typography, UI/UX, blogging, blog, about]
 ---
-<div class="about-container">
+<div class="content-wrapper">
 {% for post in site.about %}
-  <article class="about-information">
+  <article class="text-container">
+    <h1 class="page-head">{{ post.head }}</h1>
+    <h2 class="page-subhead">{{ post.subhead }}</h2> 
     <figure class="about-mugshot">
       <noscript>
         <img src="/siteart/{{post.image}}.jpg">
