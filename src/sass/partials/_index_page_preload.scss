@@ -264,7 +264,6 @@
 		@media screen and (prefers-color-scheme: dark) {
 			color:$light-aqua;
 		} 
-		.teaser-arrow-icon {vertical-align: -1px;margin-left:rem(5);}  
 	}
 	.teaser-module-art {
 		@include spanner_too (12, 1100, 0, 8);

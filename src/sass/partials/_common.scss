@@ -70,3 +70,65 @@ body {
 	overflow:hidden;
 	border:1px solid $light;
 }
+.teaser-arrow-icon {
+	vertical-align: -5px;
+	margin-left:rem(5);
+	fill:$aqua;
+	@media screen and (prefers-color-scheme: dark) {
+		fill:$light-aqua;
+	} 
+}  
+.text-container {
+    ul {
+        margin: 15px 20px rem(30);
+
+        li {
+            margin: 0 0 8px 0px;
+            font-size: em(16);
+            line-height: 150%;
+
+            //	text-indent:-24px;
+            @media screen and (max-width:em(500)) {
+                font-size: em(15);
+            }
+            &::before {
+                width: rem(14);
+                height: rem(14);
+                background-color: lighten($aqua, 45%);
+                content: ' ';
+                display: inline-block;
+                margin: 10px 8px 0 0;
+                border-radius: 50%;
+                vertical-align: -2px;
+            }
+            @media (prefers-color-scheme: dark) {
+                &::before {
+                    background-color: $light_aqua;
+                }
+            }
+        }
+    }
+blockquote {
+        font-size: em(16);
+        line-height: 130%;
+        border-left: 1px solid $aqua;
+        margin-left: 15px;
+        padding-left: 10px;
+        color: $dark;
+        @media screen and (max-width:em(500)) {
+            font-size: em(15);
+        }
+        @media ( prefers-color-scheme: dark) {
+            color:$dm-light;
+        }
+    }
+    h3 {
+        font-family: $sans;
+        font-size: em(20);
+        color: $dark;
+        margin: 0 0 12px;
+         @media ( prefers-color-scheme: dark) {
+            color:$x-light-aqua;
+        }
+    }
+} 
