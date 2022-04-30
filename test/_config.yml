@@ -34,6 +34,7 @@ collections:
     layout: minimal_layout
   design:
     output: true
+    permalink: /design/:path/
   resume:
     output: true
     layout: minimal_layout

@@ -14,6 +14,9 @@ const paths = {
         site: 'test/_site/**/*.html',
         deploy: 'dist/'
     },
+    markdown: {
+        watch: 'src/collections/**/*.markdown',
+    },
     includes: {
         input: 'src/includes/**/*.html',
         testing: 'test/_includes/'

@@ -1,3 +1,4 @@
+
 {% assign pageType = page.pagetype %}
 <script src="/scripts/*cachebustthis*"></script>
 <!-- <script src="/scripts/*cachebustthis*"></script> -->
@@ -12,38 +13,10 @@
   "use strict";
   ready(function() {
   pageFunctions.intialize();
-    {% assign pageType = page.pageType %}
-    {% if pageType == 'blog' or pageType == 'blog-entry' %}
-      pageFunctions.intializeBlogEntry();
-    {% endif%}
-    {% if pageType == 'blog' %}
-      pageFunctions.intializeBlog();
-    {% endif%}
     {% if pageType == 'index' %}
       pageFunctions.initializeIndex();
-      pageFunctions.initializeHero();
-    {% endif%}
-    {% if pageType == 'portfolio_entry' or pageType == 'about' or pageType == 'portfolio' %} 
-      pageFunctions.initializePortfolio();
-    {% endif%}
-    {% if pageType == 'about' or pageType == 'portfolio' %}
-      pageFunctions.initializeHero();
-    {% endif%}
-    {% if pageType == 'searchAdmin' %}
-      searchAdminFunctions.initialize();
-      pageFunctions.intializeMinimal();
-    {% endif%}
-    {% if pageType == 'search' %}
-      searchFunctions.initialize();
-      // pageFunctions.intializeSearch();
-      {% endif%}
-    {% if pageType == 'error' %}
-      pageFunctions.intializeMinimal();
-    {% endif%}
-    // this is a hack to make the tag archive page work. For some reason pagetype doesn't work on this page.  
-    // foobar  
-    {% if pageType == nil %}
-      pageFunctions.intitializeIndex();
+      // pageFunctions.initializeHero();
+      // included correct?
     {% endif%}
   });
 })();

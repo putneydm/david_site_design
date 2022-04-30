@@ -1,0 +1,30 @@
+.med-photo-overlay {
+    &::after {
+        position:absolute;
+        top:0;
+        left:0;
+        display:block;
+        content:' ';
+        width:100%;
+        padding-bottom:$image-ratio;
+        box-shadow:0 0 rem(50) rgba($med, .3) inset;
+        transition: box-shadow .2s;
+        z-index:2;
+        mix-blend-mode: multiply;
+        @media (prefers-color-scheme: dark) {
+            box-shadow:0 0 rem(50) rgba($dm-dark, .7) inset;
+        }
+    }
+}
+a {
+    .med-photo-overlay {
+        &:hover {
+            &::after {
+                box-shadow:0 0 rem(70) rgba($med, .5) inset;
+                @media (prefers-color-scheme: dark) {
+                    box-shadow:0 0 rem(70) rgba($dm-dark, .7) inset;
+                }
+            }
+        }
+    }
+}

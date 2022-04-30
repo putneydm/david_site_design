@@ -8,7 +8,7 @@
 {% assign alt = post.imageAlt %}
 {% endif %}
 
-<article class="teaser-module clearfix">
+<article class="teaser-module will-change-ot set">
 		<a href="{{post.url}}" rel="next">
 		<figure class="teaser-module-mainart med-photo-overlay">
 			<picture>
@@ -29,7 +29,7 @@
 		<div class="text-container">
 			<h1 class="teaser-module-head"><a href="{{ post.url}}" rel="next">{{ post.title | markdownify | strip_html }}</a></h1>
 			<h2 class="teaser-module-subhead">{{ post.myRole}}</h2>	
-			<p>	{{ post.project | truncatewords: 70 | strip_html }} <a href="{{post.url}}" rel="next" class="teaser-module-abstract-link">More
+			<p>	{{ post.project | truncatewords: 70 | strip_html }} <a href="{{post.url}}" rel="next">More
 				<svg class="teaser-arrow-icon">
 					<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-right"></use>
 					</svg>
