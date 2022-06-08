@@ -9,6 +9,7 @@ var ready = function (fn) {
   // Otherwise, wait until document is loaded
   document.addEventListener('DOMContentLoaded', fn, false);
 };
+
 var pageFunctions = {
   intialize: function () {
     var self = this;
@@ -53,7 +54,6 @@ var pageFunctions = {
       if (pageType === 'index') {        
         self.setActiveItem(self.indexModules);
       }
-      console.log(pageType)
       if (pageType === 'portfolio_entry'|| pageType === 'textPage') {
         self.initQuoteAnimate(self.blogQuotes);
       }
@@ -291,7 +291,6 @@ var pageFunctions = {
   },
   isElementVisible: function (elem) {
     var distance = elem.getBoundingClientRect();
-    console.log("is vis")
     return (
       distance.top >= 0 &&
       distance.left >= 0 &&
@@ -301,7 +300,6 @@ var pageFunctions = {
   },
   initQuoteAnimate: function (quoteList) {
     var self = this;
-    console.log("foobar", quoteList)
     quoteList.forEach(function (el) {
       var visible = self.isElementVisible(el);
       var active =
