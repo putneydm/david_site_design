@@ -1,8 +1,11 @@
 <section class="gallery-wrapper"> 
-  <button class="slide-button right" id="advance" value="advance"><span>Next</span></button>     
-  <button class="slide-button left" id="back" value="back"><span>Back</span></button> 
-  <p class="gallery-count"><span>1</span> | {{ page.slides.size }}</p>   
-  <div class="gallery">  
+  {% if page.slides %}   
+    <button class="slide-button right" id="advance" value="advance"><span>Next</span></button>     
+    <button class="slide-button left" id="back" value="back"><span>Back</span></button> 
+    <p class="gallery-count"><span>1</span> | {{ page.slides.size }}</p>  
+  {% endif %}  
+  <div class="gallery"> 
+{% if page.slides %}   
 {% for slide in page.slides %}
   {% if forloop.first %}
     <figure class="slide med-photo-overlay center">
@@ -17,6 +20,17 @@
       </picture>
     </figure>     
 {% endfor %}
+{% endif %}
+{% if page.image %}
+<figure class="slide med-photo-overlay center">
+      <picture>
+        <source data-srcset="/siteart/slides/large_{{ page.image }}.jpg" media="(min-width:900px)">
+        <source data-srcset="/siteart/slides/med_{{ page.image }}.jpg" media="(min-width: 450px)">
+        <source data-srcset="/siteart/slides/small_{{ page.image }}.jpg">
+        <img class="lazyload" data-src="/siteart/slides/large_{{ page.image }}.jpg" alt=""> 
+      </picture>
+    </figure> 
+    {% endif %}   
 </section>
 
 
