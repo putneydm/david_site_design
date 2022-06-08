@@ -160,28 +160,8 @@
 				color:$light-aqua;
 			} 
 			.teaser-arrow-icon {
-				transition: fill .2s;
 				vertical-align: -5px;
-				margin-left:rem(5);
-				fill:$aqua;
-				@media screen and (prefers-color-scheme: dark) {
-					fill:$light-aqua;
-				} 
-			}
-			&:hover {
-				background:none;
-				color:$light-aqua;
-				@media screen and (prefers-color-scheme: dark) {
-					color:$x-light-aqua;
-				} 
-				.teaser-arrow-icon {
-					fill:$light-aqua;
-					transition: fill .2s;
-					@media screen and (prefers-color-scheme: dark) {
-						fill:$x-light-aqua;
-					} 
-				}	
-			}
+			} 
 		}	
 	}
 }
