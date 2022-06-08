@@ -2,14 +2,14 @@
 /* foobar */
 {% include main_embedded_styles.css %}  
 
-{% assign pagetype = page.pageType %}
-  {% if pagetype == "index" %}
+{% assign pageType = page.pageType %}
+  {% if pageType == "index" %}
     {% include index_embeded_styles.css %}
   {% endif %}
-  {% if pagetype == "text_page" %}
+  {% if pageType == "about" or pageType == "resume" %}
     {% include fixed_header_styles.css %} 
   {% endif %}
-  {% if pagetype == "portfolio_entry" %}
+  {% if pageType == "portfolio_entry" %}
     {% include portfolio_embedded_styles.css %} 
     {% include fixed_header_styles.css %}  
   {% endif %}
