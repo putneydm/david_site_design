@@ -31,10 +31,11 @@
         background-color: $xxlight;
         height:58.9vw;
         @media screen and (min-width:rem(720)) {
-            height:calc(90vw * .589)
+            height:calc(90vw * .589);
         }  
         @media screen and (min-width:rem(1870)) {
-            height: calc(1800px * .589)
+            height: calc(rem(1800) * .589);
+            // height:100px;
          } 
          @media (prefers-color-scheme: dark) {
             background-color: $dark;
@@ -156,4 +157,43 @@ button.slide-button {
             left:calc(100% - rem(30));
           }
     }    
+}
+.blog-image {
+    border:1px solid red;
+    width: 100%;
+    max-width:700px;
+    margin: 0 auto;
+    position: relative;
+    padding: 58.8% 0 0;
+    background-color: $xxlight;
+    @media (prefers-color-scheme: dark) {
+        $background-color: $dark;
+    }
+    @media screen and (max-width:rem(430)) {
+        margin-top: -20px;
+    }
+    img {
+        width: 100%;
+        position: absolute;
+        top: 0;
+    }
+}
+
+.med-photo-overlay {
+	&::after {
+		position:absolute;
+		top:0;
+		left:0;
+		display:block;
+		content:' ';
+		width:100%;
+		padding-bottom:$image-ratio;
+		box-shadow:0 0 rem(50) rgba($med, .3) inset;
+		transition: box-shadow .2s;
+		z-index:2;
+		mix-blend-mode: multiply;
+		@media (prefers-color-scheme: dark) {
+			box-shadow:0 0 rem(50) rgba($dm-dark, .7) inset;
+		}
+	}
 }

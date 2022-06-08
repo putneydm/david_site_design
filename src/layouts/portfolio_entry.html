@@ -5,18 +5,15 @@ pageType: portfolio_entry
 <article class="content-wrapper portfolio">
 <h1 class="page-head">{{ page.title | markdownify | strip_html }}</h1>  
 <h2 class="page-subhead">{{ page.subhead | markdownify | strip_html }}</h2>
-{% if page.slides %}
+{% if page.slides or page.image %}
 	@@include('partials/portfolio/slide_show.html')
 {% endif %}  
-	<div class="text-container"> 
-  {% if page.image %}
-	  @@include('partials/blog_components/blog_image_test.html')  
-  {% endif %}  		
-        @@include('partials/portfolio_pages/icons.html') 
-          {{content}}    
-          {% if page.urllink %}
-            <a class="button portfolio" href="{{ page.urllink }}" rel="next" target="new">{{ page.title }} on the Internet Archive</a>   
-          {% endif %}
-    @@include('partials/portfolio_pages/teasers.html') 
-	</div>
+<div class="text-container"> 		
+      @@include('partials/portfolio_pages/icons.html') 
+        {{content}}    
+        {% if page.urllink %}
+          <a class="button portfolio" href="{{ page.urllink }}" rel="next" target="new">{{ page.title }} on the Internet Archive</a>   
+        {% endif %}
+  @@include('partials/portfolio_pages/teasers.html') 
+</div>
 </article>
