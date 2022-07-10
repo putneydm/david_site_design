@@ -1,17 +1,3 @@
-// .about-container {
-// 	border:1px solid red;
-// 	@extend .teaser-module-container !optional;
-// 	width:100%;
-// 	max-width:rem(700);
-// 	margin:0 auto;
-// 	padding:0;
-// 	@media screen and (max-width:rem(740)){
-// 		padding:0 rem(20);
-// 	 }
-// 	 @media screen and (max-width:rem(500)){
-//  		padding:0 rem(15);
-//  	 }  
-// }
 .about-information { 
 	p {
 	font-size:rem(16);
@@ -34,11 +20,3 @@
 				}
 			}
 	}
-// .about-mugshot {
-// 	width:rem(120);
-// 	height:rem(120);
-// 	margin:rem(4) auto rem(30);
-// 	border-radius:50%;
-// 	overflow:hidden;
-// 	border:1px solid $light;
-// }
