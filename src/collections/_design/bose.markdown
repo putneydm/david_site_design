@@ -10,7 +10,7 @@ roleDes: [Design]
 design: [research, Stakeholder Interviews, Discovery Sessions, User Testing, Documentation]
 roleDev: 
 developer: 
-myRole: Harware UI design lead
+myRole: Bringing the first over-the-counter hearing aid to market
 slides:
 image: hearphones
 sequence: 2
@@ -18,9 +18,9 @@ sequence: 2
 ## How might we ...
 
 * Create a device that removes the stigma from hearing aid use
-* Allow people to reconnect in social situations that are made difficult or impossible by hearing loss
+* Allow people to connect with others in social situations that are made difficult or impossible by hearing loss
 * Guide a user through the setup process to eliminate the need for professional assistance 
-* Launch a new product category
+* Launch a new FDA-regulated product category
 
 ___
 
@@ -28,18 +28,18 @@ ___
 
 ### No. 1 | The job to be done is not "hearing"; it's restoring lost human connections
 
-A hearing aid wasn't just an engineering problem to be solved. This would be a truly personal item for users, something they would depend on, trust. Users often said "I can hear leaves rustling when I go for a walk" or "I can go out to restaurants with friends again." This connection would imbue it with true emotional meaning. 
+A hearing aid wasn't just an engineering problem to be solved. This would be a truly personal item for users, something they would depend on, trust. Users often raved about the device. "I can hear leaves rustling when I go for a walk" or "I can go out to restaurants with friends again." This personal connection would imbue it with true emotional meaning. 
 
 ___
 
 ### No. 2 | Designing an on-device user interface
 
-We didn't want to replace one problem -- diminished hearing -- with another: constantly fiddling with a device. Actions needed to be discreet with a simple UI. We designed it to seem almost inert, like a pair of glasses. Simply take it out of the case, put them on and they just work. 
+We didn't want to replace one problem -- diminished hearing -- with another: the need to constantly fiddle with a device. Actions needed to be discreet, with a simple UI. We designed it to seem almost inert, like a pair of glasses. Simply take it out of the case, put it on and it just works. 
 
-Informed by this, button placement and interactions to prioritize became clear. We landed on: 
-* Assigning hearing-related actions as highest priority and sticking to it
+Informed by this, button placement and interactions to prioritize those actions became clear. We landed on: 
+* Assigning hearing-related actions as highest priority and sticking to that.
 * Allowing the user to return to their optimized hearing settings with a single tap of a capacitive surface -- something like a "home" button
-* Offloading complicated actions to the connected device
+* Offloading complicated actions to the app on the user's connected device/phone
 
 ___
 
@@ -53,7 +53,7 @@ ___
 
 ### No. 3 | Creating a whole new category of device 
 
-The device was meant to be groundbreaking. As the first over-the-counter hearing aid, the user would be responsible for tuning it to their needs, rather than an audiologist.   
+The device was meant to be groundbreaking. As the first over-the-counter hearing aid, the user would be responsible for tuning it to their needs, rather than relying on an audiologist.   
 
 This meant creation of tools and a user interface that turned complexity into dead simplicity. Everyone's ears and hearing loss is a bit different. We arrived at a simple message: trust your ears. If it sounds good to you, then it is tuned properly.
 

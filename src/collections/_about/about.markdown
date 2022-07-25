@@ -18,6 +18,7 @@ For the font geeks out there, the script font in the header is [Lavenderia][2], 
 
 I moved to Utah area because it is blessed with some of the most breathtaking natural beauty in the U.S. Most weekends and after work you'll find me somewhere in the nearby mountains putting up some miles. I'm also an occasional weekend 5K runner. I also spend my free time creating model cars. 
 
+<aside class="blog-pullquote blog-pullquote--set blog-pullquote--animate"><blockquote>I like to say that you should hike the hill you're not sure you can do. It's the only way to find out what you are truly capable of.</blockquote></aside>
 
 ### I went on a year-long road trip
 
