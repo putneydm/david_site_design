@@ -36,6 +36,10 @@ collections:
   resume:
     output: true
     layout: minimal_layout
+  writing:
+    output: true
+    layout: minimal_layout
+    permalink: /writing/:path/
 
 sitemap:
     file: "/sitemap.xml"
