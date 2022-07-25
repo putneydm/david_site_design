@@ -2,15 +2,6 @@
 head: Resumé
 subhead: I'm David, and this is the work I've done. I've been a journalist, editor, designer, consultant and developer. Let's talk.
 ---
-## Key Skills
-* I specialize in innovation consulting -- working closely with companies to help them realize breakthrough products
-* Experienced designer who consulted on or led lengthy complex projects for large organizations across many years
-* Design delivery, development team integration, agile sprint, Jira ticket writing, and close collaboration
-* Front-end dev — CSS, HTML, and JavaScript, some React and React Native, as well as tools such as Git  
-* Foundational design skills: wireframing, prototyping, presenting, for review, building and documenting design systems
-* Years of experience in media, content, content strategy and content site design
-* Experience with remote work at a longstanding remote-first company
-
 
 ## Professional Experience
 
@@ -25,53 +16,84 @@ I have worked on or led large, long-term, multimillion-dollar projects that incl
 ##### PPG 
 
 **Market researcher** \| *Cleveland, Ohio* <br />
-Crafted a research plan and conducted ethnographic market research to understand the market for a breakthrough paint protection and color change wrap for vehicles. Conducted interviews, synthesized results and crafted report.
+Created an ethnographic market research report to explain business needs of small shops that are installing paint protection and color change film to inform their marketing strategy for a new product.
+
+* Crafted a research plan and research questions
+* Conducted interviews with shop owners and operators
+* Affinitized key takeaways from interviews
+* Highlighted key marketing opportunities 
+* Crafted report outlining findings
 
 ##### EstateSpace enterprise app
 
 **Design Lead & Project Lead** \| *Charlottesville, Va.* <br />
-Designing a sprawling Web app that integrates budgeting, scheduling, document handling, invoicing and inventory tracking for the building trades and estate management.
+
+Created an integrated web app experience that connected budgeting, scheduling, contracts, financials, document handling, invoicing and inventory tracking to create an end-to-end project management tool for the building trades.
+
+* Collaborated with product owner on scheduling, roadmap and feature set 
+* Completed weekly status reports and tracked project budget 
+* Onboarded team members, as well as day-to-day management of team
+* Conducted user and stakeholder interviews to gather requirements
+* Prototyped and iterated multiple features, screens and flows in Sketch
+* Web app information architecture and site navigation
+* Led weekly design reviews with stakeholders and team
+* Visual design, design system and component library creation and maintenance
+* Agile scrum, Jira ticket and documentation writing
 
 ##### MIB Group enterprise search portal 
 
 **Design Lead & Developer** \| *Braintree, Mass*<br />
-Designed (UI, UX and visual) and built front end (CSS & HTML) for an app that cut weeks off the health records requests by allowing delivery of electronic health records via multiple record sources. [View in Portfolio][6]
+
+Designed and built a dynamic, simple UI for a web app that allows users to easily request and track the status of dozens of medical records from multiple sources.
+
+* Worked closely with Product Owner to plan product feature roadmap
+* Balanced deadlines for delivery of design and development work 
+* Planning and facilitation of discovery and design thinking sessions
+* User interviews and regular UI testing of new features
+* UI prototyping, iteration and bi-weekly design reviews 
+* Created visual design and design system component library 
+* Agile scrum, Jira ticket and documentation writing
+* Front end development: HTML, CSS and JavaScript. Owner and maintainer of the CSS and HTML code base.
+
+[MIB Case Study][6]
 
 ##### Bose Corporation hardware UI
 
 **Design Lead** \| *Framingham, Mass*<br />
-Designed hardware UI and wrote detailed documentation for the first FDA-approved over-the-counter hearing aid. [View in Portfolio][7]
+Breakthrough, first-of-its-kind FDA-approved over-the-counter hearing aid.
+
+* Worked with engineers to spec hardware UI  requirements — capacitive touch points, buttons and LEDs
+* Mapped user actions and device functionality onto hardware UI
+* Worked with mechanical engineers and firmware team on prototyping hardware UI
+* Planned and analyzed user testing of hardware
+* Trained in FDA-regulated product design and processes
+* Wrote FDA-regulated documentation for user-interface interactions  
+
+[Bose Case Study][7]
 
 ##### Zipcar mobile app
 
 **UI/UX Designer** \| *Boston, Mass* <br />
-One of a team of four who did extensive user testing before doing a ground-up redesign — UX, UI and visual — of the Zipcar mobile app to replace an app that was outdated visually and technologically.
+Revamped and modernized Zipcar’s outdated Android and iOS apps with a refreshed visual design, new identity and intuitive, elegant flows. Created prototypes, conducted user testing. Worked closely with product owner to set priorities.
 
 ##### Forrester Research mobile app
 
 **Designer & Developer** \| *Cambridge, Mass*<br />
-One of a team of three who tested and prototyped a mobile app that would allow users to rate their customer experience.
+Worked with CEO to design and prototype a real-time customer feedback app that would aggregate consumer opinion across a wide swath of industries.
 
 ##### Avid Technology web site
 
 **Designer & developer** \| *Burlington, Mass*<br />
-One of team of five who redesigned and relaunched Avid.com. We conducted dozens of user interviews and used Jobs to Be Done analysis to refocus it from a brochure site aimed at enterprise to an emphasis on direct software sales to users.
+Increased software sales by 70 percent with a total redesign of information architecture, visuals, content and UX on Avid.com to focus on direct sales. 
 
 ### BostonGlobe.com
 #### UX/UI Designer & Front-End Developer
 
 *Nov 2012 – Jan. 2015* \| *Boston, Mass.*
 
-I was the Boston Globe’s new products specialist. I was responsible for:
+I was the Boston Globe’s new products and innovation specialist. I was designer and developer responsible for **Cruxnow.com**, a secular site for Catholic news and lifestyle features. I was designer for **BDCwire.com** site, a mobile-focused site for younger readers to find and share news.  
 
-##### Cruxnow.com news site
-
-**Design Lead & Developer** <br />
-Wireframed and prototyped site in code. Built CSS, HTML and JS front end. Designed logo. Worked with overseas developers integrating it into Wordpress and launched the site on schedule. Wrote detailed design specs. [View in Portfolio][8]
-
-##### BDCwire.com site & RadioBDC redesign
-
-**Design lead** <br />Wireframed and prototyped site in InDesign. Visual design, typography and color palette. Wrote detailed specs for site design. Worked with offshore developer to build and launch site. Assisted in CSS and HTML bug fixes and site updates. 
+[Crux Case Study][8]
 
 
 ### PilotOnline.com
@@ -79,65 +101,60 @@ Wireframed and prototyped site in code. Built CSS, HTML and JS front end. Design
 
 *May 2008 – Oct. 2012* \| *Norfolk, Va.*<br /> *In 2012: 155M pageviews, 21M uniques and ~50 percent market share.*
 
-##### Led online coverage 
-
-during large, complex breaking news events such as a Navy jet crashing into an apartment building, breaking national news such as Mitt Romney’s running mate announcement in Norfolk, Va and as well as multiple elections.
-
-##### Wrote and edited 
-breaking news stories,  headlines and daily news stories for the site.
-
-##### Updated the site
-
-set news alerts, handled social media and assisted in planning coverage with editors, reporters, photographers and videographers.  
-
-##### Lead designer
-
-for PilotOnline.com on multiple special projects, including online presentation for the Afghan war series A Chance in Hell, which was honored as a Pulitzer finalist and at Photos of the Year International. 
+Led and planned online coverage, wrote and edited breaking news stories, and was lead designer for PilotOnline.com. Created online presentation for *A Chance in Hell*, which was honored as a Pulitzer finalist and at Photos of the Year International. 
 
 ### Link newspaper
 #### Co-founder & Design Director
 
 *July 2006-Sept. 2007* \| *Norfolk, Virginia. Circ. 30,000 (M-F).* <br />
 
-Link was a free, daily newspaper aimed at young, active adults. It won multiple design honors and was widely recognized for excellence. 
-Created branding and vision aimed at capturing an audience and advertisers who had given up on traditional newspapers. [View in Portfolio][9]
+Link was a free newspaper aimed at young, active adults. I co-founded it, created its visual design, content strategy, hired staff and oversaw daily production. It won multiple design honors and was widely recognized for excellence. 
 
-##### Co-founded
+* Co-founded and saw it through to launch and ran daily production
+* Recruited and hired a Link staff who chafed against traditional newspapers shared the vision and set them loose to innovate
+* Built prototypes and design component libraries
+* Visual design -- color palette, typography, presentation styles 
+* Content strategy, tone and branding
+* User tested prototypes with the target audience to refine our ideas through several iterations
 
-Recruited and hired a Link staff who chafed against traditional newspapers shared the vision and set them loose to innovate
+[Link Case Study][9]
 
-##### Designed & launched
+### Additional Design & Editing
 
-Built prototypes and design libraries — color palette, typography, presentation styles and templates used daily during production
-User tested prototypes with the target audience to refine our ideas through several iterations — common now, but unusual in news in that era 
+**The Virginian-Pilot**  \| *Page designer* \| Nov. 1999-July 2006 and **Sept. 2007-May 2008** \| Norfolk, Va.
 
-##### Day-to-day Management
+**Virgin Islands Daily News** \| *Designer* \| July 1999-Oct. 1999. \| St. Thomas, U.S.V.I.; circ. 20,000.
 
-Managed content and editorial voice by making sure that we stayed true to our mission statement: “We don’t do boring ever”
+**Sun Publications** \| *Designer* \| Feb. 1998-July 1999 \| Naperville, Ill.; weekly circ. 20,000. 
 
-### The Virginian-Pilot  
+**Designer/copy editor** \| Herald-Palladium \| June 1995-Jan. 1999 \| St. Joseph, Mich.; circ. 25,000.
 
-#### Page designer
+## Key Skills 
+### Theory
+* Inclusive, human-centered design 
+* Content-led information architecture and wireframing 
+* Mobile-first, resolution-independent responsive methodology 
+* Semantics and progressive enhancement 
+* Cross-browser compatibility and interoperability 
+* Qualitative and quantitative user testing
+* Iterative, data-driven research and design
+* Design thinking methodology 
+* Leading design or project teams
 
-**Nov. 1999-July 2006** and **Sept. 2007-May 2008** -- Norfolk, Va.
+### Practice 
+* Figma and Sketch, Invision and Abstract
+* Mural or similar whiteboarding tools
+* VS Code, Atom, and other code editors
+* Git, GitHub / GitLab version control 
+* Agile development methods (JIRA, Trello, etc.) 
 
-### Virgin Islands Daily News
-
-#### Designer
-
-**July 1999-Oct. 1999.** -- St. Thomas, U.S.V.I.; circ. 20,000.
-
-### Sun Publications
-
-#### Designer
-
-**Feb. 1998-July 1999** -- Naperville, Ill.; weekly circ. 20,000. 
-
-### Designer/copy editor
-
-#### Herald-Palladium
-
-**June 1995-Jan. 1999** -- St. Joseph, Mich.; circ. 25,000.
+### Languages
+* HTML5 & CSS, including preprocessor languages such as Sass and PostCSS 
+* Javascript
+* Jekyll / Liquid
+* Markdown
+* SVG 
+* Some React & React Native
 
 ## Writings
 * The Electronic Health Records Ecosystem is Complicated: Sorting It Out is Key to Building Great Experiences \| [Read][1]
@@ -150,10 +167,10 @@ Managed content and editorial voice by making sure that we stayed true to our mi
 
 **Illinois Central College** -- *January 1990 — May 1992*. East Peoria, Ill.  A.A. Journalism
 
-[1]: https://cantina.co/the-electronic-health-records-ecosystem-is-complicated-sorting-it-out-is-key-to-building-great-experiences/
-[2]: https://cantina.co/bring-your-version-control-under-control/
-[3]: https://cantina.co/three-quick-tips-to-writing-better-jira-tickets/
-[4]: https://cantina.co/postcss-plugin-problem-solving-multitool/
+[1]: /writing/understanding-electronic-health-records/
+[2]: /writing/design-version-control/
+[3]: /writing/how-to-write-a-jira-ticket/
+[4]: /writing/how-to-write-postcss-plugin/
 [6]: /design/mib/
 [7]: /design/bose/
 [8]: /design/crux/
