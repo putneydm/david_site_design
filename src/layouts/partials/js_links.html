@@ -12,6 +12,7 @@
   "use strict";
   ready(function() {
   pageFunctions.intialize();
+    {% assign pageType = page.pageType %}
     {% if pageType == 'blog' or pageType == 'blog-entry' %}
       pageFunctions.intializeBlogEntry();
     {% endif%}
@@ -22,7 +23,7 @@
       pageFunctions.initializeIndex();
       pageFunctions.initializeHero();
     {% endif%}
-    {% if pageType == 'portfolio_entry' or pageType == 'about' or pageType == 'portfolio' %}
+    {% if pageType == 'portfolio_entry' or pageType == 'about' or pageType == 'portfolio' %} 
       pageFunctions.initializePortfolio();
     {% endif%}
     {% if pageType == 'about' or pageType == 'portfolio' %}
@@ -39,13 +40,10 @@
     {% if pageType == 'error' %}
       pageFunctions.intializeMinimal();
     {% endif%}
-    // this is a hack to make the tag archive page work. For some reason pagetype doesn't work on this page.
+    // this is a hack to make the tag archive page work. For some reason pagetype doesn't work on this page.  
+    // foobar  
     {% if pageType == nil %}
-      pageFunctions.intializeMinimal();
-    {% endif%}
-    // this is a hack to make the tag archive page work. For some reason pagetype doesn't work on this page.
-    {% if pageType == nil %}
-      pageFunctions.intializeMinimal();
+      pageFunctions.intitializeIndex();
     {% endif%}
   });
 })();

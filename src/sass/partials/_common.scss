@@ -1,8 +1,6 @@
-main
-	{
+main {
 	width:100%;
 	margin:0 auto;
-	clear:both;
 	position:relative;
 }
 .skip-links{
@@ -30,3 +28,107 @@ main
 		}
 	}
 }
+body {
+    display: grid;
+    grid-template-columns: 1fr minmax(0, max-content) 1fr;
+    grid-template-rows: minmax(10rem, max-content) max-content max-content;
+    grid-template-areas:
+        "header header  header"
+        "...... content ......"
+        "footer footer footer";
+}
+.content-wrapper {
+	grid-area: content;
+	max-width:rem(1800);
+}
+.site-footer {
+	grid-area: footer;
+}
+.text-container {
+    max-width: rem(700);
+    margin: 0 auto rem(100);
+    padding: 0;
+        position: relative;
+        @media screen and (max-width:em(728)) {
+            padding: 0 rem(20);
+        }
+        @media screen and (max-width:em(500)) {
+            padding: 0 rem(15);
+        }
+        p {
+            font-size: em(18);
+            @media screen and (max-width:em(500)) {
+                font-size: em(15);
+            }
+        }
+}
+.about-mugshot {
+	width:rem(120);
+	height:rem(120);
+	margin:rem(4) auto rem(30);
+	border-radius:50%;
+	overflow:hidden;
+	border:1px solid $light;
+}
+.teaser-arrow-icon {
+	vertical-align: -5px;
+	margin-left:rem(5);
+	fill:$aqua;
+	@media screen and (prefers-color-scheme: dark) {
+		fill:$light-aqua;
+	} 
+}  
+.text-container {
+    ul {
+        margin: 15px 20px rem(30);
+
+        li {
+            margin: 0 0 8px 0px;
+            font-size: em(16);
+            line-height: 150%;
+
+            //	text-indent:-24px;
+            @media screen and (max-width:em(500)) {
+                font-size: em(15);
+            }
+            &::before {
+                width: rem(14);
+                height: rem(14);
+                background-color: lighten($aqua, 45%);
+                content: ' ';
+                display: inline-block;
+                margin: 10px 8px 0 0;
+                border-radius: 50%;
+                vertical-align: -2px;
+            }
+            @media (prefers-color-scheme: dark) {
+                &::before {
+                    background-color: $light_aqua;
+                }
+            }
+        }
+    }
+blockquote {
+        font-size: em(16);
+        line-height: 130%;
+        border-left: 1px solid $aqua;
+        margin-left: 15px;
+        padding-left: 10px;
+        color: $dark;
+        @media screen and (max-width:em(500)) {
+            font-size: em(15);
+        }
+        @media ( prefers-color-scheme: dark) {
+            color:$dm-light;
+        }
+    }
+    h3 {
+        font-family: $sans;
+        font-size: em(20);
+        color: $dark;
+        margin: 0 0 12px;
+         @media ( prefers-color-scheme: dark) {
+            color:$x-light-aqua;
+        }
+    }
+} 

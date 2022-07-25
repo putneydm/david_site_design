@@ -1,4 +1,5 @@
 .nav-fixed-bar {
+    grid-area: header;
     position: fixed;
     background-color: white;
     z-index: 10;
@@ -9,31 +10,18 @@
     flex-direction: row;
     justify-content: space-between;
     top: 0;
-    transform: translateY(-120px);
     box-shadow: 0 0 40px 15px rgba($med, .4);
-
-    @media screen and (max-width:em(560)) {
-        flex-direction: column;
-    }
-
-    a {
-        background-image: none;
-    }
-
-    @media (prefers-color-scheme: dark) {
-        background-color: $dark_aqua;
-        box-shadow: none;
-    }
-
+        @media screen and (max-width:em(560)) {
+            flex-direction: column;
+        }
+        a {
+            background-image: none;
+        }
+        @media (prefers-color-scheme: dark) {
+            background-color: $dark_aqua;
+            box-shadow: none;
+        }
 }
-
-.nav-fixed-bar--nodisplay {
-    transform: translateY(0);
-    background-color: transparent;
-    box-shadow: none;
-    position: absolute;
-}
-
 .main-header-logo {
     fill: $aqua;
     // to get height divide the width by 4
@@ -44,20 +32,17 @@
     transform: scale(1, 1);
     transition: fill .2s;
     cursor: pointer;
-
     @media screen and (max-width:em(700)) {
         height: rem(55);
         width: rem(220);
     }
-
     @media screen and (max-width:em(430)) {
         height: rem(50);
         width: rem(200);
         margin: rem(9) 0 0;
     }
-
     &:hover {
-        fill: $x-light_aqua;
+        fill: $light_aqua;
         transition: fill .2s;
     }
 
@@ -65,21 +50,10 @@
         fill: $dm-light;
     }
 }
-
-.main-header-logo--nodisplay {
-    fill: white;
-}
-
 .main-header-logo-link {
     position: relative;
     z-index: 3;
 }
-
-.headspace-wrapper {
-    display: none;
-    pointer-events: none;
-}
-
 .nav-menu-button {
     display: none;
     font-size: rem(10);
@@ -96,7 +70,6 @@
         display: block;
     }
 }
-
 .nav-menu-button-icn {
     width: rem(11);
     height: rem(8);
@@ -107,7 +80,6 @@
 .nav-list-wrapper {
     width: 100%;
 }
-
 .nav-list {
     display: flex;
     flex-direction: row;
@@ -138,8 +110,10 @@
         list-style-type: none;
 
         a {
-            color: $med;
-
+            color: $aqua;
+            &:hover {
+                color:$light-aqua;
+            }
             @media (prefers-color-scheme: dark) {
                 color: $light;
             }
@@ -155,95 +129,6 @@
             font-size: rem(18);
             margin: 0 0 rem(20);
             padding: 0;
-        }
-    }
-}
-
-.nav-list--nodisplay {
-    li {
-        a {
-            color: white;
-        }
-    }
-}
-
-// variations for different versions of header
-.small-billboard {
-    .nav-fixed-bar--nodisplay {
-        &::after {
-            background: linear-gradient(black,
-                    transparent);
-            background-size: cover;
-            content: '';
-            height: 180px;
-            width: 100%;
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: -1;
-            mix-blend-mode: multiply;
-            opacity: .6;
-        }
-    }
-}
-
-.no-billboard {
-    .nav-fixed-bar {
-        background-color: white;
-        box-shadow: 0 0 40px 15px rgba($med, .4);
-        position: fixed;
-
-        .main-header-logo {
-            fill: $aqua;
-            &:hover {
-                fill: $light-aqua
-            }
-        }
-
-        .nav-menu-button {
-            a {
-                color: $med;
-                @media (prefers-color-scheme: dark) {color: $dm-light;}
-            }
-        }
-
-        .nav-menu-button-icn {
-            fill: $light;
-        }
-
-        .nav-list {
-            li {
-                a {
-                    color: $med;
-                    @media (prefers-color-scheme: dark) {color: $light;}
-
-                }
-            }
-        }
-    }
-
-    @media (prefers-color-scheme: dark) {
-        .nav-fixed-bar {
-            background-color: $dark_aqua;
-            box-shadow: none;
-
-            .main-header-logo {
-                fill: $dm-light;
-
-                &:hover {
-                    fill: $light-aqua
-                }
-
-                .nav-menu-button {
-                    a {
-                        color: $dm-light;
-                    }
-                }
-
-                .nav-menu-button-icn {
-                    fill: $dm-light;
-                }
-            }
         }
     }
 }
