@@ -6,11 +6,16 @@
   {% if pageType == "index" %}
     {% include index_embeded_styles.css %}
   {% endif %}
-  {% if pageType == "about" or pageType == "resume" %}
+  {% if pageType == "about" or pageType == "resume" or "blog_entry" %}
     {% include fixed_header_styles.css %} 
   {% endif %}
   {% if pageType == "portfolio_entry" %}
     {% include portfolio_embedded_styles.css %} 
+    {% include fixed_header_styles.css %}  
+  {% endif %}
+  {% if pageType == "blog_entry" %}
+    {% include portfolio_embedded_styles.css %}  
+    {% include blog_embedded_styles.css %}     
     {% include fixed_header_styles.css %}  
   {% endif %}
 </style>
