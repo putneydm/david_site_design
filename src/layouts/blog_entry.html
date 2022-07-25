@@ -1,0 +1,45 @@
+---
+layout: minimal_layout
+pageType: blog_entry
+---
+<article class="content-wrapper blog">
+{% if page.image %}
+	@@include('partials/blog_components/blog_image.html')
+{% endif %} 
+<div class="text-container"> 		
+    <h1>{{ page.title | markdownify | strip_html }}</h1>  
+    <h2 class="subhead">{{ page.subhead | markdownify | strip_html }}</h2>
+
+    <p class="blog-entry-date">
+    {{ page.date | date: "%A, %B %-d, %Y" }}
+</p>
+
+    {% assign readCalc = page.content | number_of_words | divided_by: 180 | round %} 
+        {% if readCalc == 0 %} {% assign readTime = "Less than one" %} 
+            {% elsif readCalc == 1 %} {% assign readTime = "One" %} 
+            {% elsif readCalc == 2 %} {% assign readTime = "Two" %} 
+            {% elsif readCalc == 3 %} {% assign readTime = "Three" %} 
+            {% elsif readCalc == 4 %} {% assign readTime = "Four" %} 
+            {% elsif readCalc == 5 %} {% assign readTime = "Five" %} 
+            {% elsif readCalc == 6 %} 
+            {% assign readTime = "Six" %} 
+            {% elsif readCalc == 7 %} {% assign readTime = "Seven" %} 
+            {% elsif readCalc == 8 %}
+                {% assign readTime = "Eight" %} {% elsif readCalc == 9 %} 
+                {% assign readTime = "Nine" %} {% else %} 
+                {% assign readTime = readCalc %} 
+        {% endif %}
+
+    <p class="blog-read-time"> 
+    {{ readTime }}-minute read
+    </p>
+        {{content}}          
+
+    {% if page.urllink %}
+        <p>____</p>
+        <p><em>This post was <a href="{{ page.urllink }}" rel="next" target="new">orginally published</a> on the blog for Cantina Consulting.</em></p>
+    {% endif %}
+    @@include('partials/blog_components/blog_sig.html')   
+  @@include('partials/portfolio_pages/teasers.html') 
+</div>
+</article>
