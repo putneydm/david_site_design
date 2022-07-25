@@ -93,7 +93,7 @@
 					color:white;
 				} 
 			}
-			&:nth-child(3) {
+			&:nth-child(4) {
 				padding-right:0;
 				&::after{content:'';display:none;}
 			}
@@ -145,27 +145,7 @@
 			display: none;
 		}
 	}
-	p {
-		a {
-			font-family:$sans;
-			color:$aqua;
-			margin:0 rem(4) 0 0;
-			text-decoration:none;
-			display:inline-block;
-			font-size:em(13);
-			text-transform:uppercase;
-			letter-spacing:.07em;
-			background-image:none;
-			@media screen and (prefers-color-scheme: dark) {
-				color:$light-aqua;
-			} 
-			.teaser-arrow-icon {
-				vertical-align: -5px;
-			} 
-		}	
-	}
 }
-
 h1.teaser-module-head	{
 	font-size:em(36);
 	margin:0;

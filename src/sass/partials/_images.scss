@@ -20,9 +20,9 @@ a {
     .med-photo-overlay {
         &:hover {
             &::after {
-                box-shadow:0 0 rem(70) rgba($med, .5) inset;
+                box-shadow:0 0 rem(70) rgba($med, .7) inset;
                 @media (prefers-color-scheme: dark) {
-                    box-shadow:0 0 rem(70) rgba($dm-dark, .7) inset;
+                    box-shadow:0 0 rem(70) rgba($dm-dark, .5) inset;
                 }
             }
         }
