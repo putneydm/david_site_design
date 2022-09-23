@@ -48,16 +48,15 @@
 	&.main {
 		border:3px solid $aqua;
 		background-color: $aqua;
-		// fill:$dark_aqua;
+		fill:$dark_aqua;
 		@media ( prefers-color-scheme: dark) {
 			border:3px solid $light_aqua;
-			fill:$light_aqua;
-			background: transparent;
+			background-color: $light-aqua;
         }
 		.footer-icon {
 			fill:white;
 			@media ( prefers-color-scheme: dark) {
-				fill:$light_aqua;
+				fill:$dm-dark;
 			}
 		}
 	}
@@ -127,9 +126,46 @@ pagination-wrapper {
     transform: scaleX(-1);
     filter: FlipH;
 }   
+.button {
+	display:block;
+	width:100%;
+	height:rem(75);
+	max-width:rem(500);
+	border-radius:rem(4);
+	margin:0 auto rem(60);
+	padding:rem(30) 0;
+	background-color:white;
+	font-family:$sans;
+	font-size:rem(14);
+	text-align:center;
+	letter-spacing:.06em;
+	color:$aqua;
+	transition:color .2s ease-in, background-color .2s ease-in;
+	background-image:none;
+	text-shadow:none;
+  	// box-shadow: 0 rem(18) rem(75) 0 rgba($dark, .3);
+	  box-shadow: 0 0 rem(95) rgba($dark, .3);
+	@media screen and (max-width:em(520)) {width:96%;}
+		&:hover{
+			background-color:$aqua;
+			color:white;background-image:none;
+		}
+	@media (prefers-color-scheme: dark) {
+		color: white;
+		background-color: $dark-aqua;
+		box-shadow: none;
+	} 	
+}
 .button.portfolio {
     margin-top:40px;
     @media screen and (min-width:em(520)) {
         margin-top:60px;
     }
+}
+.content-wrapper {
+	&.portfolio {
+		h3 {
+			margin:0 0 rem(12);			
+		}
+	}
 }

@@ -31,10 +31,11 @@
         background-color: $xxlight;
         height:58.9vw;
         @media screen and (min-width:rem(720)) {
-            height:calc(90vw * .589)
+            height:calc(90vw * .589);
         }  
         @media screen and (min-width:rem(1870)) {
-            height: calc(1800px * .589)
+            height: calc(rem(1800) * .589);
+            // height:100px;
          } 
          @media (prefers-color-scheme: dark) {
             background-color: $dark;
@@ -80,7 +81,7 @@ button.slide-button {
     top:calc(100% + 10px);
     z-index:9;
     transition: background-color .2s, transform .2s ease-in-out;
-    box-shadow: 0 0 rem(50) 0 rgba($dark, .4);
+    box-shadow: 0 0 rem(50) rgba($dark, .4);
     cursor:pointer;
     &::after {
         display:block;

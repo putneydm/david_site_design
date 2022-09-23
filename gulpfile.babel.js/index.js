@@ -103,11 +103,14 @@ const {
   pages: {
     input: pagesInput
     },
+   markdown: {
+    watch: markdown
+   }
 } = paths;
 
 function watchTask() {
   watch(
-    [inputCSS, inputInlineCSS, inputJS, inlineJS, includesInput, layoutsInput, pagesInput],
+    [inputCSS, inputInlineCSS, inputJS, inlineJS, includesInput, layoutsInput, pagesInput, markdown],
     series(parallel(cleanCSS, cleanJS, cleanPages), parallel(css, cssInline), parallel(concatJs, minifyInlineScripts), cachebustScripts, parallel(includes, layouts, pages, collections))
   );
 }

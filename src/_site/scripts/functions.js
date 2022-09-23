@@ -347,7 +347,7 @@ var pageFunctions = {
     //  var heroImage = document.querySelector('#hero-image'),
     var heroImageName = el.getAttribute('data-image'),
       windowWidth = window.innerWidth, // finds width of browser window
-      pageType = document.querySelector('BODY').dataset.pagetype,
+      pageType = document.querySelector('BODY').dataset.pageType,
       imageURL = windowWidth > 700 ?
       '/siteart/hero_' + heroImageName + '.jpg' :
       '/siteart/sm_hero_' + heroImageName + '.jpg';

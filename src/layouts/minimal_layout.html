@@ -5,12 +5,11 @@
 	@@include('partials/skip_links.html')
 	<div class="svg-import hidden" aria-hidden="true">
 			@@include('../svg/svgsprite.svg')
-	{% if pageType == portfolio_entry %}	
+	{% if page.pageType == "portfolio_entry" %}	
 		@@include('../svg/port_svgsprite.svg')
 	{% endif %}
 	</div>
-		@@include('partials/headers/fixed_header_inside.html')
-		<h1>{{ page.pagetype }}</h1>
+	@@include('partials/headers/fixed_header_inside.html')
 	{{content}}
 </main>
 	@@include('partials/footer/footer.html')

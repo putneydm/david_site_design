@@ -1,8 +1,6 @@
 var fontLoadAlt = {
     intialize: function() {
         "use strict";
-        // console.log('fonts');
-        // var pageType = document.getElementsByTagName('Body')[0].getAttribute('data-pagetype');
         var woff = '/fonts/fontsWOFF_variant.css';
         var woff2 = '/fonts/fontsWOFF2_variant.css';
         this.loadFont('font-file', woff, woff2)

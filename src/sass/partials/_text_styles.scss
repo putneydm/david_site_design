@@ -1,24 +1,15 @@
-@media (prefers-color-scheme: dark) {
-    body {
-        background-color: $dm-dark;
-        color: $dm-light;
-    }
-}
 figure {
     img {
         width: 100%;
         background-color: $xxlight;
     }
 }
-
 img {
     display: block;
-
     a {
         border: 0;
     }
 }
-
 a {
     img {
         border: 0;
@@ -29,41 +20,6 @@ a {
         box-shadow: 0 0 rem(8) $x-light-aqua;
         outline-style: none;
         color: black !important;
-    }
-}
-h1,
-h2,
-h3,
-h4 {
-    font-family: $sans;
-    font-weight: 700;
-}
-
-ul {
-    padding: 0px;
-
-    li {
-        list-style-type: none;
-    }
-}
-.section-header {
-    font-size: rem(30);
-    text-transform: lowercase;
-    font-family: $sans;
-    font-weight: bold;
-    text-align: center;
-    color: $aqua;
-    transform: font-size .3s;
-    @media screen and (max-width:em(500)) {
-        font-size: em(22);
-    }
-
-    span {
-        color: $med;
-    }
-
-    a {
-        background-image: none;
     }
 }
 p,

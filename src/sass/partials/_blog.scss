@@ -1,0 +1,212 @@
+.content-wrapper.blog {
+    min-width: 1000px;
+   @media screen and (max-width:rem(1000)) {
+        min-width: unset;
+    }
+    h1 {
+        font-size:rem(30);
+        margin:0 0 rem(24);
+        text-align: center;
+        @media screen and (max-width:rem(500)) {
+            font-size:rem(24);
+        }
+    }
+    h1 > a {
+        color:white;
+        text-decoration: none;
+        background: none;
+        &:hover {
+            color:$light-aqua;
+        }
+    }
+    h2 {
+        font-size:rem(22);
+        @media screen and (max-width:rem(500)) {
+            font-size:rem(18);
+        }
+    }
+    h2, h3 {
+        margin:rem(30) 0 rem(8);
+        &::before {
+            display:none;
+        }
+    }
+    h2.subhead {
+        font-size: rem(20);
+        text-align: center;
+        margin: 0 0 rem(36);
+        line-height: 140%;
+        color: $med;
+        @media screen and (max-width:rem(500)) {
+            font-size: rem(18);
+            margin: 0 rem(10) rem(24);
+        }
+        @media (prefers-color-scheme: dark) {
+            color: $light-aqua;
+        }
+    }
+    P+ul, ul {
+        padding-left:rem(24);
+        li {
+            &:last-child {
+                margin-bottom: rem(24);
+            }
+        }
+    }
+    p+ul+p {
+        padding-left:0;
+    }
+}
+.text-container {
+p:nth-child(5):first-letter {
+    float: left;
+    color: $med;
+    font-size: em(62);
+    line-height: 80%;
+    margin: rem(5) rem(5) 0 0;
+    font-family: $sans;
+
+    @media screen and (max-width:em(500)) {
+        font-size: em(53);
+    }
+
+    @media (prefers-color-scheme: dark) {
+        color: $x-light-aqua;
+    }
+}
+}
+.text-container.blog-teaser {
+    h1>a {
+        color:$body;
+        &:hover {
+            color:$aqua;
+            @media (prefers-color-scheme: dark) {
+                color: $light-aqua;
+            }
+        }
+        @media (prefers-color-scheme: dark) {
+            color: white;
+        }
+    }
+}
+.text-container.blog-teaser::after {
+		display: block;
+		max-width:rem(400);
+		height:rem(1);
+		content:"";
+		border-bottom:1px solid $med;
+		margin:rem(72) auto 0;
+
+	@media screen and (max-width:rem(700)) {
+		margin:rem(48) auto 0;
+    }	
+	&:last-child {
+			display: none;
+	}
+}
+.blog-mugshot {
+    width:rem(60);
+    height:rem(60);
+    border-radius: 40px;
+    float:left;
+    padding:0;
+    margin:0 rem(18) 0 0;
+    img {
+        border-radius: 40px;  
+    }
+}
+.blog-signiture {
+    font-style: italic;
+    margin: rem(24) 0 rem(42);
+    border-top:1px solid $light;
+    padding:rem(24) 0 0 0;
+    p {
+        font-size:rem(14);
+    }
+    @media screen and (prefers-color-scheme: dark) {
+        border-top:1px solid $dark;
+    } 
+}
+p.blog-entry-date {
+    text-align: center;
+    font-style: italic;
+    font-size: rem(14);
+    margin-bottom: rem(18);
+}
+
+p.blog-read-time {
+    text-align: center;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+    font-size: rem(14);
+    margin-bottom: rem(15);
+    &::before {
+        display: block;
+        width: rem(150);
+        content: " ";
+        height: rem(1);
+        border-top: 1px solid $med;
+        margin: 0 auto rem(8);
+    }
+}
+.blog-image-insert {
+    padding:8px;
+    margin:rem(24) 0;
+    background-color: white;
+    border-radius: rem(4);
+}
+pre {
+    width:100%;
+    padding:rem(12);
+    background-color: $xxlight;
+    border-radius: rem(5);
+    overflow-y: scroll;
+    @media screen and (prefers-color-scheme: dark) {
+        background-color:$body;
+    } 
+    code {
+        font-size:rem(15);
+        font-family: monospace;
+        color:$dark;
+        line-height: 1.8;
+        background-color: transparent;
+        @media screen and (prefers-color-scheme: dark) {
+            color:$x-light-aqua;
+        } 
+    }
+}
+code {
+    display:inline-block;
+    background-color:$xxlight;
+    font-size: 14px;
+    padding:0 6px;
+    border-radius: rem(5);
+    color:$aqua;
+    @media screen and (prefers-color-scheme: dark) {
+        background-color:$body;
+        color:$x-light-aqua;
+    } 
+}
+.blog-image {
+    padding-bottom: 58.8%;
+    position: relative;
+    background-color: $xxlight;
+    picture {
+        position: absolute;
+        top:0;
+        left:0;
+    }
+    @media screen and (prefers-color-scheme: dark) {
+        background-color: $body;
+    } 
+}
+
+.blog-image.med-photo-overlay {
+    width:100%;
+    position: relative;
+    max-width:rem(1000);
+    margin: 0 0 rem(42);
+    &::after {
+        max-width: 43.7 rem;
+    }    
+}

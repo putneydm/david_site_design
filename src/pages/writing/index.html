@@ -1,0 +1,17 @@
+---
+title: Writing
+layout: minimal_layout
+pageType: blog_entry
+head: Writing
+subhead: I occasionally write blog posts about UX, techology, project how-tos, code advice and or reviews of tech devices. This is a sampling of my favorites.
+description: David Putney. My day job is a UI/UX designer and developer at a Boston internet consulting firm. I built this site to share examples of my work and to publish an occasional blog entry.
+keywords: [Jekyll, typography, UI/UX, blogging, blog, about]
+---
+<div class="content-wrapper">
+  <h1 class="page-head">{{ page.head }}</h1>
+<h2 class="page-subhead">{{ page.subhead }}</h2> 
+  {% assign collections = site.writing | sort: 'sequence' %}
+  {% for post in collections %}
+    @@include('../../pages/_partials/index_components/mt_writing_teaser.html')
+  {% endfor %}
+</div>

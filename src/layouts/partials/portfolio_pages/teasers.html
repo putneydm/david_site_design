@@ -1,6 +1,12 @@
 {% if pageType == portfolio_entry and page.pageType != mil %}
 
+{% if site.design %}
 {% assign teasers = site.design %}
+{% endif %}
+{% if site.writing %}
+{% assign teasers = site.writing %}
+{% endif %}
+
 {% for item in teasers %}
 {% if item.title == page.title and forloop.index != 1 and forloop.index != teasers.size %}
         {% assign prevnum = forloop.index | minus: 2 %}

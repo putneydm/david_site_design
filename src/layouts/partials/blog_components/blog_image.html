@@ -1,0 +1,21 @@
+
+ {% if page.image %}
+ {% assign image = page.image %}
+ {% endif %}
+ {% if post.image %}
+ {% assign image = post.image %}
+ {% endif %}
+  
+{% if image %}
+<figure class="blog-image med-photo-overlay center">
+  <picture>
+    <source data-srcset="/siteart/large_{{ image }}.jpg" media="(min-width:900px)">
+    <source data-srcset="/siteart/med_{{ image }}.jpg" media="(min-width: 450px)">
+    <source data-srcset="/siteart/xsmall_{{ image }}.jpg">
+      <img class="lazyload" data-src="/siteart/large_{{ image }}.jpg" alt=""> 
+  </picture>
+</figure> 
+{% endif %}   
+  
+  
+  

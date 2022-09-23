@@ -2,22 +2,21 @@
 # Site settings
 title: David Putney
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "https://www.davidputney.com" # the base hostname & protocol for your site
+url: "https://www.davidputney.design" # the base hostname & protocol for your site
 disclaimer: Made by David with ♥. This is my personal website. It is not affiliated with any current or former employers.
-description: "I'm David Putney, a web designer and developer living in the Boston, Mass. area. I specialize in UI/UX, and designing and building media and content-driven websites."
+description: "I'm David Putney, a UI/UX designer and developer living in the Salt Lake City area of Utah. I built this site to share examples of my professional design and development work."
 tagLine: This is my site
-sitekeywords: ['David Putney', 'blogger', 'blog', 'writer', 'design', 'portfolio', 'web development', 'front-end developer', 'web design', 'mobile first', 'responsive design', 'HTML', 'CSS', 'JavaScript', 'jQuery']
+sitekeywords: ['David Putney', 'writer', 'design', 'portfolio', 'web development', 'front-end developer', 'web design', 'mobile first', 'responsive design', 'HTML', 'CSS', 'JavaScript', UI, UX]
 permalink: /:year/:month/:title.html
 
 # Build settings
 markdown: kramdown
 
-plugins: [jekyll/tagging, jekyll-paginate, jekyll-sitemap]
+plugins: [jekyll-sitemap, jekyll-paginate]
 
 gems:
-  - jekyll-tagging
-  - jekyll-paginate
   - jekyll-sitemap
+  - jekyll-paginate
 
 array: []  #empty array
 
@@ -34,9 +33,14 @@ collections:
     layout: minimal_layout
   design:
     output: true
+    permalink: /design/:path/
   resume:
     output: true
     layout: minimal_layout
+  writing:
+    output: true
+    layout: minimal_layout
+    permalink: /writing/:path/
 
 sitemap:
     file: "/sitemap.xml"
