@@ -1,41 +1,65 @@
 {% assign pageType = page.pageType %}
 <!-- og image -->
-{% capture ogImage %}med_placeholder.jpg{% endcapture %}
+{% if page.slides %}
+	{% capture ogImage %}slides/med_{{ page.slides | first }}.jpg{% endcapture %}
+{% elsif page.image and pageType != 'portfolio_entry' %}
+	{% assign image = page.image %}
+	{% capture ogImage %}large_{{ image }}.jpg{% endcapture %}			
+{% elsif page.image and pageType == 'portfolio_entry' %}
+	{% assign image = page.image %}
+	{% capture ogImage %}slides/large_{{ image }}.jpg{% endcapture %}	
+{% else %}
+	{% capture ogImage %}med_placeholder.jpg{% endcapture %}
+{% endif %}  
+
+<!-- og title -->	
+{% if pageType == 'portfolio_entry' %}
+	{% assign title = page.title %}
+	{% assign subhead = page.subhead %}	
+	{% capture ogTitle %}{{ title }} | {{ subhead }} {% endcapture %}
+{% elsif pageType == 'blog_entry' %}
+	{% assign ogTitle = page.title %}
+{% else %}
+	{% capture ogTitle %}David Putney | Design{% endcapture %}
+{% endif %}
+
 <!-- og description -->
 {% if pageType == 'portfolio_entry' %}
+	{% assign ogDescription = page.project | truncatewords: "120" | strip_html | xml_escape %}
+	{% assign ogKeywords = page.keywords | join: ', ' %}
+{% elsif pageType == 'blog_entry' %}
 	{% assign ogDescription = page.content | truncatewords: "120" | strip_html | xml_escape %}
 	{% assign ogKeywords = page.keywords | join: ', ' %}
 {% else %}
 	{% assign ogDescription = site.description %}
-	<!-- of keywords  -->
-	{% assign ogKeywords = site.keywords | join: ', ' %}
 {% endif %}
-<!-- og title -->	
-{% assign ogTitle = site.description %}
 
+<!-- of keywords  -->
+{% assign ogKeywords = site.keywords | join: ', ' %}
 
+<!-- foobar  -->
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <meta name="HandheldFriendly" content="True">
-<meta name="MobileOptimized" content="320">
+<meta name="MobileOptimized" content="320"> 
 <!-- facebook -->
 <meta property="og:title" content="{{ogTitle}}" />
-<meta property="og:site_name" content="David Putney | This is my site"/>
-<meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
+<meta property="og:site_name" content="David Putney | Design"/>
+<meta property="og:url" content="https://davidputney.design{{ page.url }}" />
 <meta property="og:description" content="{{ogDescription}}" />
 <meta property="og:type" content="article" />
 <meta property="og:locale" content="en_US" />
-<meta property="og:image" content="{{site.url}}/siteart/{{ogImage}}" />
+<meta property="og:image" content="https://davidputney.design/siteart/{{ogImage}}" />
 <!-- twitter -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{{ogTitle}}" />
-<meta name="twitter:description" content="{{ogDescription | truncate: "200"}}" />
-<meta name="twitter:image" content="{{site.url}}/siteart/{{ogImage}}" />
+<meta name="twitter:description" content="{{ogDescription}}" />
+<meta name="twitter:image" content="https://davidputney.design/siteart/{{ogImage}}" />
 <!-- other -->
 <meta name="description" content="{{ogDescription}}" />
 <meta name="keywords" content="{% if ogKeywords %}{{ogKeywords}}, {% endif %}{{ogSiteKeywords}}" />
-<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
-<meta name="news_keywords" content="David Putney, design, web design, internet design, web sites, CSS, HTML, jQuery" />
+<link rel="canonical" href="https://davidputney.design{{ page.url }}" />
+<meta name="news_keywords" content="David Putney, design, web design, internet design, web sites, UX design, CSS, HTML, Javascript" />
 <meta name="geo.placename" content="Saratoga Springs, Utah">
 <meta name="author" content="David Putney">

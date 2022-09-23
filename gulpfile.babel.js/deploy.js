@@ -22,7 +22,7 @@ const {
 function prepPages() {
     return src(pagesIn)
         .pipe(replace(/yygoogleanlyticsxx/g, googleAnalytics)) // google analytics number to site
-        .pipe(minifyHTML())
+        // .pipe(minifyHTML())
         .pipe(dest(pagesDeploy));
 }
 

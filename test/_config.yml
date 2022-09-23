@@ -2,9 +2,9 @@
 # Site settings
 title: David Putney
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "https://www.davidputney.com" # the base hostname & protocol for your site
+url: "https://www.davidputney.design" # the base hostname & protocol for your site
 disclaimer: Made by David with ♥. This is my personal website. It is not affiliated with any current or former employers.
-description: "I'm David Putney, a UI/UX designer and developer at a Boston technology consulting firm. I built this site to share examples of my professional design and development work."
+description: "I'm David Putney, a UI/UX designer and developer living in the Salt Lake City area of Utah. I built this site to share examples of my professional design and development work."
 tagLine: This is my site
 sitekeywords: ['David Putney', 'writer', 'design', 'portfolio', 'web development', 'front-end developer', 'web design', 'mobile first', 'responsive design', 'HTML', 'CSS', 'JavaScript', UI, UX]
 permalink: /:year/:month/:title.html
@@ -12,10 +12,11 @@ permalink: /:year/:month/:title.html
 # Build settings
 markdown: kramdown
 
-plugins: [jekyll-sitemap]
+plugins: [jekyll-sitemap, jekyll-paginate]
 
 gems:
   - jekyll-sitemap
+  - jekyll-paginate
 
 array: []  #empty array
 
