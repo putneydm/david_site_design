@@ -12,6 +12,7 @@ roleDev:
 developer: 
 myRole: Bringing the first over-the-counter hearing aid to market
 slides: [homepage-old, homepage-new, wellness-old, wellness-after, care-gaps-old, care-gaps-new, call-outcomes-old, call-outcomes-new]
+keyImage: homepage-redesign
 slidesCaps: [Home Page |  Before, Homepage | After, Wellness Worklist |  Before, Wellness Worklist | After, Care Gaps |  Before, Care Gaps | After, Call Outcomes |  Before, Call Outcomes | After]
 sequence: 1
 ---
