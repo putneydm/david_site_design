@@ -36,6 +36,8 @@ body {
         "header header  header"
         "...... content ......"
         "footer footer footer";
+    grid-auto-columns: 0;   
+    overflow:hidden scroll; 
 }
 .content-wrapper {
 	grid-area: content;

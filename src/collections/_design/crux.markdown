@@ -13,7 +13,7 @@ myRole: Designing & building a secular news site for a Catholic audience
 project: "Crux was to be a destination site about the Catholic Church, with news, advice and lifestyle features aimed at members in the United States and elsewhere. It was a green-field project. I served as design lead, front-end developer, visual designer and more, essentially crafting the brand identity as well as the site itself."
 client: "Boston Globe Media Company, circa July-October 2015"
 urllink: https://web.archive.org/web/20160310104001/http://www.cruxnow.com/
-sequence: 3
+sequence: 4
 ---
 ## How might we ...
 * Establish a destination site about the Catholic Church aimed at members worldwide
