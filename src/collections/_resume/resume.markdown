@@ -5,11 +5,20 @@ subhead: I'm David, and this is the work I've done. I've been a journalist, edit
 
 ## Professional Experience
 
+
+### Aledade
+
+#### Senior Designer \| Design Systems & Infrastructure
+
+*Aug. 2022 – present* \| *Bethesda, Md* 
+
+XXXXXX
+
 ### Cantina
 
 #### Senior Designer & Front-End Developer
 
-*Jan. 2015 – present* \| *Boston, Mass* 
+*Jan. 2015 – July 2022* \| *Boston, Mass* 
 
 I have worked on or led large, long-term, multimillion-dollar projects that include:
 
