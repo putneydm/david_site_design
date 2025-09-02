@@ -30,16 +30,18 @@
         position:relative;
         background-color: $xxlight;
         height:58.9vw;
-        @media screen and (min-width:rem(720)) {
-            height:calc(90vw * .589);
-        }  
-        @media screen and (min-width:rem(1870)) {
-            height: calc(rem(1800) * .589);
-            // height:100px;
-         } 
+        @media screen and (min-width:rem(940)) {
+            height: calc(90vw * .589);
+        }
          @media (prefers-color-scheme: dark) {
             background-color: $dark;
         } 
+        &.video {
+            height:56.3vw;
+            @media screen and (min-width:rem(940)) {
+                height: calc(90vw * .563);
+            } 
+        }
     }  
     .slide {
         margin:0;

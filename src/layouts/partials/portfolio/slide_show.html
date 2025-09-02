@@ -4,7 +4,13 @@
     <button class="slide-button left" id="back" value="back"><span>Back</span></button> 
     <p class="gallery-count"><span>1</span> | {{ page.slides.size }}</p>  
   {% endif %}  
-  <div class="gallery"> 
+
+   {% if page.video %}   
+  <div class="gallery video"> 
+      {% else %}
+        <div class="gallery"> 
+          {% endif %}
+
 {% if page.slides %}   
 {% for slide in page.slides %}
   {% if forloop.first %}
@@ -30,7 +36,16 @@
         <img class="lazyload" data-src="/siteart/slides/large_{{ page.image }}.jpg" alt=""> 
       </picture>
     </figure> 
-    {% endif %}   
+    {% endif %}  
+{% if page.video %}
+    <figure class="slide center">
+      <video width="100%" controls>
+          <source src="/siteart/video/{{ page.video }}.mov">
+      </video>
+    </figure>
+    {% endif %}  
+
+    </div>  
 </section>
 
 
