@@ -11,7 +11,7 @@ slides: ['link_1', 'link_2', 'link_3', 'link_14', 'link_13', 'link_4', 'link_5',
 roleDes: [Founder, Design Director]
 myRole: Launching a colorful alternative to traditional newspapers
 design: [Branding, Prototypes, Content Strategy, Visual Design, Typography, Logo Design]
-sequence: 4
+sequence: 5
 ---
 ## How might we ...
 * Reach an audience alienated by traditional newspapers

@@ -8,6 +8,11 @@
 {% assign alt = post.imageAlt %}
 {% endif %}
 
+{% if post.keyImage %}
+{% assign image = post.keyImage %}
+{% assign alt = post.imageAlt %}
+{% endif %}
+
 <article class="teaser-module will-change-ot set">
 		<a href="{{post.url}}" rel="next">
 		<figure class="teaser-module-mainart med-photo-overlay">

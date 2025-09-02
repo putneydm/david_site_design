@@ -12,7 +12,7 @@ roleDev: [Developer]
 myRole: Creating a "Google for medical records" 
 developer: [HTML, CSS, JavaScript]
 slides: ['mib_1', 'mib_2', 'mib_3', 'mib_4', 'mib_5', 'mib_6', 'mib_7', 'mib_8', 'mib_9', 'mib_10', 'mib_11', 'mib_12', 'mib_13']
-sequence: 1
+sequence: 2
 ---
 ## How might we ...
 

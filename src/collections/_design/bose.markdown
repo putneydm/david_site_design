@@ -13,7 +13,7 @@ developer:
 myRole: Bringing the first over-the-counter hearing aid to market
 slides:
 image: hearphones
-sequence: 2
+sequence: 3
 ---
 ## How might we ...
 
