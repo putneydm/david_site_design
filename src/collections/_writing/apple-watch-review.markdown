@@ -5,7 +5,7 @@ imageAlt: "Images of Apple Watches"
 layout: blog_entry
 pageType: blog_entry
 image: apple-watch
-sequence: 5  
+sequence: 6  
 ---
 
 The Apple Watch is very nice.

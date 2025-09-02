@@ -5,11 +5,9 @@ imageAlt: Screenshot of MIB Electronic Medical Records Portal
 layout: blog_entry
 pageType: blog_entry
 project: MIB-EHR was a legacy company's entry into the fast-growing field of electronic medical records for life insurance companies. It delivered records from multiple vendors, cut weeks off delivery times and hugely reduced costs. I designed, built and delivered a simple, perfomant front end and wrote extensive documentation.
-image: jira
+image: unsplash
 sequence: 1  
-urllink: https://cantina.co/three-quick-tips-to-writing-better-jira-tickets/
 ---
-
 
 What 
 
@@ -24,21 +22,21 @@ A responsive design system in Figma is build up using multiple :
 * Responsive typography
 * Component swap system
 
-
 ## Breakpoints
 
 Let's start with a quick tutorial of how breakpoints work in code. We will be mirroring this basic fuctionality in our Figma system, and the goal is to have a one-to-one match between both.
 
 Code uses media queries. These do a simple check to see if certain conditions are true or false. Let's us the eample of some body type.
 
-```.body-type {
+```css
+.body-type {
     font-size:16px;
 }
 @media screen and (max-width:940rem) {
-        .body-type {
-            font-size:14px;
-        }
+    .body-type {
+        font-size:14px;
     }
+}
 ```
 
 First step, we set up our body type with a default size of `16px`.
@@ -51,12 +49,14 @@ We will model the behavior of media queries in a Figma using variables and modes
 
 The first step is to determine the viewport widths that will trigger content reflow and resizing. These will be our breakpoints. 
 
-These will vary from use case to use case. In an ideal world a breakpoint is "when the content breaks" At scale, that doesn't work. We went with four:
+These will vary from use case to use case. In an ideal world a breakpoint is "when the content breaks" At design system scale, that doesn't work all that well. We went with four:
 
-* Base -- XXX px - XXX px Large desktop size to small desktop.
-* Medium -- Small desktop to roughly iPad landscape
-* Small -- roughly iPad landscape - roughly iPad portrait
-* Narrow -- roughly iPad portrait to small phone
+| Breakpoint | Min-width | Max-width | Device Range |
+| --- | --- | --- | --- |
+| Base | 1600px | 1100px | Large desktop - Small desktop |
+| Medium | xx | xx | Small desktop - Tablet landscape | 
+| Small | xx | xx | Tablet landscape - Tablet portrait |
+| Narrow | xx | xx | Tablet portrait - Small phone |
 
 These avoid targeting *exact* device sizes. They cover narrowest to widest viewport possibilities -- the entire continuum of sizes across any possible device or browser window width.
 
@@ -66,14 +66,13 @@ The next step is to open the XXXXX and create a mode for each of these breakpoin
 
 The first values that we will add will be the `page-max-width` and `page-min-width`. These will be the min and max ranges of a particular breakpoint. 
 
-In our use case, 
-
-| Breakpoint | Min-width | Max-width |
-| --- | --- | --- |
-| Base | 1600px | 1100px | 
-| Medium | xx | xx | 
-| Small | xx | xx | 
-| Narrow | xx | xx | 
-
+Finally, we set up a page template component and the set the max-width of the frame to `page-max-width` and the min-width to `page-min-width`. You should be able to drag the frame between its min- and max-widths, switch modes and drag it between the min- and max-widths for that breakpoint.  
+<figure>
+<video width="100%" controls>
+    <source src="/siteart/video/page-resize.mov">
+</video>
+<figcaption><strong>Video</strong> foobar foo bar foobar</figcaption>
+</figure>
 
 Finally, we set up a page template component and the set the max-width of the frame to `page-max-width` and the min-width to `page-min-width`. You should be able to drag the frame between its min- and max-widths, switch modes and drag it between the min- and max-widths for that breakpoint.  
+
