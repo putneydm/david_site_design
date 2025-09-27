@@ -13,6 +13,10 @@ What
 
 Layouts must be built using auto layout. In general, components should be fill width and hug height.
 
+This abstracts away responsive design -- it gets you 80 percent there with no effort at all. It just works.
+
+uses auto layouts and variable modes. 
+
 
 A responsive design system in Figma is build up using multiple :
 
@@ -24,7 +28,7 @@ A responsive design system in Figma is build up using multiple :
 
 ## Breakpoints
 
-Let's start with a quick tutorial of how breakpoints work in code. We will be mirroring this basic fuctionality in our Figma system, and the goal is to have a one-to-one match between both.
+**Let's start with** a quick tutorial of how breakpoints work in code. We will be mirroring this basic fuctionality in our Figma system, and the goal is to have a one-to-one match between both.
 
 Code uses media queries. These do a simple check to see if certain conditions are true or false. Let's us the eample of some body type.
 
@@ -53,10 +57,10 @@ These will vary from use case to use case. In an ideal world a breakpoint is "wh
 
 | Breakpoint | Min-width | Max-width | Device Range |
 | --- | --- | --- | --- |
-| Base | 1600px | 1100px | Large desktop - Small desktop |
-| Medium | xx | xx | Small desktop - Tablet landscape | 
-| Small | xx | xx | Tablet landscape - Tablet portrait |
-| Narrow | xx | xx | Tablet portrait - Small phone |
+| Base | 1081px | 2300px | Large desktop - Small desktop |
+| Medium | 851px | 1080px | Small desktop - Tablet landscape | 
+| Small | 850px | 601px | Tablet landscape - Tablet portrait |
+| Narrow | 600px | 450px | Tablet portrait - Small phone |
 
 These avoid targeting *exact* device sizes. They cover narrowest to widest viewport possibilities -- the entire continuum of sizes across any possible device or browser window width.
 
@@ -67,12 +71,35 @@ The next step is to open the XXXXX and create a mode for each of these breakpoin
 The first values that we will add will be the `page-max-width` and `page-min-width`. These will be the min and max ranges of a particular breakpoint. 
 
 Finally, we set up a page template component and the set the max-width of the frame to `page-max-width` and the min-width to `page-min-width`. You should be able to drag the frame between its min- and max-widths, switch modes and drag it between the min- and max-widths for that breakpoint.  
-<figure>
+
+<!-- <figure>
 <video width="100%" controls>
     <source src="/siteart/video/page-resize.mov">
 </video>
 <figcaption><strong>Video</strong> foobar foo bar foobar</figcaption>
-</figure>
+</figure> -->
 
-Finally, we set up a page template component and the set the max-width of the frame to `page-max-width` and the min-width to `page-min-width`. You should be able to drag the frame between its min- and max-widths, switch modes and drag it between the min- and max-widths for that breakpoint.  
+Finally, we set up a page template component and the set the max-width of the component to `page-max-width` and the min-width to `page-min-width`. You should be able to drag the frame between its min- and max-widths, switch modes and drag it between the min- and max-widths for that breakpoint.  
 
+<!-- video here -->
+
+
+
+## Flexible Grid Layout System
+
+Now that a basic page template has been made, we need to fill that page up with content. That means a layout system. 
+
+Our system uses Layout components that span the full six columns of our grid. Inside these layouts are Containers that span anywhere from one to five columns in a variety of configurations. For example we have a one-five, which is a Container that spans one column with one that spans five. A two-three has a two column container and three column. The logic extends to a three-three, two-two-two and any combination of Container widths that add up to six column span. 
+
+In the spirit of responsive design, they are a flexible grid. They get narrower as the page width shrinks until they finally break into a wrap and stack configuration. By default, these layout columns break from rows into columns at `Narrow` breakpoint, however the Layout props allow the designer to "move up" that breakpoint to `Small` or `Medium` breakpoints as determined by their content and design needs. 
+
+
+
+
+In a sense, this system will use the same princples as the breakpoints on the Page Template, we will set min- and max-widths for containers. These containers will reside inside layouts. 
+
+
+
+## Responsive Spacing
+
+Responsive spacing is a key to "it just works" ethos of this design system. 
