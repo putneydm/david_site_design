@@ -1,4 +1,5 @@
-const { src, dest } = require('gulp');
+const { src, dest, series } = require('gulp');
+const del = require('del');
 import { paths } from "../variables"
 
 const {
@@ -8,9 +9,15 @@ const {
     }
 } = paths;
 
-function collections() {
-    return src(input)
-    .pipe(dest(output))
+function cleanMarkdown() {
+    // Delete only .markdown files in the output directory
+    return del([`${output}/**/*.markdown`], { force: true });
 }
 
-exports.collections = collections;
+function collections() {
+    return src(input, { base: 'src/collections' }) // Preserve directory structure
+        .pipe(dest(output));
+}
+
+// Run cleanMarkdown first, then collections
+exports.collections = series(cleanMarkdown, collections);
