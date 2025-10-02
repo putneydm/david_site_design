@@ -1,4 +1,4 @@
-import { paths } from "../variables"
+const { paths } = require("../variables")
 const del = require('del');
 
 const {

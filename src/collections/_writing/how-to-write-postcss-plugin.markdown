@@ -7,7 +7,7 @@ pageType: blog_entry
 project: MIB-EHR was a legacy company's entry into the fast-growing field of electronic medical records for life insurance companies. It delivered records from multiple vendors, cut weeks off delivery times and hugely reduced costs. I designed, built and delivered a simple, perfomant front end and wrote extensive documentation.
 image: multilool
 urllink: https://cantina.co/postcss-plugin-problem-solving-multitool/
-sequence: 4  
+sequence: 5  
 ---
 
 

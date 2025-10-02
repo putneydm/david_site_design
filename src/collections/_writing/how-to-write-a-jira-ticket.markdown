@@ -6,7 +6,7 @@ layout: blog_entry
 pageType: blog_entry
 project: MIB-EHR was a legacy company's entry into the fast-growing field of electronic medical records for life insurance companies. It delivered records from multiple vendors, cut weeks off delivery times and hugely reduced costs. I designed, built and delivered a simple, perfomant front end and wrote extensive documentation.
 image: jira
-sequence: 1  
+sequence: 2  
 urllink: https://cantina.co/three-quick-tips-to-writing-better-jira-tickets/
 ---
 

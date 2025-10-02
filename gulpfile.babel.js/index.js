@@ -1,42 +1,43 @@
 // cleaners
-import { cleanJS } from "./cleaners/cleanjs"
-import { cleanFolders } from "./cleaners/cleanfolders"
-import { cleanCSS } from "./cleaners/cleanCSS"
-import { cleanPages } from "./cleaners/cleanPages"
+const { cleanJS } = require("./cleaners/cleanjs")
+const { cleanFolders } = require("./cleaners/cleanfolders")
+const { cleanCSS } = require("./cleaners/cleanCSS")
+const { cleanPages } = require("./cleaners/cleanPages")
 // css modules
-import { css } from "./css_modules/css"
-import { cssInline } from "./css_modules/cssinline"
+const { css } = require("./css_modules/css")
+const { cssInline } = require("./css_modules/cssinline")
 // html 
-import { layouts } from "./html_modules/layouts"
-import { pages } from "./html_modules/pages"
-import { includes } from "./html_modules/includes"
+const { layouts } = require("./html_modules/layouts")
+const { pages } = require("./html_modules/pages")
+const { includes } = require("./html_modules/includes")
 // scripts
-import { cachebustScripts } from "./js_modules/cachebustscripts"
-import { concatJs } from "./js_modules/concat"
-import { lintJS } from "./js_modules/lintjs"
-import { minifyScripts } from "./js_modules/minifyScripts"
-import { minifySearch } from "./js_modules/minifySearch"
-import { minifyInlineScripts } from "./js_modules/minifyinlinescripts"
+const { cachebustScripts } = require("./js_modules/cachebustscripts")
+const { concatJs } = require("./js_modules/concat")
+const { lintJS } = require("./js_modules/lintjs")
+const { minifyScripts } = require("./js_modules/minifyScripts")
+const { minifySearch } = require("./js_modules/minifySearch")
+const { minifyInlineScripts } = require("./js_modules/minifyinlinescripts")
 // movers
-import { bower } from "./movers/bower"
-import { collections } from "./movers/collections"
+const { bower } = require("./movers/bower")
+const { collections } = require("./movers/collections")
+const { videos } = require("./movers/videos")
 
 // fonts
-import { fonts } from "./util/fonts"
+const { fonts } = require("./util/fonts")
 
 // visuals
-import { svg } from "./visuals/svg"
-import { portfolioSVG } from "./visuals/portfolioSVG"
-import { blogImages } from "./visuals/blogimages"
-import { heroImages } from "./visuals/heroimages"
-import { heroIndex } from "./visuals/heroimagesindex"
-import { slideImages } from "./visuals/slides"
+const { svg } = require("./visuals/svg")
+const { portfolioSVG } = require("./visuals/portfolioSVG")
+const { blogImages } = require("./visuals/blogimages")
+const { heroImages } = require("./visuals/heroimages")
+const { heroIndex } = require("./visuals/heroimagesindex")
+const { slideImages } = require("./visuals/slides")
 
 // other
-import { animations } from "./animations"
-import { paths } from "./variables"
-import { deploy } from "./deploy"
-import { util } from "babel-core"
+const { animations } = require("./animations")
+const { paths } = require("./variables")
+const { deploy } = require("./deploy")
+const { util } = require("babel-core")
 
 // variables
 const { parallel, series, watch } = require('gulp');
@@ -68,6 +69,7 @@ exports.minifyInlineScripts = minifyInlineScripts;
 // movers
 exports.bower = bower;
 exports.collections = collections;
+exports.videos = videos;
 // visuals
 exports.svg = svg;
 exports.portfolioSVG = portfolioSVG;
@@ -99,19 +101,22 @@ const {
   },
   pageLayouts: {
     input: layoutsInput
-    },
+  },
   pages: {
     input: pagesInput
-    },
+  },
    markdown: {
     watch: markdown
-   }
+  },
+  videos: {
+    input: videofolder
+  }
 } = paths;
 
 function watchTask() {
   watch(
-    [inputCSS, inputInlineCSS, inputJS, inlineJS, includesInput, layoutsInput, pagesInput, markdown],
-    series(parallel(cleanCSS, cleanJS, cleanPages), parallel(css, cssInline), parallel(concatJs, minifyInlineScripts), cachebustScripts, parallel(includes, layouts, pages, collections))
+    [inputCSS, inputInlineCSS, inputJS, inlineJS, includesInput, layoutsInput, pagesInput, markdown, videofolder],
+    series(parallel(cleanCSS, cleanJS, cleanPages), parallel(css, cssInline), parallel(concatJs, minifyInlineScripts), cachebustScripts, parallel(includes, layouts, pages, collections), videos)
   );
 }
 

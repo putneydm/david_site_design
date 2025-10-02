@@ -74,6 +74,18 @@ p:nth-child(5):first-letter {
         color: $x-light-aqua;
     }
 }
+figure {
+    padding:0;
+    margin:0 0 12px 0;
+    font-size: inherit;
+    figcaption {
+        font-style:italic;
+        margin: 12px 0 36px;
+        strong {
+            color:$x-light-aqua;
+        }
+    }
+}
 }
 .text-container.blog-teaser {
     h1>a {
@@ -209,4 +221,60 @@ code {
     &::after {
         max-width: 43.7 rem;
     }    
+}
+table {
+    border-collapse: collapse;
+    margin-bottom: 24px;
+    width:100%;
+    text-align: left;
+    th, td {
+        vertical-align: top;
+    }
+    th {
+        padding:0 16px 6px 0;
+        font-family: $sans;
+    }
+    thead {
+        border-bottom:1px solid $light-aqua;
+        tr {
+            border-bottom: 0;
+            &:hover {
+                background-color: transparent;
+            }
+        }
+        @media (prefers-color-scheme: dark) {
+            border-bottom:1px solid $aqua;
+        }   
+    }
+    tr {
+        border-bottom: $xxlight;
+        border-bottom:1px solid $x-light-aqua;
+        &:last-child {
+            border:0px;
+        }
+        &:hover {
+            background-color: $haze;
+            transition: background-color .2s ease-in-out;     
+        }
+        @media (prefers-color-scheme: dark) {
+        &:hover {
+            background-color: $body;
+            transition: background-color .2s ease-in-out;     
+        }
+        } 
+        td {
+            padding: 8px 0;
+            &:first-child {
+                font-weight:bold;
+                color:$dark;
+                font-family: $sans;
+                @media (prefers-color-scheme: dark) {
+                    color: $light-aqua;
+                } 
+            }
+        }
+        @media (prefers-color-scheme: dark) {
+            border-bottom:1px solid $dark-aqua;
+        }  
+    }
 }

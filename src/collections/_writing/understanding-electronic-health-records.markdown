@@ -7,7 +7,7 @@ pageType: blog_entry
 project: MIB-EHR was a legacy company's entry into the fast-growing field of electronic medical records for life insurance companies. It delivered records from multiple vendors, cut weeks off delivery times and hugely reduced costs. I designed, built and delivered a simple, perfomant front end and wrote extensive documentation.
 image: maze
 urllink: https://cantina.co/the-electronic-health-records-ecosystem-is-complicated-sorting-it-out-is-key-to-building-great-experiences/
-sequence: 2  
+sequence: 3  
 ---
 Each person’s access to their own health records simply should be a right — easy, open, unfettered access. So why hasn’t anyone — you know — gone and done it?
 
