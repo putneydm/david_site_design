@@ -20,6 +20,7 @@ import { minifyInlineScripts } from "./js_modules/minifyinlinescripts"
 // movers
 import { bower } from "./movers/bower"
 import { collections } from "./movers/collections"
+import { videos } from "./movers/videos"
 
 // fonts
 import { fonts } from "./util/fonts"
@@ -68,6 +69,7 @@ exports.minifyInlineScripts = minifyInlineScripts;
 // movers
 exports.bower = bower;
 exports.collections = collections;
+exports.videos = videos;
 // visuals
 exports.svg = svg;
 exports.portfolioSVG = portfolioSVG;
