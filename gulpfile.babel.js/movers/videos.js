@@ -10,12 +10,13 @@ const {
     }
 } = paths;
 
-const cleanVideos = () => del(testing, { force: true });
+const cleanVideos = () => del([`${testing}/*`, `${dist}/*`], { force: true });
 
-const videos = () => 
-    src(input, { base: 'src/videos/' }) // Preserve directory structure
+const videos = () => {
+    return src(input, { base: 'src/videos/' }) // Preserve directory structure
     .pipe(dest(testing))
-    .pipe(dest(dist));
+    .pipe(dest(dist))
+} 
 
 // Run cleanVideos first, then collections
 exports.videos = series(cleanVideos, videos);

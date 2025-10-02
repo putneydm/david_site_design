@@ -65,7 +65,7 @@ const paths = {
     },  
     videos: {
         input: 'src/videos/{*.mov,*.mp4}',
-        testing: 'test/_site/siteart/videos/',
+        testing: 'test/_site/siteart/videos',
         dist: 'dist/siteart/videos'
     },  
     svg: {
