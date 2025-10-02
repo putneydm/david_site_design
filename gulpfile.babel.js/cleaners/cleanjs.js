@@ -1,5 +1,5 @@
 const { src } = require('gulp');
-import { paths } from "../variables"
+const { paths } = require("../variables");
 
 const cleanFiles = require('gulp-clean');
 

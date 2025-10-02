@@ -63,6 +63,11 @@ const paths = {
         testing: 'test/siteart/slides',
         dist: 'dist/siteart/slides'
     },  
+    videos: {
+        input: 'src/videos/{*.mov,*.mp4}',
+        testing: 'test/_site/siteart/videos',
+        dist: 'dist/siteart/videos'
+    },  
     svg: {
         input: 'src/svg/svg_in/*.svg',
         output: 'src/svg/'
@@ -107,3 +112,6 @@ const cacheBustNames = {
 const googleAnalytics = 'UA-56763803-1';
 
 export { paths, googleAnalytics, cacheBustNames }
+
+
+
