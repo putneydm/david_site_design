@@ -72,12 +72,12 @@ The first values that we will add will be the `page-max-width` and `page-min-wid
 
 Finally, we set up a page template component and the set the max-width of the frame to `page-max-width` and the min-width to `page-min-width`. You should be able to drag the frame between its min- and max-widths, switch modes and drag it between the min- and max-widths for that breakpoint.  
 
-<!-- <figure>
+<figure>
 <video width="100%" controls>
     <source src="/siteart/video/page-resize.mov">
 </video>
 <figcaption><strong>Video</strong> foobar foo bar foobar</figcaption>
-</figure> -->
+</figure>
 
 Finally, we set up a page template component and the set the max-width of the component to `page-max-width` and the min-width to `page-min-width`. You should be able to drag the frame between its min- and max-widths, switch modes and drag it between the min- and max-widths for that breakpoint.  
 
@@ -103,3 +103,46 @@ In a sense, this system will use the same princples as the breakpoints on the Pa
 ## Responsive Spacing
 
 Responsive spacing is a key to "it just works" ethos of this design system. 
+
+These are a set of sizing variables that change across each of our breakpoints so that they tighten up as the viewport shrinks. Further, we have abstracted them into a group of relative sizes, ranging from Extra Wide to Tightest. In their use, the exact amount is less important than the value of judgment of "it looks good," especially because the actual value of the spacing will change based on viewport size
+
+| Breakpoint |Base | Medium | Small | Narrow |
+| --- | --- | --- | --- |
+| Base | 12px | 12px | 8px |  8px |
+| None | 0px | 0px | 0px |  0px |
+| Tightest | 4px | 4px | 4px |  4px |
+| Tight | 8px | 8px | 4px |  4px |
+| Loose | 16px | 16px | 12px |  12px |
+| Loosest | 24px | 24px | 16px |  16px |
+| Wide | 36px | 36px | 24px |  24px |
+| Extra Wide | 48px | 48px | 30px |  30px |
+
+
+## Component Swap System
+
+One of the more thorny problems of responsive design in Figma is complex content reflow. While the responsive layouts will handle the overall reflow of the page structure. But it can't turn a table into a list, or cause a three side-by-side items reflow into a wrap and stack.
+
+The answer here is to design the versions for each breakpoint and have them live swap when switching between breakpoints. This is done by combining two methods:
+
+- A component with a variant for any breakpoint where it needs to change. 
+- A set of variables that will trigger the component swap. 
+
+
+| Breakpoint |Base | Medium | Small | Narrow |
+| --- | --- | --- | --- |
+| @none | None | None | None |  None |
+| @med | Base | Medium | Medium |  Medium |
+| @small | Base | Base | Small |  Small |
+| @narrow | Base | Base | Base |  Narrow |
+| @small @narrow | Base | Base | Small |  Narrow |
+| @med @small | Base | Medium | Small |  Small |
+| @med @narrow | Base | Medium | Medium |  Narrow |
+| @med @small @narrow | Base | Medium | Small |  Narrow |
+
+
+<figure>
+<video width="100%" controls>
+    <source src="/siteart/video/component_swap.mp4">
+</video>
+<figcaption><strong>Video Demo</strong> Components can live swap between breakpoints, going from a side-by-side layout to a wrap and stack and back to the original layout.</figcaption>
+</figure>
