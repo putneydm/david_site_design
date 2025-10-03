@@ -142,7 +142,7 @@ The answer here is to design the versions for each breakpoint and have them live
 
 <figure>
 <video width="100%" controls>
-    <source src="/siteart/video/component_swap.mp4">
+    <source src="/siteart/videos/component_swap.mp4">
 </video>
 <figcaption><strong>Video Demo</strong> Components can live swap between breakpoints, going from a side-by-side layout to a wrap and stack and back to the original layout.</figcaption>
 </figure>
