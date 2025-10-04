@@ -99,6 +99,13 @@ In the spirit of responsive design, they are a flexible grid. They get narrower 
 In a sense, this system will use the same princples as the breakpoints on the Page Template, we will set min- and max-widths for containers. These containers will reside inside layouts. 
 
 
+<figure>
+<video width="100%" controls>
+    <source src="/siteart/videos/container_reflow.mp4">
+</video>
+<figcaption><strong>Video Demo</strong> The Container components, with red outlines, have a flexible width and reflow into a wrap-and-stack layout at narrower widths.</figcaption>
+</figure>
+
 
 ## Responsive Spacing
 
