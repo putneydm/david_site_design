@@ -116,7 +116,7 @@ const {
 function watchTask() {
   watch(
     [inputCSS, inputInlineCSS, inputJS, inlineJS, includesInput, layoutsInput, pagesInput, markdown, videofolder],
-    series(parallel(cleanCSS, cleanJS, cleanPages), parallel(css, cssInline), parallel(concatJs, minifyInlineScripts), cachebustScripts, parallel(includes, layouts, pages, collections), videos)
+    series(parallel(cleanCSS, cleanJS, cleanPages), parallel(css, cssInline), parallel(concatJs, minifyInlineScripts), cachebustScripts, parallel(includes, layouts, pages, collections))
   );
 }
 
