@@ -9,6 +9,23 @@ image: unsplash
 sequence: 1  
 ---
 
+A design prototype is really just a plan -- a woefully inadequate one. It's the difference between a prototype and a finished page or screen is the difference between a blueprint and the finished building. 
+
+This isn't a knock on designers so much as the realities of tooling limitations. When I was a designer and developer for *The Boston Globe* in the early days of responsive design, I found that the only way to make a responsive website was to *build a responsive website*. 
+
+After attempts at "this is the desktop view" and "this is the mobile view" prototypes, I found that the real problem was figuring out the "in-betweens." Someone had to figure out what happens when the content starts to smoosh together somewhere between our designer-idealized sizing.
+
+As a result, I went straight to code when [designing and building sites such as Crux.com](/design/crux/). 
+
+## The Basics
+
+- Layouts must be built using Auto Layout
+- Screens and components must be set to `fill` horizontally and `hug` vertically.
+- Sizing must be defined by variables 
+- Modes will determine our breakpoints
+
+
+
 What 
 
 Layouts must be built using auto layout. In general, components should be fill width and hug height.
@@ -18,6 +35,16 @@ This abstracts away responsive design -- it gets you 80 percent there with no ef
 uses auto layouts and variable modes. 
 
 
+These avoid targeting *exact* device sizes. They cover narrowest to widest viewport possibilities -- the entire continuum of sizes across any possible device or browser window width.
+
+This is to allow designers to exactly model real-world responsive behavior. Designers can get caught in the pitfall of creating targeted views such as "Desktop view," an "iPad view" and a "phone view." These don't solve the problem of the "in betweens" -- what happens halfway between these two widths and what is really needed to transform one view into another. 
+
+
+
+
+As we go forward, we will add variables in each of these modes. Like our media queries, the values in each mode will be applied when a page is set to that mode -- effectively applying different styles based on the "breakpoint" that the page set at. 
+
+
 A responsive design system in Figma is build up using multiple :
 
 * A set of breakpoints
@@ -25,6 +52,8 @@ A responsive design system in Figma is build up using multiple :
 * Responsive spacing system
 * Responsive typography
 * Component swap system
+
+If any of these sound familiar, they are the ingredients of a responsive site. I'll be going through each of these, one by one with instructions on how to build them in Figma.
 
 ## Breakpoints
 
@@ -49,26 +78,29 @@ This media query checks if the content is showing on a screen (as opposed to say
 
 This is greatly simplified, but the principle applies that at a certain viewport size range, specific styles are applied to the page and other are ignored.
 
-We will model the behavior of media queries in a Figma using variables and modes. Modes will serve the same purpose as our media queries and breakpoints, ie when a specific mode is active, a set of values will be used. This will allow us to assign exact values to spacing, page width, sizing, max and min widths -- really anything that a media query can affect.
+We will model the behavior of media queries in a Figma using variables and modes. Modes will serve the same purpose as our media queries and breakpoints, ie when a specific mode is active, a set of values for that breakpoint range will be used. This will allow us to assign exact values to spacing, page width, sizing, max and min widths -- really anything that a media query can affect.
 
-The first step is to determine the viewport widths that will trigger content reflow and resizing. These will be our breakpoints. 
+The first step is to determine the viewport widths that will trigger content reflow and resizing. These will be our breakpoints. We went with four:
 
-These will vary from use case to use case. In an ideal world a breakpoint is "when the content breaks" At design system scale, that doesn't work all that well. We went with four:
+- Base
+- Medium
+- Small
+- Narrow
 
-| Breakpoint | Min-width | Max-width | Device Range |
+Why are these not just called desktop, tablet landscape, tablet portrait and phone? 
+
+True, they roughly match these size ranges, but they don't target devices. A large tablet and a small desktop might be the same viewport. These focus on building for *any size*, not just *specific* sizes. They will work for any size window, any size device now or in the future a user might bring. 
+
+The next step is to open the XXXXX and create a mode for each of these breakpoints. If you don't know about Figma modes, you can [read about them here](). 
+
+The first values that we will add as we build up our breakpoint modes will be the `page-max-width` and `page-min-width`. These will be the min and max ranges for that particular breakpoint. 
+
+| Breakpoint | Page-Min-Width | PAge-Max-Width | Device Range |
 | --- | --- | --- | --- |
 | Base | 1081px | 2300px | Large desktop - Small desktop |
 | Medium | 851px | 1080px | Small desktop - Tablet landscape | 
 | Small | 850px | 601px | Tablet landscape - Tablet portrait |
 | Narrow | 600px | 450px | Tablet portrait - Small phone |
-
-These avoid targeting *exact* device sizes. They cover narrowest to widest viewport possibilities -- the entire continuum of sizes across any possible device or browser window width.
-
-This is to allow designers to exactly model real-world responsive behavior. Designers can get caught in the pitfall of creating targeted views such as "Desktop view," an "iPad view" and a "phone view." These don't solve the problem of the "in betweens" -- what happens halfway between these two widths and what is really needed to transform one view into another. 
-
-The next step is to open the XXXXX and create a mode for each of these breakpoints. If you don't know about Figma modes, you can [read about them here]() You can name your modes whatever works for you. As we go forward, we will add variables in each of these modes. Like our media queries, the values in each mode will be applied when a page is set to that mode -- effectively applying different styles based on the "breakpoint" that the page set at. 
-
-The first values that we will add will be the `page-max-width` and `page-min-width`. These will be the min and max ranges of a particular breakpoint. 
 
 Finally, we set up a page template component and the set the max-width of the frame to `page-max-width` and the min-width to `page-min-width`. You should be able to drag the frame between its min- and max-widths, switch modes and drag it between the min- and max-widths for that breakpoint.  
 
@@ -96,7 +128,7 @@ In the spirit of responsive design, they are a flexible grid. They get narrower 
 
 
 
-In a sense, this system will use the same princples as the breakpoints on the Page Template, we will set min- and max-widths for containers. These containers will reside inside layouts. 
+In a sense, this system will use the same principles as the breakpoints on the Page Template, we will set min- and max-widths for containers. These containers will reside inside layouts. 
 
 
 <figure>
@@ -132,8 +164,7 @@ One of the more thorny problems of responsive design in Figma is complex content
 The answer here is to design the versions for each breakpoint and have them live swap when switching between breakpoints. This is done by combining two methods:
 
 - A component with a variant for any breakpoint where it needs to change. 
-- A set of variables that will trigger the component swap. 
-
+- A set of variables that will trigger the component swap.
 
 | Breakpoint |Base | Medium | Small | Narrow |
 | --- | --- | --- | --- |
@@ -145,6 +176,9 @@ The answer here is to design the versions for each breakpoint and have them live
 | @med @small | Base | Medium | Small |  Small |
 | @med @narrow | Base | Medium | Medium |  Narrow |
 | @med @small @narrow | Base | Medium | Small |  Narrow |
+
+
+
 
 
 <figure>
