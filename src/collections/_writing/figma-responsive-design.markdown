@@ -9,21 +9,47 @@ image: unsplash
 sequence: 1  
 ---
 
-A design prototype is really just a plan -- a woefully inadequate one. It's the difference between a prototype and a finished page or screen is the difference between a blueprint and the finished building. 
 
-This isn't a knock on designers so much as the realities of tooling limitations. When I was a designer and developer for *The Boston Globe* in the early days of responsive design, I found that the only way to make a responsive website was to *build a responsive website*. 
+Consider the problem of building a flexible, dynamic screen from static design prototypes. 
 
-After attempts at "this is the desktop view" and "this is the mobile view" prototypes, I found that the real problem was figuring out the "in-betweens." Someone had to figure out what happens when the content starts to smoosh together somewhere between our designer-idealized sizing.
+A prototype is really just a plan -- a low-rez plan at best. Even the best prototypes are often handed over to engineers to "just figure out." They are the difference between a blueprint and the finished building. 
 
-As a result, I went straight to code when [designing and building sites such as Crux.com](/design/crux/). 
+This isn't a knock on designers so much as stating the realities of tooling and its limitations. We've all felt it. 
+
+As a designer and developer for *The Boston Globe* in the early days of responsive design, we did a lot of "this is the desktop view" and "this is the mobile view" prototypes. But the problem was figuring out the "in-betweens," what happens when the content starts to smoosh together somewhere between our designer-idealized sizing.
+
+I finally landed on the notion that the only way to make a responsive website was to actually  *build a responsive website*. As a result, I went straight to code when [designing and building sites such as Crux.com](/design/crux/). Not the most practical solution, to be sure.
+
+A solution to the lack of truly responsive prototypes arrived a couple years ago in the form of both variables and modes in Figma. I was in the audience at the Moscone Center for the demos and my reaction was "I can do so much with this." 
+
+As a designer on the Aledade Canonical Design System I set out to create the most advanced design system in the world using these tools. 
 
 ## The Basics
 
-- Layouts must be built using Auto Layout
-- Screens and components must be set to `fill` horizontally and `hug` vertically.
-- Sizing must be defined by variables 
-- Modes will determine our breakpoints
+The single most useful aspect of variables in Figma is that: 
 
+- they are a single source of truth
+- they can be applied to multiple components
+- they are easily changeable 
+
+To an engineer, that begins to sound a lot like CSS. Functionally, they are, even if they are defined and maintained in different ways. For the uninitiated, an engineer may define something like a header -- an `H1` by giving it a size, color, line height etc. 
+
+```CSS
+h1 {
+    font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    color:#333;
+    font-size: 18px;
+    line-height:1.3;
+}
+```
+
+After this, any `H1` will appear with these visual characteristics. If the color value for the `H1` is changes from `#333` to `#FF0000` all `H1`s would change from dark gray to red. This is the principle -- single source of truth, centrally maintained -- that we will use for our design system.
+
+A few other basic requirements before we get started: 
+
+- Layouts must be built using Auto Layout
+- The outermost frame of a layout must be set to a static width. 
+- Components inside this frame must be set to `fill` horizontally and `hug` vertically.
 
 
 What 
