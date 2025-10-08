@@ -29,14 +29,14 @@ const paths = {
         bower: 'src/scripts/bower_components/**/*.js',
         vendor: 'src/scripts/vendor/*.js',
         testing: 'test/scripts/',
-        dist: 'dist/scripts/',
+        dist: 'dist/scripts/',  
         admin: 'src/scripts/exclude/search_admin.js',
         search: 'src/scripts/exclude/search.js'
     },
     bower: {
         components: 'bower_components',
         json: 'bower.json',
-        vendor: 'src/scripts/vendor/' 
+        vendor: 'src/scripts/vendor/'  
     },
     styles: {
         input: 'src/sass/styles.scss',
@@ -65,8 +65,8 @@ const paths = {
     },  
     videos: {
         input: 'src/videos/{*.mov,*.mp4}',
-        testing: 'test/_site/siteart/videos',
-        dist: 'dist/siteart/videos'
+        testing: 'test/videos/',
+        dist: 'dist/videos/'
     },  
     svg: {
         input: 'src/svg/svg_in/*.svg',

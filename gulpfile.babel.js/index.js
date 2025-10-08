@@ -21,6 +21,7 @@ const { minifyInlineScripts } = require("./js_modules/minifyinlinescripts")
 const { bower } = require("./movers/bower")
 const { collections } = require("./movers/collections")
 const { videos } = require("./movers/videos")
+const { images } = require("./movers/images")
 
 // fonts
 const { fonts } = require("./util/fonts")
@@ -70,6 +71,7 @@ exports.minifyInlineScripts = minifyInlineScripts;
 exports.bower = bower;
 exports.collections = collections;
 exports.videos = videos;
+exports.images = images;
 // visuals
 exports.svg = svg;
 exports.portfolioSVG = portfolioSVG;
@@ -110,13 +112,16 @@ const {
   },
   videos: {
     input: videofolder
+  },
+  images: {
+    output: imagesFolder
   }
 } = paths;
 
 function watchTask() {
   watch(
-    [inputCSS, inputInlineCSS, inputJS, inlineJS, includesInput, layoutsInput, pagesInput, markdown, videofolder],
-    series(parallel(cleanCSS, cleanJS, cleanPages), parallel(css, cssInline), parallel(concatJs, minifyInlineScripts), cachebustScripts, parallel(includes, layouts, pages, collections))
+    [inputCSS, inputInlineCSS, inputJS, inlineJS, includesInput, layoutsInput, pagesInput, markdown, videofolder, imagesFolder],
+    series(parallel(cleanCSS, cleanJS, cleanPages), parallel(css, cssInline), parallel(concatJs, minifyInlineScripts), cachebustScripts, parallel(includes, layouts, pages, collections), parallel(images, videos))
   );
 }
 
