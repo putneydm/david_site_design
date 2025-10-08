@@ -10,9 +10,14 @@ const {
     }
 } = paths;
 
-const cleanVideos = () => del([`${testing}/*`, `${dist}/*`], { force: true });
 
-const videos = () => {
+console.log('Input:', input);
+console.log('Testing:', testing);
+console.log('Dist:', dist);
+
+const cleanVideos = () => del([`${testing}/*.{mov,mp4}`, `${dist}/*.{mov,mp4}`], { force: true });
+
+const videos = (done) => {
     return src(input, { base: 'src/videos/' }) // Preserve directory structure
     .pipe(dest(testing))
     .pipe(dest(dist))
