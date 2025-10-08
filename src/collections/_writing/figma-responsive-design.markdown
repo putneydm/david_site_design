@@ -103,28 +103,51 @@ Finally, we set up a page template component and the set the max-width of the fr
 
 <figure>
 <video width="100%" controls>
-    <source src="/siteart/video/page-resize.mov">
+    <source src="/siteart/videos/page_template_resize.mp4">
 </video>
-<figcaption><strong>Video</strong> foobar foo bar foobar</figcaption>
+<figcaption><strong>Video Demo</strong> With the min- and max-widths assigned, the page can now switch between modes to simulate breakpoints and page resizing.</figcaption>
 </figure>
 
 ## Flexible Grid Layout System
 
-Now that a basic page template has been made, we need to fill that page up with content. That means a layout system. 
+Now that a basic page template has been made, the next step is to fill that page with content with a Flexible Grid Layout System. 
 
-Our system uses Layout components that span the full six columns of our grid. Inside these layouts are Containers that span anywhere from one to five columns in a variety of configurations. For example we have a one-five, which is a Container that spans one column with one that spans five. A two-three has a two column container and three column. The logic extends to a three-three, two-two-two and any combination of Container widths that add up to six column span. 
+Our system uses Layout components that span the full six columns of our grid. Inside these layouts are Containers that span anywhere from one to five columns in a variety of configurations. For example we have a one-five, which is a Container that spans one column with one that spans five. A two-three has a two column container and three column. The logic extends to a three-three, two-two-two and any combination of Container widths that add up to six column span. The variety of Layouts can been seen in Image X
+
+<figure class="blog-image-insert">
+    <img src="/siteart/responsive_component.png" alt="A Sketch file with the name homescreens-new-12/20/2019-updated-final-revised-final-final.sketch.">
+    <figcaption><strong>Image X</strong> The variety of Layouts & Containers for all four breakpoints allows for multiple choices of columns.</figcaption>
+</figure>
+
+
+
+We will set min- and max-widths for containers based on the percentage of the container they will take up, minus the gutter for each breakpoint. The way to compute this is to start with a `base width` for your content -- the max width of your content space at each breakpoint. The formula:
+
+`(base width - gutter widths) / columns`
+
+The result is a really big grid full of min and max widths that are then assigned to each Container inside the Layouts. 
+
 
 In the spirit of responsive design, they are a flexible grid. They get narrower as the page width shrinks until they finally break into a wrap and stack configuration. By default, these layout columns break from rows into columns at `Narrow` breakpoint, however the Layout props allow the designer to "move up" that breakpoint to `Small` or `Medium` breakpoints as determined by their content and design needs. 
 
 
 
+<figure class="blog-image-insert">
+    <img src="/siteart/layots_examples.png" alt="A Sketch file with the name homescreens-new-12/20/2019-updated-final-revised-final-final.sketch.">
+    <figcaption><strong>Responsive Components</strong> This calendar component has layouts for three-across, two-across and stacked that will live swap at each breakpoint.</figcaption>
+</figure>
 
-In a sense, this system will use the same principles as the breakpoints on the Page Template, we will set min- and max-widths for containers. These containers will reside inside layouts. 
+
+
+These containers will reside inside Layouts, with auto layouts and [Flow](https://help.figma.com/hc/en-us/articles/360040451373-Guide-to-auto-layout#flow) set to wrap. 
+
+
+
 
 
 <figure>
 <video width="100%" controls>
-    <source src="/siteart/videos/container_reflow.mp4">
+    <source src="/siteart/videos/flexible_grid.mp4">
 </video>
 <figcaption><strong>Video Demo | </strong> The Container components, with red outlines, have a flexible width and reflow into a wrap-and-stack layout at narrower widths.</figcaption>
 </figure>
