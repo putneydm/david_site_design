@@ -45,7 +45,7 @@
             color: $light-aqua;
         }
     }
-    P+ul, ul {
+    P+ul, P+ol, ul, ol {
         padding-left:rem(24);
         li {
             &:last-child {
@@ -82,7 +82,12 @@ figure {
         font-style:italic;
         margin: 12px 0 36px;
         strong {
-            color:$x-light-aqua;
+            color:$dark;
+            font-family: $sans;
+            font-style: normal;
+            @media (prefers-color-scheme: dark) {
+                color:$x-light-aqua;
+            }
         }
     }
 }
@@ -164,8 +169,11 @@ p.blog-read-time {
 .blog-image-insert {
     padding:8px;
     margin:rem(24) 0;
-    background-color: white;
-    border-radius: rem(4);
+    img {
+        background-color: white;
+        border-radius: rem(4);
+        overflow: hidden;
+    }
 }
 pre {
     width:100%;
