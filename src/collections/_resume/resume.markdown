@@ -8,30 +8,43 @@ subhead: I'm David, and this is the work I've done. I've been a journalist, edit
 
 ### Aledade
 
-#### Senior Designer \| Design Systems & Infrastructure
+#### Senior Designer \| Design Systems & Infrastructure Team
 
-*Aug. 2022 – present* \| *Bethesda, Md* 
+*Aug. 2022 – present* \| *Bethesda, Md (Remote)* 
 
-XXXXXX
+##### Design System & Infrastructure Team
 
-### Cantina
+- Designer of the three-person team that built the Canonical Design System.
+- Between Summer 2024 and present, I designed, built and shipped more than 50 fully functional components, a semantic color system, semantic naming system, spacing variables and multiple display modes.
+- Included advanced features such as fully responsive design system and components, color deficiency preview modes and wireframe mode. 
+- Led Figma Day Camp and Design System Office Hours, our outreach and training for user of the design system.
+- Wrote 50+ pages of design system documentation
+- Set up and maintain the Design System team backlog based on Agile practices to ensure tracking and completion of design, documentation and engineering tasks.
+
+[Responsive Design Case Study][10]
+
+##### Specialist Navigator Team
+
+- zxzxcxz
+- xcxzc
+
+
+
+
+### Cantina 
 
 #### Senior Designer & Front-End Developer
 
 *Jan. 2015 – July 2022* \| *Boston, Mass* 
 
-I have worked on or led large, long-term, multimillion-dollar projects that include:
+**Consulting Experience** I have worked on or led large, long-term, multimillion-dollar projects for clients that include: PPG, Cleveland, Ohio; EstateSpace, Charlottesville, Va.; MIB Group, Braintree, Mass;  Bose Corporation, Framingham, Mass; and Zipcar, Boston, Mass
+
+
 
 ##### PPG 
 
 **Market researcher** \| *Cleveland, Ohio* <br />
 Created an ethnographic market research report to explain business needs of small shops that are installing paint protection and color change film to inform their marketing strategy for a new product.
-
-* Crafted a research plan and research questions
-* Conducted interviews with shop owners and operators
-* Affinitized key takeaways from interviews
-* Highlighted key marketing opportunities 
-* Crafted report outlining findings
 
 ##### EstateSpace enterprise app
 
@@ -39,61 +52,28 @@ Created an ethnographic market research report to explain business needs of smal
 
 Created an integrated web app experience that connected budgeting, scheduling, contracts, financials, document handling, invoicing and inventory tracking to create an end-to-end project management tool for the building trades.
 
-* Collaborated with product owner on scheduling, roadmap and feature set 
-* Completed weekly status reports and tracked project budget 
-* Onboarded team members, as well as day-to-day management of team
-* Conducted user and stakeholder interviews to gather requirements
-* Prototyped and iterated multiple features, screens and flows in Sketch
-* Web app information architecture and site navigation
-* Led weekly design reviews with stakeholders and team
-* Visual design, design system and component library creation and maintenance
-* Agile scrum, Jira ticket and documentation writing
-
 ##### MIB Group enterprise search portal 
 
-**Design Lead & Developer** \| *Braintree, Mass*<br />
+**Design Lead & Developer** \| *Braintree, Mass* \|
 
-Designed and built a dynamic, simple UI for a web app that allows users to easily request and track the status of dozens of medical records from multiple sources.
-
-* Worked closely with Product Owner to plan product feature roadmap
-* Balanced deadlines for delivery of design and development work 
-* Planning and facilitation of discovery and design thinking sessions
-* User interviews and regular UI testing of new features
-* UI prototyping, iteration and bi-weekly design reviews 
-* Created visual design and design system component library 
-* Agile scrum, Jira ticket and documentation writing
-* Front end development: HTML, CSS and JavaScript. Owner and maintainer of the CSS and HTML code base.
-
-[MIB Case Study][6]
+Designed and built a dynamic, simple UI for a groundbreaking web app that allows users to easily request and track the status of dozens of medical records from multiple sources that allowed the MIB to launch a new business unit. [MIB Case Study][6]
 
 ##### Bose Corporation hardware UI
 
-**Design Lead** \| *Framingham, Mass*<br />
-Breakthrough, first-of-its-kind FDA-approved over-the-counter hearing aid.
-
-* Worked with engineers to spec hardware UI  requirements — capacitive touch points, buttons and LEDs
-* Mapped user actions and device functionality onto hardware UI
-* Worked with mechanical engineers and firmware team on prototyping hardware UI
-* Planned and analyzed user testing of hardware
-* Trained in FDA-regulated product design and processes
-* Wrote FDA-regulated documentation for user-interface interactions  
-
-[Bose Case Study][7]
+**Design Lead** \| *Framingham, Mass* \|
+Designed and documented haerdware user interface for a breakthrough, first-of-its-kind FDA-approved over-the-counter hearing aid. [Bose Case Study][7]
 
 ##### Zipcar mobile app
 
-**UI/UX Designer** \| *Boston, Mass* <br />
-Revamped and modernized Zipcar’s outdated Android and iOS apps with a refreshed visual design, new identity and intuitive, elegant flows. Created prototypes, conducted user testing. Worked closely with product owner to set priorities.
+**UI/UX Designer** \| *Boston, Mass* \| Revamped and modernized Zipcar’s outdated Android and iOS apps with a refreshed visual design, new identity and intuitive, elegant flows. Created prototypes, conducted user testing. Worked closely with product owner to set priorities.
 
 ##### Forrester Research mobile app
 
-**Designer & Developer** \| *Cambridge, Mass*<br />
-Worked with CEO to design and prototype a real-time customer feedback app that would aggregate consumer opinion across a wide swath of industries.
+**Designer & Developer** \| *Cambridge, Mass* \| Worked with CEO to design and prototype a real-time customer feedback app that would aggregate consumer opinion across a wide swath of industries.
 
 ##### Avid Technology web site
 
-**Designer & developer** \| *Burlington, Mass*<br />
-Increased software sales by 70 percent with a total redesign of information architecture, visuals, content and UX on Avid.com to focus on direct sales. 
+**Designer & developer** \| *Burlington, Mass* \| Increased software sales by 70 percent with a total redesign of information architecture, visuals, content and UX on Avid.com to focus on direct sales. 
 
 ### BostonGlobe.com
 #### UX/UI Designer & Front-End Developer
@@ -184,3 +164,4 @@ Link was a free newspaper aimed at young, active adults. I co-founded it, create
 [7]: /design/bose/
 [8]: /design/crux/
 [9]: /design/link/
+[10]: /writing/figma-responsive-design/
