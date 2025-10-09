@@ -14,11 +14,12 @@ subhead: I'm David, and this is the work I've done. I've been a journalist, edit
 
 ##### Design System & Infrastructure Team
 
-- Designer of the three-person team that built the Canonical Design System.
+- Designer role on a three-person design systems team that architected and built the Canonical Design System.
 - Between Summer 2024 and present, I designed, built and shipped more than 50 fully functional components, a semantic color system, semantic naming system, spacing variables and multiple display modes.
-- Included advanced features such as fully responsive design system and components, color deficiency preview modes and wireframe mode. 
+- In one year, design system component use by Aledade teams grew from 4,328 instances in use to 29,833. 
+- Includes advanced features such as fully responsive pages, layouts and components, color deficiency preview modes and wireframe mode. 
 - Led Figma Day Camp and Design System Office Hours, our outreach and training for user of the design system.
-- Wrote 50+ pages of design system documentation
+- Wrote 50+ pages of design system documentation for components, color system and layout system.
 - Set up and maintain the Design System team backlog based on Agile practices to ensure tracking and completion of design, documentation and engineering tasks.
 
 [Responsive Design Case Study][10]
