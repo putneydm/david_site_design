@@ -1,6 +1,6 @@
 ---
-title:  "How to build a responsive design system in Figma"
-subhead: "Writing good Jira tickets won't make you famous, but it will make your team's job easier"
+title:  "How to build an advanced responsive design system in Figma"
+subhead: "Modeling a fully responsive prototype is the Holy Grail. Figma includes the tools to make that reaility."
 imageAlt: Screenshot of MIB Electronic Medical Records Portal
 layout: blog_entry
 pageType: blog_entry
@@ -15,13 +15,15 @@ A prototype is really just a plan -- a low-rez plan at best. Even the best proto
 
 This isn't a knock on designers so much as stating the realities of tooling and its limitations. We've all felt it. 
 
-As a designer and developer for *The Boston Globe* in the early days of responsive design, we did a lot of "this is the desktop view" and "this is the mobile view" prototypes. But the problem was figuring out the "in-betweens," what happens when the content starts to smoosh together somewhere between our designer-idealized sizing.
+As a [designer and developer](/resume/#bostonglobe.com) for *The Boston Globe* in the early days of responsive design, we did a lot of "this is the desktop view" and "this is the mobile view" prototypes. But the problem was figuring out the "in-betweens," what happens when the content starts to smoosh together somewhere between our designer-idealized sizing.
 
 I finally landed on the notion that the only way to make a responsive website was to actually  *build a responsive website*. As a result, I went straight to code when [designing and building sites such as Crux.com](/design/crux/). Not the most practical solution, to be sure.
 
-A solution to the lack of truly responsive prototypes arrived a couple years ago in the form of both variables and modes in Figma. I was in the audience at the Moscone Center for the demos and my reaction was "I can do so much with this." 
+Modeling responsive design down to pixel perfection hasn't really been possible. In fact, it's the Holy Grail of prototyping, in many ways. Or is it?
 
-As a designer on the Aledade Canonical Design System I set out to create the most advanced design system in the world using these tools. It models responsive design 1:1 with code across every breakpoint while at the same time greatly simplifying the prototyping process. 
+It's actually possible. A solution arrived a couple years ago with variables and variable modes in Figma. I was in the audience at the Moscone Center for the demos and my reaction was "I can do so much with this." 
+
+It's just a matter of putting it all together to create the most advanced design system in the world. The result is a system that models responsive design perfectly and raise the fidelity of prototypes while at the same time greatly simplifying the design, delivery and engineering. 
 
 <figure>
 <video width="100%" controls>
@@ -32,13 +34,13 @@ As a designer on the Aledade Canonical Design System I set out to create the mos
 
 ## The Basics
 
-What makes this type of advanced prototyping possible is Figma Variables and Variable Modes. They unlock several possibilities that are game-changers when prototyping. 
+Figma Variables and Variable Modes unlock possibilities that are game-changers when prototyping. They serve these purposes:
 
-- they are a central source of truth
-- they can be applied to multiple components
-- they can represent multiple values
+- a central source of truth
+- can be applied to multiple components
+- represent multiple values that can be changed on the fly
 
-To an engineer, that begins to sound a lot like CSS. Functionally, they are, even if they are defined and maintained in different ways. For the uninitiated, an engineer may define something like a header -- an `H1` by giving it a size, color, line height etc. 
+To an engineer, that begins to sound a lot like CSS. Functionally they are, even if they are defined and maintained in different ways. For the uninitiated, an engineer may define something like a header -- an `H1` -- by giving it a size, color, line height etc. 
 
 ```CSS
 h1 {
@@ -49,18 +51,26 @@ h1 {
 }
 ```
 
-This is the central source of truth about a the visual design of an `H1`. If the color value for the `H1` is changes from `#333` to `#FF0000` all `H1`s would change from dark gray to red. This is the principle -- single source of truth, centrally maintained -- that we will use for our design system. Except with variables. 
+This is the central source of truth about the visual design of an `H1`. If the color value for the `H1` is changed from `#333` to `#FF0000` all `H1`s would change from dark gray to red. This is the principle -- single source of truth, centrally maintained -- that we will use for our design system. Except with variables instead of style declarations. 
 
-Everything that makes a responsive system possible flows out of that idea. Variable Modes can change variables on the fly, across an entire prototype screen, all at once. 
+Everything that makes a responsive system possible flows out of that idea. Variable Modes can change variables on the fly, across an entire prototype screen, all at once, affecting everything defined by that variable. Spacing, type size, line height, border width, corner radius, color and more can all be defined this way.
 
-I've broken this down into five steps – the basic ingredients of responsive prototypes. I'll be going through each of these, one by one with guidance on how to build them in Figma. 
+In short, any value that can be controlled or set with a Figma variables at the library level *absolutely positively* should be. This concept -- a single source of truth -- leads to design consistency, easier maintenance and ability to closely match prototypes and code. 
 
+The advanced abilities of this system also extend to engineering teams. Our Vue components, type, spacing -- everything  -- are one-to-one matches. A designer can set a breakpoint on a Layout compoent, and that translates directly over to the code asset using Code Connect and Figma developer tools. 
+
+This closes the gap between designer intent and developer delivery. Everyone uses the same tools, with the same names and the same results.
+
+Ready to build something? 
+
+I've broken the process of building this system down into five steps. These are the basic ingredients of responsive prototypes. I'll be going through each of these, one by one with guidance on how to build them in Figma. 
 
 1. [A set of breakpoints](#Breakpoints)
 2. [A flexible grid layout system](#flexible-grid-layout-system)
 3. [Responsive spacing system](#responsive-spacing-system)
 4. [Responsive typography]()
 5. [Component swap system](#component-swap-system)
+
 
 ## Breakpoints
 
@@ -105,7 +115,9 @@ Finally, we set up a page template component and the set the max-width of the fr
 
 ## Flexible Grid Layout System
 
-Now that a basic page template has been made, the next step is to fill that page with content with a Flexible Grid Layout system. This can be a bit [complicated](https://www.youtube.com/watch?v=UjvGAYuWSUA). 
+This is the most [complicated](https://www.youtube.com/watch?v=UjvGAYuWSUA) part of the responsive system. It will include creating a set of min- and max-width variables and assigning those widths to containers. The end result will be a system to allow content containers to automatically resize and reflow as the page is resized. 
+
+The result is an extraordinarily powerful tool for quickly building complex responsive screens. And, by matching these layouts in code, engineers will have an equally powerful tool at their disposal. 
 
 A layout component is made up of:
 
@@ -132,29 +144,26 @@ The min widths for containers are computed by using the min-width of your Layout
 <figure class="blog-image-insert">
     <img src="/siteart/mins_and_max.png" alt="A Sketch file with the name homescreens-new-12/20/2019-updated-final-revised-final-final.sketch.">
     <figcaption><strong>Image X</strong> Layouts and Containers require computing a min and max width for each container across each breakpoint.</figcaption>
-</figure>
+</figure> 
 
-These are the min and max widths that will be used for the Containers. 
+This table contains an example of min and max sizes for a One-Third container, which will take up a maximum of one third of any Layout. However, recall that Layouts have built-in breakpoints. The first two rows in the table -- `min` and `max` values -- are for the Containers that will break into a wrap and stack at `Narrow` breakpoint. The sets of with `@ Medium`, `@ Small` through `@ Narrow` are for the `Medium`, `Small` and `Narrow` breakpoints. At these breakpoints their min- and max- width is the same as the Layout, so they will break into a wrap and stack.
 
+| Breakpoint |Base | Medium | Small | Narrow |
+| --- | --- | --- | --- |
+| Min | 329.66 | 257 | 181.66 |  418 |
+| Max | 502.66 | 338.66 | 264.66 |  576 |
+| Min @ Medium | 329.66 | 787 | 569 |  418 |
+| Max @ Medium | 502.66 | 1048 | 817 |  576 |
+| Min @ Small | 329.66 | 261.34 | 569 |  418 |
+| Max @ Small | 502.66 | 338.66 | 817 |  576 |
 
-
-In the spirit of responsive design, they are a flexible grid. They get narrower as the page width shrinks until they finally break into a wrap and stack configuration. By default, these layout columns break from rows into columns at `Narrow` breakpoint, however the Layout props allow the designer to "move up" that breakpoint to `Small` or `Medium` breakpoints as determined by their content and design needs. 
-
-
-
-
-
-These containers will reside inside Layouts, with auto layouts and [Flow](https://help.figma.com/hc/en-us/articles/360040451373-Guide-to-auto-layout#flow) set to wrap. 
-
-
-
-
+The Components closely replicate the structure and functions of the flexible grid of a responsive page. Additionally, this implementation makes for a robust component. Video Demo X shows several of these Layout & Container components in use. 
 
 <figure>
 <video width="100%" controls>
     <source src="/videos/flexible_grid.mp4">
 </video>
-<figcaption><strong>Video Demo | </strong> The Container components, with red outlines, have a flexible width and reflow into a wrap-and-stack layout at narrower widths.</figcaption>
+<figcaption><strong>Video Demo X | </strong> The Container components, with red outlines, have a flexible width and reflow into a wrap-and-stack layout at narrower widths.</figcaption>
 </figure>
 
 
@@ -177,18 +186,32 @@ Figma Variables and Variable Modes can embed multiple values within a single var
 | Wide | 36px | 36px | 24px |  24px |
 | Extra Wide | 48px | 48px | 30px |  30px |
 
-In their use, the exact amount is less important than "it looks good." Spacing of `12px` isn't `12px` across all breakpoints, the naming convention abstracts them into a group of relative sizes. Base is default. 
-
-
-
-
+In their use, the exact amount is less important than "it looks good." Spacing of `12px` isn't `12px` across all breakpoints, the naming convention abstracts them into a group of relative sizes. Base is default.
 
 ## Responsive Typography
+
+Responsive typography is much like responsive spacing. It is a variable set, but it also controls every aspect of typography across the breakpoints. Any type setting -- size, line height, spacing -- can be tweaked for optimum display. 
+
+A variable set for controlling type size might look something like this. Although type choice and other factors might apply to specific design systems. 
+
+| Breakpoint |Base | Medium | Small | Narrow |
+| --- | --- | --- | --- |
+| Body | 12px | 12px | 8px |  8px |
+| Body-Small | 0px | 0px | 0px |  0px |
+| H1 | 4px | 4px | 4px |  4px |
+| H2 | 8px | 8px | 4px |  4px |
+| H3 | 16px | 16px | 12px |  12px |
+| H4 | 24px | 24px | 16px |  16px |
+| H5 | 36px | 36px | 24px |  24px |
+| H6| 48px | 48px | 30px |  30px |
+
+Because of size of the type changes and we are using a [unitless line height](https://css-tricks.com/almanac/properties/l/line-height/), line height must also be handled with a variable set. 
+
 
 
 ## Component Swap System
 
-One of the more thorny problems of responsive design in Figma is complex content reflow. While the responsive layouts will handle the overall reflow of the page structure. But it can't turn a table into a list, or cause a three side-by-side items reflow into a wrap and stack.
+One of the more thorny problems of responsive design in Figma is complex content reflow. While the responsive layouts will handle the overall reflow of the page structure. But layouts can't turn a table into a list, or cause a three side-by-side items reflow into a wrap and stack.
 
 The answer here is to design the versions for each breakpoint and have them live swap when switching between breakpoints. 
 
@@ -223,21 +246,54 @@ When the component is placed in the design, the Breakpoint prop is replaced with
 
 <figure>
 <video width="100%" controls>
-    <source src="/videos/component_swap.mp4">
+    <source src="/videos/hot_swap.mp4">
 </video>
-<figcaption><strong>Video Demo</strong> Components can live swap between breakpoints, going from a side-by-side layout to a wrap and stack and back to the original layout.</figcaption>
+<figcaption><strong>Video Demo</strong> The Calendar component can live swap between breakpoints, going from a side-by-side layout to a wrap and stack and back to the original layout.</figcaption>
 </figure>
-
 
 
 ## Putting it all Together
 
+At this point the system has breakpoints, a flexible grid system and responsive spacing and typography. System components from buttons to containers to the site header can be built using these principles and methods.
 
-A few other basic requirements before we get started: 
+With these pieces in place, a designer can quickly build a prototype that is responsive. This won't solve everything. It's more of an 85 percent solution. The remaining 15 percent requires individual tweaking of content that can be live swapped using the component swap system. This might sound difficult, but it's far easier than putting together "this is the desktop" and "this is the iPad version" and manually tweaking everything.
+
+Additionally, engineers will work from the same toolset in code, which means faster build times. 
+
+So how does a page actually get built using these tools? They ared structured so that components can be embedded within components. Tbe page, layouts, cards come directly from the library. These all have "content slots" that can contain either library components or custom content.  
+
+It's components all the way down.
+
+<!-- image of component slots -->
+
+<figure class="blog-image-insert">
+    <img src="/siteart/responsive_component.png" alt="A Sketch file with the name homescreens-new-12/20/2019-updated-final-revised-final-final.sketch.">
+    <figcaption><strong>Image X</strong> This calendar component has layouts for three-across, two-across and stacked that will live swap at each breakpoint.</figcaption>
+</figure>
+
+The page template -- shown in Figure X -- has multiple slots. These slots are simply a fame with some color applied. Figma allows for swapping any component for any other component at any time. Click on the component name in the upper right, choose from the library or locally created. 
+
+However, designers must follow these basic principles:
 
 - Layouts must be built using Auto Layout
-- The outermost frame of a layout must be set to a static width. 
+- The page template must be set to a static width. 
 - Components inside this frame must be set to `fill` horizontally and `hug` vertically.
+
+However, a fully responsive page can be built extraordinarily fast. 
+
+<!-- video building a responsive page -->
+<figure>
+<video width="100%" controls>
+    <source src="/videos/hot_swap.mp4">
+</video>
+<figcaption><strong>Video Demo</strong> The Calendar component can live swap between breakpoints, going from a side-by-side layout to a wrap and stack and back to the original layout.</figcaption>
+</figure>
+
+## Conclusion
+
+After years of stasis, Figma has been presenting exciting tools to build design system tools not possible just a few years ago. 
+
+Getting everything into place takes some work. Building Layouts and Containers proved to be a bit tedious at times. However, the result is an advanced toolset that benefits designers and engineers. 
 
 
 

@@ -230,6 +230,11 @@ code {
         max-width: 43.7 rem;
     }    
 }
+
+p + table {
+    margin-top:24px;
+}
+
 table {
     border-collapse: collapse;
     margin-bottom: 24px;
