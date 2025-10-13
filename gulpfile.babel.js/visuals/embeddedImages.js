@@ -21,13 +21,13 @@ function imagesProcess(done) {
     return src(input)
         .pipe(gm(function (gmfile) {
             return gmfile.setFormat('jpg'),
-                gmfile.resample(144, 144),
+                gmfile.resample(72, 72),
                 gmfile.quality(82),
                 gmfile.filter('triangle'),
                 gmfile.unsharp('0.25x0.25+8+0.065'),
                 gmfile.interlace('none'),
                 gmfile.colorspace('sRGB'),
-                gmfile.resize(700) // Resize to 1400px width, auto height
+                gmfile.resize(1400) // Resize to 1400px width, auto height
         }, 
         {
             imageMagick: true
