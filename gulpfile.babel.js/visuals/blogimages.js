@@ -4,15 +4,14 @@ import { moveImages } from "../movers/moveImages"
 
 //images
 const imagemin = require('gulp-imagemin');
-const jpegtran = require('imagemin-jpegtran');
+const jpegtran = require('imagemin-jpegtran'); 
 const gm = require('gulp-gm');
 const rename = require('gulp-rename');
 
 const {
     images: {
         input: input,
-        testing: test,
-        dist: dist,
+        src: source
     }
 } = paths;
 
@@ -47,8 +46,7 @@ function blogImagesLarge(done) {
             prefix: 'large_'
         }))
 
-        .pipe(dest(test))
-        .pipe(dest(dist));
+        .pipe(dest(source));
         done();
     }
 
@@ -80,8 +78,7 @@ function blogImagesXSmall(done) {
             prefix: 'xsmall_'
         }))
 
-        .pipe(dest(test))
-        .pipe(dest(dist));
+        .pipe(dest(source));
         done()
 }
 
@@ -113,8 +110,7 @@ function blogImagesMed(done) {
             prefix: 'med_'
         }))
 
-        .pipe(dest(test))
-        .pipe(dest(dist));
+        .pipe(dest(source));
         done()
 }
 
