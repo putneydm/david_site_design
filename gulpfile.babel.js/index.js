@@ -21,7 +21,7 @@ const { minifyInlineScripts } = require("./js_modules/minifyinlinescripts")
 const { bower } = require("./movers/bower")
 const { collections } = require("./movers/collections")
 const { videos } = require("./movers/videos")
-const { images } = require("./movers/images")
+const { syncImages } = require("./movers/syncImages")
 
 // fonts
 const { fonts } = require("./util/fonts")
@@ -33,6 +33,7 @@ const { blogImages } = require("./visuals/blogimages")
 const { heroImages } = require("./visuals/heroimages")
 const { heroIndex } = require("./visuals/heroimagesindex")
 const { slideImages } = require("./visuals/slides")
+const { embeddedImages } = require("./visuals/embeddedImages")
 
 // other
 const { animations } = require("./animations")
@@ -71,7 +72,7 @@ exports.minifyInlineScripts = minifyInlineScripts;
 exports.bower = bower;
 exports.collections = collections;
 exports.videos = videos;
-exports.images = images;
+exports.syncImages = syncImages;
 // visuals
 exports.svg = svg;
 exports.portfolioSVG = portfolioSVG;
@@ -79,6 +80,7 @@ exports.blogImages = blogImages;
 exports.heroImages = heroImages;
 exports.heroIndex = heroIndex;
 exports.slideImages = slideImages;
+exports.embeddedImages = embeddedImages;
 // other
 exports.deploy = deploy;
 exports.animations = animations;
@@ -121,7 +123,7 @@ const {
 function watchTask() {
   watch(
     [inputCSS, inputInlineCSS, inputJS, inlineJS, includesInput, layoutsInput, pagesInput, markdown, videofolder, imagesFolder],
-    series(parallel(cleanCSS, cleanJS, cleanPages), parallel(css, cssInline), parallel(concatJs, minifyInlineScripts), cachebustScripts, parallel(includes, layouts, pages, collections), parallel(images, videos))
+    series(parallel(cleanCSS, cleanJS, cleanPages), parallel(css, cssInline), parallel(concatJs, minifyInlineScripts), cachebustScripts, parallel(includes, layouts, pages, collections), parallel(syncImages, videos))
   );
 }
 

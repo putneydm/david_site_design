@@ -54,6 +54,7 @@ const paths = {
     images: {
         input: 'src/photos_in/{*.jpg,*.tiff,*.png}',
         output: 'src/photos_out/',
+        src: 'src/_site/siteart/',
         testing: 'test/siteart/',
         dist: 'dist/siteart/'
     },
@@ -64,7 +65,7 @@ const paths = {
         dist: 'dist/siteart/slides'
     },  
     videos: {
-        input: 'src/videos/{*.mov,*.mp4}',
+        input: 'src/videos/{*.mov,*.mp4}', 
         testing: 'test/videos/',
         dist: 'dist/videos/'
     },  
