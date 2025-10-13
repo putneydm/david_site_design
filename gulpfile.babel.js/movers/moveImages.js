@@ -21,7 +21,7 @@ function cleanImages(cb) {
         .pipe(cleanFiles())
         cb();
 }
-
+  
 exports.moveImages = series(moveImages, cleanImages);
 
 
