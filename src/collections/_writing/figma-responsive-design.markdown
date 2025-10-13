@@ -127,7 +127,7 @@ A layout component is made up of:
 For example, we have a One-Five Layout, which is a layout with a Container that spans one column and a Container that spans five. A Two-Three has a two-column container and a three-column container. The logic extends to a Three-Three, Two-Two-Two and any combination of Container widths that add up to fill a six-column span.
 
 <figure class="blog-image-insert">
-    <img src="/siteart/layout_options.png" alt="A Sketch file with the name homescreens-new-12/20/2019-updated-final-revised-final-final.sketch.">
+    <img src="/siteart/layout_options.jpg" alt="A Sketch file with the name homescreens-new-12/20/2019-updated-final-revised-final-final.sketch.">
     <figcaption><strong>Image X</strong> The variety of Layouts and Containers for all four breakpoints allows for multiple choices for fast prototyping.</figcaption>
 </figure>
 
@@ -142,7 +142,7 @@ This will take some math. The way to compute the max-widths of your containers i
 The min widths for containers are computed by using the min-width of your Layout at each breakpoint. The result of all this math is a really big grid of variables full of min and max widths across each breakpoint.
 
 <figure class="blog-image-insert">
-    <img src="/siteart/mins_and_max.png" alt="A Sketch file with the name homescreens-new-12/20/2019-updated-final-revised-final-final.sketch.">
+    <img src="/siteart/mins_and_max.jpg" alt="A Sketch file with the name homescreens-new-12/20/2019-updated-final-revised-final-final.sketch.">
     <figcaption><strong>Image X</strong> Layouts and Containers require computing a min and max width for each container across each breakpoint.</figcaption>
 </figure>
 
@@ -256,7 +256,7 @@ Our variable set will look like this. It takes in all possible combinations of b
 A component that will be live-swapped requires a variant for each breakpoint. As shown in Image X below, this calendar layout has a three-across layout for Base and Medium breakpoints, a two-across for Small and a wrap-and-stack for Narrow. This component has a prop `Breakpoint`. The value of the prop for the three-across is `base`, the two-across is `medium` and the stack is `narrow`.
 
 <figure class="blog-image-insert">
-    <img src="/siteart/responsive_component.png" alt="A Sketch file with the name homescreens-new-12/20/2019-updated-final-revised-final-final.sketch.">
+    <img src="/siteart/responsive_component.jpg" alt="A Sketch file with the name homescreens-new-12/20/2019-updated-final-revised-final-final.sketch.">
     <figcaption><strong>Image X</strong> This calendar component has layouts for three-across, two-across and stacked that will live-swap at each breakpoint.</figcaption>
 </figure>
 
@@ -284,7 +284,7 @@ It's components all the way down.
 <!-- image of component slots -->
 
 <figure class="blog-image-insert">
-    <img src="/siteart/responsive_component.png" alt="A Sketch file with the name homescreens-new-12/20/2019-updated-final-revised-final-final.sketch.">
+    <img src="/siteart/responsive_component.jpg" alt="A Sketch file with the name homescreens-new-12/20/2019-updated-final-revised-final-final.sketch.">
     <figcaption><strong>Image X</strong> This calendar component has layouts for three-across, two-across and stacked that will live-swap at each breakpoint.</figcaption>
 </figure>
 
