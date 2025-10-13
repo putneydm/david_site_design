@@ -22,12 +22,12 @@ function imagesProcess(done) {
         .pipe(gm(function (gmfile) {
             return gmfile.setFormat('jpg'),
                 gmfile.resample(72, 72),
-                gmfile.quality(82),
+                gmfile.resize(1400), // Resize to 1400px width, auto height
+                gmfile.quality(90),
                 gmfile.filter('triangle'),
                 gmfile.unsharp('0.25x0.25+8+0.065'),
                 gmfile.interlace('none'),
-                gmfile.colorspace('sRGB'),
-                gmfile.resize(1400) // Resize to 1400px width, auto height
+                gmfile.colorspace('sRGB')
         }, 
         {
             imageMagick: true
