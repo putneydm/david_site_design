@@ -7,18 +7,31 @@ const gm = require('gulp-gm');
 
 const {
     images: {
-        src: source,
-        testing: testing,
-        dist: dist,
-    }
+        src: imgSource,
+        testing: imgTesting,
+        dist: imgDist,
+    },
+    slides: {
+        src: slideSource,
+        testing: slideTesting,
+        dist: slideDist,
+    },
 } = paths;
 
-const cleanImages = () => del([`${testing}/{*.jpg,*.tiff,*.png}`, `${dist}/{*.jpg,*.tiff,*.png}`], { force: true });
+const cleanImages = () => del([`${imgTesting}/{*.jpg,*.tiff,*.png}`, `${imgDist}/{*.jpg,*.tiff,*.png}`], { force: true });
 
-function syncImages(done) {
-    return src(`${source}/{*.jpg,*.tiff,*.png}`)
-    .pipe(dest(testing))
-    .pipe(dest(dist));
+const syncImages = (done) => {
+    return src(`${imgSource}/{*.jpg,*.tiff,*.png}`)
+    .pipe(dest(imgTesting))
+    .pipe(dest(imgDist));
 }
 
-exports.syncImages = series(cleanImages, syncImages);
+const cleanSlides = () => del([`${slideTesting}/{*.jpg,*.tiff,*.png}`, `${slideDist}/{*.jpg,*.tiff,*.png}`], { force: true });
+
+const syncSlides = (done) => {
+    return src(`${slideSource}/{*.jpg,*.tiff,*.png}`)
+    .pipe(dest(slideTesting))
+    .pipe(dest(slideDist));
+}
+
+exports.syncImages = series(cleanImages, cleanSlides, syncImages, syncSlides);

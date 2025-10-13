@@ -61,6 +61,7 @@ const paths = {
     slides: {
         input: 'src/slides_in/{*.jpg,*.tiff,*.png}',
         output: 'src/slides_out/',
+        src: 'src/_site/siteart/slides/',
         testing: 'test/siteart/slides',
         dist: 'dist/siteart/slides'
     },  

@@ -4,7 +4,7 @@ import { moveImages } from "../movers/moveImages"
 
 //images
 const imagemin = require('gulp-imagemin');
-const jpegtran = require('imagemin-jpegtran');
+const jpegtran = require('imagemin-jpegtran'); 
 const gm = require('gulp-gm');
 const rename = require('gulp-rename');
 

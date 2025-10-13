@@ -116,13 +116,16 @@ const {
     input: videofolder
   },
   images: {
-    output: imagesFolder
+    src: imgSource
+  },
+  slides: {
+    src: slidesSource
   }
 } = paths;
 
 function watchTask() {
   watch(
-    [inputCSS, inputInlineCSS, inputJS, inlineJS, includesInput, layoutsInput, pagesInput, markdown, videofolder, imagesFolder],
+    [inputCSS, inputInlineCSS, inputJS, inlineJS, includesInput, layoutsInput, pagesInput, markdown, videofolder, imgSource, slidesSource],
     series(parallel(cleanCSS, cleanJS, cleanPages), parallel(css, cssInline), parallel(concatJs, minifyInlineScripts), cachebustScripts, parallel(includes, layouts, pages, collections), parallel(syncImages, videos))
   );
 }
