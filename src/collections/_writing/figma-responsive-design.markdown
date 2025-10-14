@@ -23,10 +23,10 @@ Modeling responsive design down to pixel perfection hasn't really been possible.
 
 It's actually possible. A solution arrived a couple of years ago with variables and variable modes in Figma. I was in the audience at the Moscone Center for the demos, and my reaction was, "I can do so much with this."
 
-It's just a matter of putting it all together to create the most advanced design system in the world. The result is a system that models responsive design perfectly and raises the fidelity of prototypes while greatly simplifying the design, delivery and engineering.
+It's just a matter of putting it all together to create the most advanced design system in the world. The result is a system that models responsive design perfectly and raises the fidelity of prototypes while greatly simplifying the design, delivery and engineering. Video Demo 1 shows a prototype made with this system resizing with full content reflow and resizing.
 
 <figure>
-<video width="100%" controls>
+<video width="100%" controls id="#video-1">
     <source src="/videos/full_responsive.mp4">
 </video>
 <figcaption><strong>Video Demo 1</strong> The Figma prototype models responsive behavior across all widths, with content reflow and resizing.</figcaption>
@@ -104,13 +104,13 @@ The first step is to determine the viewport widths that will trigger content ref
 
 These ranges roughly match size ranges of devices, but they don't *directly* target devices. They focus on building screens for *any size*, any device, now or in the future. Each of these breakpoints is a Mode with the page min- and max-widths values for that breakpoint.
 
-Finally, we set up a page template component and set the max-width of the frame to `page-max-width` and the min-width to `page-min-width`. [You should be able](https://www.youtube.com/watch?v=535Zy_rf4NU) to drag the frame between its min- and max-widths, switch modes and drag it between the min- and max-widths for that breakpoint.
+Finally, we set up a page template component and set the max-width of the frame to `page-max-width` and the min-width to `page-min-width`. [You should be able](https://www.youtube.com/watch?v=535Zy_rf4NU) to drag the frame between its min- and max-widths, switch modes and drag it between the min- and max-widths for that breakpoint. Video Demo 2 shows how this works.
 
 <figure>
 <video width="100%" controls>
     <source src="/videos/page_template_resize.mp4">
 </video>
-<figcaption><strong>Video Demo</strong> With the min- and max-widths assigned, the page can now switch between modes to simulate breakpoints and page resizing.</figcaption>
+<figcaption><strong>Video Demo 2</strong> With the min- and max-widths assigned, the page can now switch between modes to simulate breakpoints and page resizing.</figcaption>
 </figure>
 
 ## Flexible Grid Layout System
@@ -124,11 +124,11 @@ A layout component is made up of:
 - **Layout**  —  These are the outer containers that span the full width of the content area.
 - **Container** — These are inside the Layouts and span a specific number of columns, from one to six.
 
-For example, we have a One-Five Layout, which is a layout with a Container that spans one column and a Container that spans five. A Two-Three has a two-column container and a three-column container. The logic extends to a Three-Three, Two-Two-Two and any combination of Container widths that add up to fill a six-column span.
+For example, we have a One-Five Layout, which is a layout with a Container that spans one column and a Container that spans five. A Two-Three has a two-column container and a three-column container. The logic extends to a Three-Three, Two-Two-Two and any combination of Container widths that add up to fill a six-column span. This results in a large variety of components for each layout and breakpoints, shown in Image 1.
 
 <figure class="blog-image-insert">
     <img src="/siteart/layout_options.jpg" alt="A Sketch file with the name homescreens-new-12/20/2019-updated-final-revised-final-final.sketch.">
-    <figcaption><strong>Image X</strong> The variety of Layouts and Containers for all four breakpoints allows for multiple choices for fast prototyping.</figcaption>
+    <figcaption><strong>Image 1</strong> The variety of Layouts and Containers for all four breakpoints allows for multiple choices for fast prototyping options.</figcaption>
 </figure>
 
 Setup for the Layout part is fairly straightforward. It's a frame with auto layouts with the content [Flow](https://help.figma.com/hc/en-us/articles/360040451373-Guide-to-auto-layout#flow) set to wrap.
@@ -139,11 +139,11 @@ This will take some math. The way to compute the max-widths of your containers i
 
 `(base width - gutter widths) / columns`
 
-The min widths for containers are computed by using the min-width of your Layout at each breakpoint. The result of all this math is a really big grid of variables full of min and max widths across each breakpoint.
+The min widths for containers are computed by using the min-width of your Layout at each breakpoint. The result of all this math is a really big grid of variables full of min and max widths across each breakpoint, show in Image 2.
 
 <figure class="blog-image-insert">
     <img src="/siteart/mins_and_max.jpg" alt="A Sketch file with the name homescreens-new-12/20/2019-updated-final-revised-final-final.sketch.">
-    <figcaption><strong>Image X</strong> Layouts and Containers require computing a min and max width for each container across each breakpoint.</figcaption>
+    <figcaption><strong>Image 2</strong> Layouts and Containers require computing a min and max width for each container across each breakpoint.</figcaption>
 </figure>
 
 This table contains an example of min and max sizes for a One-Third container, which will take up a maximum of one-third of any Layout. However, recall that Layouts have built-in breakpoints. The first two rows in the table — `min` and `max` values — are for the Containers that will break into a wrap and stack at the `Narrow` breakpoint. The sets with `@ Medium`, `@ Small` through `@ Narrow` are for the `Medium`, `Small` and `Narrow` breakpoints. At these breakpoints, their min- and max-width is the same as the Layout, so they will break into a wrap and stack.
@@ -157,13 +157,13 @@ This table contains an example of min and max sizes for a One-Third container, w
 | Min @ Small | 329.66 | 261.34 | 569 | 418 |
 | Max @ Small | 502.66 | 338.66 | 817 | 576 |
 
-The components closely replicate the structure and functions of the flexible grid of a responsive page. Additionally, this implementation makes for a robust component. Video Demo X shows several of these Layout and Container components in use.
+The components closely replicate the structure and functions of the flexible grid of a responsive page. Additionally, this implementation makes for a robust component. Video Demo 3 shows several of these Layout and Container components in use.
 
 <figure>
 <video width="100%" controls>
     <source src="/videos/flexible_grid.mp4">
 </video>
-<figcaption><strong>Video Demo X</strong> The Container components, with red outlines, have a flexible width and reflow into a wrap-and-stack layout at narrower widths.</figcaption>
+<figcaption><strong>Video Demo 3</strong> The Container components, with red outlines, have a flexible width and reflow into a wrap-and-stack layout at narrower widths.</figcaption>
 </figure>
 
 
@@ -186,22 +186,22 @@ Figma Variables and Variable Modes can embed multiple values within a single var
 | Wide | 36px | 36px | 24px | 24px |
 | Extra Wide | 48px | 48px | 30px | 30px |
 
-In their use, the exact amount is less important than "it looks good." Spacing of `12px` isn't `12px` across all breakpoints; the naming convention abstracts them into a group of relative sizes. Base is default.
+In their use, the exact amount is less important than "it looks good." Spacing of `12px` isn't `12px` across all breakpoints; the naming convention abstracts them into a group of relative sizes. Base is default. Video Demo 4 shows live-swapping of components. 
 
 <figure>
 <video width="100%" controls>
     <source src="/videos/responsive_spacing.mp4">
 </video>
-<figcaption><strong>Video Demo</strong> The Calendar component can live-swap between breakpoints, going from a side-by-side layout to a wrap-and-stack and back to the original layout.</figcaption>
+<figcaption><strong>Video Demo 4</strong> The Calendar component can live-swap between breakpoints, going from a side-by-side layout to a wrap-and-stack and back to the original layout.</figcaption>
 </figure>
 
 
 
 ## Responsive Typography
 
-Responsive typography is much like responsive spacing. It is a variable set, but it also controls every aspect of typography across the breakpoints. Any type setting — size, line height, spacing — can be tweaked for optimum display.
+Responsive typography is much like responsive spacing. It is a variable set, but it also controls every aspect of typography across the breakpoints. Any setting that affects type — size, line height, spacing — can be tweaked for optimum display.
 
-A variable set for controlling type size might look something like this, although type choice and other factors might apply to specific design systems.
+A variable set for controlling type size might look something like this, although type choice and other factors might apply to specific design systems and aesthetic choices.
 
 | Breakpoint | Base | Medium | Small | Narrow |
 | --- | --- | --- | --- | --- |
@@ -214,18 +214,14 @@ A variable set for controlling type size might look something like this, althoug
 | H5 | 16px | 14px | 12px | 10px |
 | H6 | 14px | 12px | 10px | 8px |
 
-Because the size of the type changes and we are using a [unitless line height](https://css-tricks.com/almanac/properties/l/line-height/), line height must also be handled with a variable set.
-
-
+The type set also includes spacing and line height variables, as well as weight changing at the narrowest breakpoints. Video Demo 5 shows these typography settings in action. 
 
 <figure>
 <video width="100%" controls>
     <source src="/videos/responsive_type.mp4">
 </video>
-<figcaption><strong>Video Demo</strong> The Calendar component can live-swap between breakpoints, going from a side-by-side layout to a wrap-and-stack and back to the original layout.</figcaption>
+<figcaption><strong>Video Demo 5 </strong>//switching between breakpoints causes the type sizing, spacing and line height to adjust.</figcaption>
 </figure>
-
-
 
 ## Component Swap System
 
@@ -253,11 +249,11 @@ Our variable set will look like this. It takes in all possible combinations of b
 | @med @narrow | Base | Medium | Medium | Narrow |
 | @med @small @narrow | Base | Medium | Small | Narrow |
 
-A component that will be live-swapped requires a variant for each breakpoint. As shown in Image X below, this calendar layout has a three-across layout for Base and Medium breakpoints, a two-across for Small and a wrap-and-stack for Narrow. This component has a prop `Breakpoint`. The value of the prop for the three-across is `base`, the two-across is `medium` and the stack is `narrow`.
+A component that will be live-swapped requires a variant for each breakpoint. As shown in Image 3 below, this calendar layout has a three-across layout for Base and Medium breakpoints, a two-across for Small and a wrap-and-stack for Narrow. This component has a prop `Breakpoint`. The value of the prop for the three-across is `base`, the two-across is `medium` and the stack is `narrow`.
 
 <figure class="blog-image-insert">
     <img src="/siteart/responsive_component.jpg" alt="A Sketch file with the name homescreens-new-12/20/2019-updated-final-revised-final-final.sketch.">
-    <figcaption><strong>Image X</strong> This calendar component has layouts for three-across, two-across and stacked that will live-swap at each breakpoint.</figcaption>
+    <figcaption><strong>Image 3</strong> This calendar component has layouts for three-across, two-across and stacked that will live-swap at each breakpoint.</figcaption>
 </figure>
 
 When the component is placed in the design, the Breakpoint prop is replaced with an @break variable. In this case, `@small @narrow`. Switching to the breakpoint of `small` causes the value of our @break variable to change from `base` to `small`, and the `small` variant is displayed in the prototype.
@@ -266,7 +262,7 @@ When the component is placed in the design, the Breakpoint prop is replaced with
 <video width="100%" controls>
     <source src="/videos/hot_swap.mp4">
 </video>
-<figcaption><strong>Video Demo</strong> The Calendar component can live-swap between breakpoints, going from a side-by-side layout to a wrap-and-stack and back to the original layout.</figcaption>
+<figcaption><strong>Video Demo 6</strong> The Calendar component can live-swap between breakpoints, going from a side-by-side layout to a wrap-and-stack and back to the original layout.</figcaption>
 </figure>
 
 ## Putting it All Together
@@ -284,26 +280,26 @@ It's components all the way down.
 <!-- image of component slots -->
 
 <figure class="blog-image-insert">
-    <img src="/siteart/responsive_component.jpg" alt="A Sketch file with the name homescreens-new-12/20/2019-updated-final-revised-final-final.sketch.">
-    <figcaption><strong>Image X</strong> This calendar component has layouts for three-across, two-across and stacked that will live-swap at each breakpoint.</figcaption>
+    <img src="/siteart/content_slots.jpg" alt="A Sketch file with the name homescreens-new-12/20/2019-updated-final-revised-final-final.sketch.">
+    <figcaption><strong>Image 4</strong> A page template and with flyout that shows the multiple content slots in components.</figcaption>
 </figure>
 
-The page template — shown in Image X — has multiple slots. These slots are simply a frame with some color applied. Figma allows for swapping any component for any other component at any time. Click on the component name in the upper right and choose from the library or locally created components.
+The page template — shown in Image 4 — has multiple slots. These slots are simply a frame with some color applied. Figma allows for swapping any component for any other component at any time. Click on the component name in the upper right and choose from the library or locally created components.
 
-However, designers must follow these basic principles:
+Designers should follow these basic principles when building for this type of system:
 
 - Layouts must be built using Auto Layout
 - The page template must be set to a static width
 - Components inside this frame must be set to `fill` horizontally and `hug` vertically
 
-However, a fully responsive page can be built extraordinarily fast. How fast? In the video below, I walk through the build process. 
+However, a fully responsive page can be built extraordinarily fast. How fast? In the Video Demo 7 below, I walk through the build process. 
 
 <!-- video building a responsive page -->
 <figure>
 <video width="100%" controls>
     <source src="/videos/responsive_build_demo.mp4">
 </video>
-<figcaption><strong>Video Demo</strong> Building a fully responsive page in just 3 minutes using the responsive design system.</figcaption>
+<figcaption><strong>Video Demo 7</strong> Building a fully responsive page in just 3 minutes using the responsive design system.</figcaption>
 </figure>
 
 ## Conclusion
@@ -311,6 +307,3 @@ However, a fully responsive page can be built extraordinarily fast. How fast? In
 After years of stasis, Figma has been presenting exciting tools to build design system tools not possible just a few years ago.
 
 Getting everything into place takes some work. Building Layouts and Containers proved to be a bit tedious at times. However, the result is an advanced toolset that benefits designers and engineers.
-
-
-
