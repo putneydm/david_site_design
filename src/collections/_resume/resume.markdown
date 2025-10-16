@@ -3,109 +3,68 @@ head: Resumé
 subhead: I'm David, and this is the work I've done. I've been a journalist, editor, designer, consultant and developer. Let's talk.
 ---
 
-## Professional Experience
+## Professional Summary
+- **Senior Designer & Front-End Developer** with **20+ years** experience in design, user experience and design systems. 
+- Expert in advanced **Figma design systems**, strong experience in **CSS/HTML5**. 
+- Worked or led **cross-functional Agile** processes. 
+- Delivered **$MM enterprise projects** for Bose, Zip-car, & The Boston Globe.
 
+## Professional Experience
 
 ### Aledade
 
-#### Senior Designer \| Design Systems & Infrastructure Team
+#### Senior Designer | Design Systems & Infrastructure Team
+*Aug. 2022 – Present* | *Bethesda, MD (Remote)*
 
-*Aug. 2022 – present* \| *Bethesda, Md (Remote)* 
+- **Built Canonical Design System** in Figma/Storybook, delivering a new visual design, 50+ accessible components, semantic color system and display modes (Fall 2024–present). [Visual Design Case Study][10]
+- **Drove 589% adoption growth** (4K→30K instances) across design teams in one year, accelerating UI scalability and consistency.
+- **Engineered in Figma** a full responsive layouts system, components and responsive spacing and type system. [Responsive Design Case Study][XX] 
+- **Close collaboration** with engineering team to ensure alignment of Figma and Vue components.
+- **Led design team outreach/training**, onboarding of design team users.
+- **Authored 50+ documentation pages** of component/token/layout for Storybook.
+- **Set up and manage Agile backlog** for design, engineering, and documentation tasks.
 
-##### Design System & Infrastructure Team
+##### Related 
 
-- Designer role on a three-person design systems team that architected and built the Canonical Design System.
-- Between Summer 2024 and present, I designed, built and shipped more than 50 fully functional components, a semantic color system, semantic naming system, spacing variables and multiple display modes.
-- In one year, design system component use by Aledade teams grew from 4,328 instances in use to 29,833. 
-- Includes advanced features such as fully responsive pages, layouts and components, color deficiency preview modes and wireframe mode. 
-- Led Figma Day Camp and Design System Office Hours, our outreach and training for user of the design system.
-- Wrote 50+ pages of design system documentation for components, color system and layout system.
-- Set up and maintain the Design System team backlog based on Agile practices to ensure tracking and completion of design, documentation and engineering tasks.
-
-[Responsive Design Case Study][10]
-
-##### Specialist Navigator Team
-
-- zxzxcxz
-- xcxzc
+[How to Build a Responsive Design System in Figma](XX)
 
 
-
-
-### Cantina 
-
+### Cantina
 #### Senior Designer & Front-End Developer
+*Jan. 2015 – July 2022* | *Boston, MA*
 
-*Jan. 2015 – July 2022* \| *Boston, Mass* 
+**Led or was part of 7+ multimillion-dollar enterprise projects**, delivering **70% sales growth** and FDA-approved UIs for PPG, EstateSpace, MIB, Bose, Zipcar, Forrester, & Avid:
 
-**Consulting Experience** I have worked on or led large, long-term, multimillion-dollar projects for clients that include: PPG, Cleveland, Ohio; EstateSpace, Charlottesville, Va.; MIB Group, Braintree, Mass;  Bose Corporation, Framingham, Mass; and Zipcar, Boston, Mass
-
-
-
-##### PPG 
-
-**Market researcher** \| *Cleveland, Ohio* <br />
-Created an ethnographic market research report to explain business needs of small shops that are installing paint protection and color change film to inform their marketing strategy for a new product.
-
-##### EstateSpace enterprise app
-
-**Design Lead & Project Lead** \| *Charlottesville, Va.* <br />
-
-Created an integrated web app experience that connected budgeting, scheduling, contracts, financials, document handling, invoicing and inventory tracking to create an end-to-end project management tool for the building trades.
-
-##### MIB Group enterprise search portal 
-
-**Design Lead & Developer** \| *Braintree, Mass* \|
-
-Designed and built a dynamic, simple UI for a groundbreaking web app that allows users to easily request and track the status of dozens of medical records from multiple sources that allowed the MIB to launch a new business unit. [MIB Case Study][6]
-
-##### Bose Corporation hardware UI
-
-**Design Lead** \| *Framingham, Mass* \|
-Designed and documented haerdware user interface for a breakthrough, first-of-its-kind FDA-approved over-the-counter hearing aid. [Bose Case Study][7]
-
-##### Zipcar mobile app
-
-**UI/UX Designer** \| *Boston, Mass* \| Revamped and modernized Zipcar’s outdated Android and iOS apps with a refreshed visual design, new identity and intuitive, elegant flows. Created prototypes, conducted user testing. Worked closely with product owner to set priorities.
-
-##### Forrester Research mobile app
-
-**Designer & Developer** \| *Cambridge, Mass* \| Worked with CEO to design and prototype a real-time customer feedback app that would aggregate consumer opinion across a wide swath of industries.
-
-##### Avid Technology web site
-
-**Designer & developer** \| *Burlington, Mass* \| Increased software sales by 70 percent with a total redesign of information architecture, visuals, content and UX on Avid.com to focus on direct sales. 
+- **Drove 70% software sales increase** via Avid.com redesign (info architecture, UX, HTML/CSS).
+- **designed FDA-approved hearing aid hardware UI** for Bose—designed/documented hardware interface [Case Study][7].
+- **Designed and built enterprise search portal** for MIB (CSS & HTML), enabling new business unit launch and significant sales growth. [Case Study][6].
+- **Led design of end-to-end project app** for EstateSpace (budgeting, invoicing, inventory app).
+- **Redesigned and user tested iOS/Android apps** for Zipcar Mobile-first revamp of their products.
+- **Direct collaboration with Forrester CEO** for prototyping a real-time feedback app.
 
 ### BostonGlobe.com
 #### UX/UI Designer & Front-End Developer
+*Nov. 2012 – Jan. 2015* | *Boston, MA*
 
-*Nov 2012 – Jan. 2015* \| *Boston, Mass.*
-
-I was the Boston Globe’s new products and innovation specialist. I was designer and developer responsible for **Cruxnow.com**, a secular site for Catholic news and lifestyle features. I was designer for **BDCwire.com** site, a mobile-focused site for younger readers to find and share news.  
-
-[Crux Case Study][8]
-
+**Led new product innovation** Designed UX/UI and built front-end (CSS, HTML, JS) for Cruxnow.com (Catholic news/lifestyle) & BDCwire.com (mobile news sharing). [Cruxnow.com Case Study][8]
 
 ### PilotOnline.com
-#### Content Producer, Designer & Developer 
+#### Content Producer, Designer & Developer
+*May 2008 – Oct. 2012* | *Norfolk, VA* | *155M pageviews, 50% market share (2012)*
 
-*May 2008 – Oct. 2012* \| *Norfolk, Va.*<br /> *In 2012: 155M pageviews, 21M uniques and ~50 percent market share.*
+- **Led Pulitzer Prize-finalist multimedia project** *A Chance in Hell* (Winner: Photos of the Year Intl).
+- **Drove 155M page views** via breaking news coverage + CMS design/optimization.
+- **Planned digital strategy** for 21M monthly uniques (HTML/CSS/JS).
 
-Led and planned online coverage, wrote and edited breaking news stories, and was lead designer for PilotOnline.com. Created online presentation for *A Chance in Hell*, which was honored as a Pulitzer finalist and at Photos of the Year International. 
+### Link Newspaper
+#### Co-Founder & Design Director
+*July 2006 – Sept. 2007* | *Norfolk, VA (Circ. 30K M-F)*
 
-### Link newspaper
-#### Co-founder & Design Director
+**Co-founded award-winning free newspaper** for young adults, delivering strong visual design, groundbreaking content strategy and led daily production:
 
-*July 2006-Sept. 2007* \| *Norfolk, Virginia. Circ. 30,000 (M-F).* <br />
-
-Link was a free newspaper aimed at young, active adults. I co-founded it, created its visual design, content strategy, hired staff and oversaw daily production. It won multiple design honors and was widely recognized for excellence. 
-
-* Co-founded and saw it through to launch and ran daily production
-* Recruited and hired a Link staff who chafed against traditional newspapers shared the vision and set them loose to innovate
-* Built prototypes and design component libraries
-* Visual design -- color palette, typography, presentation styles 
-* Content strategy, tone and branding
-* User tested prototypes with the target audience to refine our ideas through several iterations
+- **Launched 30K-circulation paper**, winning multiple design honors.
+- **Hired innovative staff** who disrupted traditional newspaper norms.
+- **Built design system & component libraries** Color, typography and branding.
 
 [Link Case Study][9]
 
@@ -139,7 +98,7 @@ Link was a free newspaper aimed at young, active adults. I co-founded it, create
 * Agile development methods (JIRA, Trello, etc.) 
 
 ### Languages
-* HTML5 & CSS, including preprocessor languages such as Sass and PostCSS 
+* HTML5 & CSS, including preprocessor languages such as SASS and PostCSS 
 * Javascript
 * Jekyll / Liquid
 * Markdown
@@ -155,7 +114,7 @@ Link was a free newspaper aimed at young, active adults. I co-founded it, create
 ## Education
 **Eastern Illinois University** -- *August 1992 — May 1995*. Charleston, Ill. B.A. Journalism
 
-**Illinois Central College** -- *January 1990 — May 1992*. East Peoria, Ill.  A.A. Journalism
+**Illinois Central College** -- *January 1990 — May 1992*. East Peoria, Ill.  A.A. Journalism 
 
 [1]: /writing/understanding-electronic-health-records/
 [2]: /writing/design-version-control/
