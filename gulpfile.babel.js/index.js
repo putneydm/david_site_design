@@ -85,11 +85,6 @@ exports.embeddedImages = embeddedImages;
 exports.deploy = deploy;
 exports.animations = animations;
 
-// combined tasks
-exports.default = series(parallel(cleanCSS, cleanJS, cleanPages), bower, svg, portfolioSVG, parallel(css, cssInline), parallel(concatJs, minifyInlineScripts), cachebustScripts, parallel(includes, layouts, pages, collections))
-
-exports.rebuild = series(parallel(cleanCSS, cleanJS, cleanPages), parallel(css, cssInline), parallel(concatJs, minifyInlineScripts), cachebustScripts, parallel(includes, layouts, pages, collections))
-
 // watcher
 const {
   styles: {
@@ -126,9 +121,15 @@ const {
 function watchTask() {
   watch(
     [inputCSS, inputInlineCSS, inputJS, inlineJS, includesInput, layoutsInput, pagesInput, markdown, videofolder, imgSource, slidesSource],
-    series(parallel(cleanCSS, cleanJS, cleanPages), parallel(css, cssInline), parallel(concatJs, minifyInlineScripts), cachebustScripts, parallel(includes, layouts, pages, collections), parallel(syncImages, videos))
+    series(parallel(cleanCSS, cleanJS, cleanPages), parallel(css, cssInline), parallel(concatJs, minifyInlineScripts), parallel(cachebustScripts), parallel(includes, layouts, pages, collections), parallel(syncImages, videos))
   );
 }
+
+// combined tasks
+exports.default = series(parallel(cleanCSS, cleanJS, cleanPages), bower, svg, portfolioSVG, parallel(css, cssInline), parallel(concatJs, minifyInlineScripts), parallel(cachebustScripts), parallel(includes, layouts, pages, collections), parallel(syncImages, videos))
+
+exports.rebuild = series(parallel(cleanCSS, cleanJS, cleanPages), parallel(css, cssInline), parallel(concatJs, minifyInlineScripts), parallel(cachebustScripts), parallel(includes, layouts, pages, collections), parallel(syncImages, videos))
+
 
 exports.watcher = watchTask;
 
