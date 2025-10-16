@@ -11,10 +11,10 @@ const rename = require('gulp-rename');
 const {
     slides: {
         input: input,
-        testing: test,
-        dist: dist,
+        src: source
     }
 } = paths;
+
 
 exports.moveSlides = moveSlides;
 
@@ -45,8 +45,7 @@ function slideImagesLarge(done) {
         .pipe(rename({
             prefix: 'large_'
         }))
-        .pipe(dest(test))
-        .pipe(dest(dist));
+        .pipe(dest(source));
         done();
     }
 
@@ -80,8 +79,7 @@ function slideImagesMed(done) {
             prefix: 'med_'
         }))
 
-        .pipe(dest(test))
-        .pipe(dest(dist));
+        .pipe(dest(source));
         done();
     }
 
@@ -113,8 +111,7 @@ function slideImagesSmall(done) {
             prefix: 'small_'
         }))
 
-        .pipe(dest(test))
-        .pipe(dest(dist));
+        .pipe(dest(source));
         done()
 }
 
