@@ -21,7 +21,7 @@ const { minifyInlineScripts } = require("./js_modules/minifyinlinescripts")
 const { bower } = require("./movers/bower")
 const { collections } = require("./movers/collections")
 const { videos } = require("./movers/videos")
-const { syncImages } = require("./movers/syncImages")
+const { images } = require("./movers/images")
 
 // fonts
 const { fonts } = require("./util/fonts")
@@ -33,7 +33,6 @@ const { blogImages } = require("./visuals/blogimages")
 const { heroImages } = require("./visuals/heroimages")
 const { heroIndex } = require("./visuals/heroimagesindex")
 const { slideImages } = require("./visuals/slides")
-const { embeddedImages } = require("./visuals/embeddedImages")
 
 // other
 const { animations } = require("./animations")
@@ -72,7 +71,7 @@ exports.minifyInlineScripts = minifyInlineScripts;
 exports.bower = bower;
 exports.collections = collections;
 exports.videos = videos;
-exports.syncImages = syncImages;
+exports.images = images;
 // visuals
 exports.svg = svg;
 exports.portfolioSVG = portfolioSVG;
@@ -80,10 +79,14 @@ exports.blogImages = blogImages;
 exports.heroImages = heroImages;
 exports.heroIndex = heroIndex;
 exports.slideImages = slideImages;
-exports.embeddedImages = embeddedImages;
 // other
 exports.deploy = deploy;
 exports.animations = animations;
+
+// combined tasks
+exports.default = series(parallel(cleanCSS, cleanJS, cleanPages), bower, svg, portfolioSVG, parallel(css, cssInline), parallel(concatJs, minifyInlineScripts), cachebustScripts, parallel(includes, layouts, pages, collections))
+
+exports.rebuild = series(parallel(cleanCSS, cleanJS, cleanPages), parallel(css, cssInline), parallel(concatJs, minifyInlineScripts), cachebustScripts, parallel(includes, layouts, pages, collections))
 
 // watcher
 const {
@@ -111,25 +114,16 @@ const {
     input: videofolder
   },
   images: {
-    src: imgSource
-  },
-  slides: {
-    src: slidesSource
+    output: imagesFolder
   }
 } = paths;
 
 function watchTask() {
   watch(
-    [inputCSS, inputInlineCSS, inputJS, inlineJS, includesInput, layoutsInput, pagesInput, markdown, videofolder, imgSource, slidesSource],
-    series(parallel(cleanCSS, cleanJS, cleanPages), parallel(css, cssInline), parallel(concatJs, minifyInlineScripts), parallel(cachebustScripts), parallel(includes, layouts, pages, collections), parallel(syncImages, videos))
+    [inputCSS, inputInlineCSS, inputJS, inlineJS, includesInput, layoutsInput, pagesInput, markdown, videofolder, imagesFolder],
+    series(parallel(cleanCSS, cleanJS, cleanPages), parallel(css, cssInline), parallel(concatJs, minifyInlineScripts), cachebustScripts, parallel(includes, layouts, pages, collections), parallel(images, videos))
   );
 }
-
-// combined tasks
-exports.default = series(parallel(cleanCSS, cleanJS, cleanPages), bower, svg, portfolioSVG, parallel(css, cssInline), parallel(concatJs, minifyInlineScripts), parallel(cachebustScripts), parallel(includes, layouts, pages, collections), parallel(syncImages, videos))
-
-exports.rebuild = series(parallel(cleanCSS, cleanJS, cleanPages), parallel(css, cssInline), parallel(concatJs, minifyInlineScripts), parallel(cachebustScripts), parallel(includes, layouts, pages, collections), parallel(syncImages, videos))
-
 
 exports.watcher = watchTask;
 
