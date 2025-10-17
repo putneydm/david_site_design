@@ -14,7 +14,7 @@ myRole: Bringing the first over-the-counter hearing aid to market
 slides: [homepage-old, homepage-new, wellness-before, wellness-after]
 slidesCaps: [Home Page | Before, Home Page | After, Wellness Worklist | After, Wellness Worklist | Before]
 keyImage: homepage-redesign
-sequence: 3
+sequence: 2
 ---
 ## How might we ...
 
@@ -24,3 +24,9 @@ sequence: 3
 * Launch a new FDA-regulated product category
 
 ___
+
+## Unique Challenges
+
+### No. 1 | The job to be done is not "hearing"; it's restoring lost human connections
+
+A hearing aid wasn't just an engineering problem to be solved. This would be a truly personal item for users, something they would depend on, trust. Users often raved about the device. "I can hear leaves rustling when I go for a walk" or "I can go out to restaurants with friends again." This personal connection would imbue it with true emotional meaning. 
