@@ -1,19 +1,17 @@
 ---
-title:  "Aledade Visual Redesign"
-subhead: Hardware Ui for breakthrough device to help with hearing loss 
+title:  "Aledade Responsive Component System"
+subhead: Building a system to model responsive design in Figma
 imageAlt: Screenshot of MIB Electronic Medical Records Portal
 layout: portfolio_entry
 pageType: portfolio_entry
-client: Bose, Framingham, Mass.
+client: Aledade, Bethesda, Md. (Remote)
 project: Bose had an ambitious goal of creating and selling the first over-the counter hearing aid. It needed to be discreet, comfortable and stylish. It also needed to be dead-easy to use. I designed on-device controls -- boiling complex ideas down to a single button action -- so a user could quickly and easily access life-changing features. 
-roleDes: [Design]
-design: [research, Stakeholder Interviews, Discovery Sessions, User Testing, Documentation]
+roleDes: [design lead]
+design: [design system, component system, discovery, training, Documentation, figma]
 roleDev: 
 developer: 
-myRole: Bringing the first over-the-counter hearing aid to market
-slides: [homepage-old, homepage-new, wellness-before, wellness-after]
-slidesCaps: [Home Page | Before, Home Page | After, Wellness Worklist | After, Wellness Worklist | Before]
-keyImage: homepage-redesign
+myRole: Creating an innovative and easy way to model reponsive design in Figma
+video: foobar
 sequence: 2
 ---
 ## How might we ...
