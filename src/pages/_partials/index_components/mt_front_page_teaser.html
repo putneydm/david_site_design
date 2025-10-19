@@ -13,6 +13,11 @@
 {% assign alt = post.imageAlt %}
 {% endif %}
 
+{% if post.crossfadeImage %}
+{% assign imageToo = post.crossfadeImage %}
+{% assign alt = post.imageAlt %}
+{% endif %}
+
 <article class="teaser-module will-change-ot set">
 		<a href="{{post.url}}" rel="next">
 		<figure class="teaser-module-mainart med-photo-overlay">
@@ -29,6 +34,22 @@
 			{% endif %}
         </noscript>
 			</picture>
+		{% if post.crossfadeImage %}
+			<picture class="fading-image">
+				<source data-srcset="/siteart/slides/large_{{ imageToo }}.jpg" media="(min-width:900px)">
+				<source data-srcset="/siteart/slides/med_{{ imageToo }}.jpg" media="(min-width:450px)">
+				<source data-srcset="/siteart/slides/small_{{ imageToo }}.jpg">
+				<img class="lazyload" data-src="/siteart/slides/large_{{ imageToo }}.jpg" alt="">
+			<noscript>
+				{% if post.slides %}
+				<img src="/siteart/slides/large_{{image}}.jpg">		
+				{% elsif post.image %}
+				<img src="/siteart/large_{{image}}.jpg">
+				{% endif %}
+			</noscript>
+			</picture>
+		{% endif %}
+
 		</figure>
 		</a>
 		<div class="text-container">
