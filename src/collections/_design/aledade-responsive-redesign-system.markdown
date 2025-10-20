@@ -5,7 +5,7 @@ imageAlt: Screenshot of MIB Electronic Medical Records Portal
 layout: portfolio_entry
 pageType: portfolio_entry
 client: Aledade, Bethesda, Md. (Remote)
-project: Bose had an ambitious goal of creating and selling the first over-the counter hearing aid. It needed to be discreet, comfortable and stylish. It also needed to be dead-easy to use. I designed on-device controls -- boiling complex ideas down to a single button action -- so a user could quickly and easily access life-changing features. 
+project: I built a Figma design system that exactly mirrors responsive code behavior, enabling a designer-to-engineer pipeline to match pixel-for-pixel with prototypes. By hacking Figma's modes and tokens, I created a powerful, easy-to-use system of breakpoints, flexible grids, and live-resizing components. Through outreach and support efforts, adoption surged 1,200% in one year.
 roleDes: [design lead]
 design: [design system, component system, discovery, training, Documentation, figma]
 roleDev: 
