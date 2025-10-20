@@ -1,6 +1,6 @@
 ---
 title:  "Aledade Responsive Component System"
-subhead: Building a framework to model responsive design in Figma
+subhead: Building an advanced framework to model responsive design in Figma
 imageAlt: Screenshot of MIB Electronic Medical Records Portal
 layout: portfolio_entry
 pageType: portfolio_entry
