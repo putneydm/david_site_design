@@ -12,8 +12,9 @@ roleDev:
 developer: 
 myRole: Working with the design team to build a new visual design system
 slides: [homepage-old, homepage-new, wellness-before, wellness-after]
+keyImage: homepage-old
+crossfadeImage: homepage-new
 slidesCaps: [Home Page | Before, Home Page | After, Wellness Worklist | After, Wellness Worklist | Before]
-keyImage: homepage-redesign
 sequence: 1
 ---
 ## How might we ...
