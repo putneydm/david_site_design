@@ -11,10 +11,10 @@ design: [design system, component system, visual design, branding, typography, d
 roleDev: 
 developer: 
 myRole: Working with the design team to build a new visual design system
-slides: [homepage-old, homepage-new, wellness-before, wellness-after]
+slides: [homepage-old, homepage-new, wellness-before, wellness-after, call-outcomes-old, call-outcomes-new, care-gaps-old, care-gaps-new, add-appts-old, add-appt-new]
 keyImage: homepage-old
 crossfadeImage: homepage-new
-slidesCaps: [Home Page | Before, Home Page | After, Wellness Worklist | After, Wellness Worklist | Before]
+slidesCaps: [Home Page | Before, Home Page | After, Wellness Worklist | Before, Wellness Worklist | After,Call Outcomes | Before, Call Outcomes | After, Care Gaps | Before, Care Gaps | After,  Add Appointments | Before, Add Appointments | After]
 sequence: 1
 ---
 ## How might we ...
@@ -38,11 +38,12 @@ ___
 * Instituted core design motifs: border radius, weight, spacing and details.  
 * Fully documented the system for quick reference for the design team.
 
-### No. 2 | Build accessibility and semantics into the design system
+### No. 2 \| Building accessibility and semantics into the design system
+
 
 **The Goal** \| 
 
-### No. 3 | Implement a brand vision for the future
+### No. 3 \| Implement a brand vision for the future
 
 Refreshed pages take advatange of a simple, consistent color palette, a defined type scale and weights, a new icon system 
 

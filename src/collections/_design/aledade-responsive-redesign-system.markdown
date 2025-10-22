@@ -10,6 +10,8 @@ roleDes: [design lead]
 design: [design system, component system, discovery, training, Documentation, figma]
 roleDev: 
 developer: 
+keyImage: call-outcomes-base
+crossfadeImage: call-outcomes-narrow
 myRole: Creating an innovative and easy way to model reponsive design in Figma
 video: foobar
 sequence: 2
