@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>David Putney</title>
+    <description>I&apos;m David Putney, a UI/UX designer and developer living in the Salt Lake City area of Utah. I built this site to share examples of my professional design and development work.</description>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Mon, 01 Sep 2025 13:39:15 -0400</pubDate>
+    <lastBuildDate>Mon, 01 Sep 2025 13:39:15 -0400</lastBuildDate>
+    <generator>Jekyll v4.2.2</generator>
+    
+  </channel>
+</rss>
