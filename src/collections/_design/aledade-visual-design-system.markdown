@@ -11,37 +11,37 @@ design: [design system, component system, visual design, branding, typography, d
 roleDev: 
 developer: 
 myRole: Working with the design team to build a new visual design system
-slides: [homepage-old, homepage-new, wellness-before, wellness-after, call-outcomes-old, call-outcomes-new, care-gaps-old, care-gaps-new, add-appts-old, add-appt-new]
+slides: [homepage-old, homepage-new, wellness-before, wellness-after, call-outcomes-old, call-outcomes-new, care-gaps-old, care-gaps-new, add-appts-old, add-appt-new, header-new, header-old, candy-icons-old, candy-icons-new, color-palette-old, color-palette-new, buttons-before, buttons-after, type-before, type-after]
 keyImage: homepage-old
 crossfadeImage: homepage-new
-slidesCaps: [Home Page | Before, Home Page | After, Wellness Worklist | Before, Wellness Worklist | After,Call Outcomes | Before, Call Outcomes | After, Care Gaps | Before, Care Gaps | After,  Add Appointments | Before, Add Appointments | After]
+slidesCaps: [Home Page | Before, Home Page | After, Wellness Worklist | Before, Wellness Worklist | After,Call Outcomes | Before, Call Outcomes | After, Care Gaps | Before, Care Gaps | After,  Add Appointments | Before, Add Appointments | After, Site Header | Before, Site Header 
+ After, Art Icons | Before, Art Icons | After, Color Palette | Before, Color Palette | After, Buttons | Before, Buttons | After, Typography | Before, Typography | After ]
 sequence: 1
 ---
 ## How might we ...
 
-* Create a new visual design system -- semantic color palette, typography, component library 
-* Reflect the company's new brand identity in the visual design
-* Make sure that our efforts are scalable, consistent and easy to use.
+* Create a new visual design system that is accessible, with a semantic color palette, clear typography, and build a full component library 
+* Reflect the company's evolving brand identity in in a fresh, simple visual design
+* Ensure that our efforts are scalable, consistent and easy to use.
 ___
 
 ## Unique Challenges
 
-### No. 1 \| Replace an inconsistent existing UI cobbled together from multiple overlapping design systems
+### No. 1 \| Replacing a tired, inconsistent UI cobbled together from multiple overlapping design systems
 
-**The Goal \|** After a decade of accrued design debt, the app needed a simple, easy-to-implement system to speed up prototyping and engineering processes while locking in consistency and greatly reducing the app code base.  
+**The Goal \|** After a decade of accrued design and tech debt, the app needed a simple, easy-to-implement system. It would need to speed up prototyping and engineering processes and lock in design consistency. Changes would lead to a smaller app code base.  
 
-**The Result \|** A greatly simplified and consistent visual design system. Among them: 
-* Reduced the number of button styles from 16 down to two
-* Cut color palette down from dozens of colors to a focused, simple color palette.  
-* Defined type scale and weights.
-* A consistent icon set and art style  
-* Instituted core design motifs: border radius, weight, spacing and details.  
-* Fully documented the system for quick reference for the design team.
+**The Result \|** A greatly simplified and consistent visual design system. Among the upgrades: 
+* Reducing the number of button styles from 20+ down to two
+* Cutting color palette down from dozens of colors to a focused, simple color palette.  
+* Defining a type scale and weights with semantic naming.
+* Setting a consistent icon set and art style. 
+* Instituting consistent core design motifs: border radius, line weight, spacing and other details.  
+* Fully documenting the system in Storybook for quick reference for the design and engineering teams.
 
 ### No. 2 \| Building accessibility and semantics into the design system
 
-
-**The Goal** \| 
+**The Goal** \| Create a color palette that is based on function, while at the same time ensuring that 
 
 ### No. 3 \| Implement a brand vision for the future
 

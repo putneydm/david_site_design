@@ -5,7 +5,7 @@ imageAlt: Screenshot of MIB Electronic Medical Records Portal
 layout: portfolio_entry
 pageType: portfolio_entry
 client: Aledade, Bethesda, Md. (Remote)
-project: I built a Figma design system that exactly mirrors responsive code behavior, enabling a designer-to-engineer pipeline to match pixel-for-pixel with prototypes. By hacking Figma's modes and tokens, I created a powerful, easy-to-use system of breakpoints, flexible grids, and live-resizing components. Through outreach and support efforts, adoption surged 1,200% in one year.
+project: I engineered a Figma design system that uses tokens, auto layouts and modes to exactly mirror responsive behavior. The easy-to-use system of breakpoints, flexible grids, and content reflow enables a designer-to-engineer pipeline and smooth handoffs of detailed prototypes. Through my outreach and support efforts, design system adoption surged 1,200% in one year.
 roleDes: [design lead]
 design: [design system, component system, discovery, training, Documentation, figma]
 roleDev: 
@@ -13,9 +13,15 @@ developer:
 keyImage: call-outcomes-base
 crossfadeImage: call-outcomes-narrow
 myRole: Creating an innovative and easy way to model reponsive design in Figma
-video: foobar
+video: full_responsive
 sequence: 2
 ---
+
+## Overview
+
+**I engineered and** built a Figma design system that uses tokens, auto layouts and modes to exactly mirror responsive behavior. The easy-to-use system of breakpoints, flexible grids, and content reflow enables a designer-to-engineer pipeline and smooth handoffs of detailed prototypes. Through my outreach and support efforts, design system adoption surged 1,200% in one year.
+
+
 ## How might we ...
 
 * Build a system in Figma that exactly models responsive behavior of code 
