@@ -17,10 +17,10 @@ video: full_responsive
 sequence: 2
 ---
 
-## Overview
 
-**I engineered and** built a Figma design system that uses tokens, auto layouts and modes to exactly mirror responsive behavior. The easy-to-use system of breakpoints, flexible grids, and content reflow enables a designer-to-engineer pipeline and smooth handoffs of detailed prototypes. Through my outreach and support efforts, design system adoption surged 1,200% in one year.
+## The Project 
 
+**A new fully responsive component library** for a webapp that provides patient information to enable and support [Value Based Care](https://www.cms.gov/priorities/innovation/key-concepts/value-based-care) in medical practices. 
 
 ## How might we ...
 
