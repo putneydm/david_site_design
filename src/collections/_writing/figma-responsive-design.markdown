@@ -220,7 +220,7 @@ The type set also includes spacing and line height variables, as well as weight 
 <video width="100%" controls>
     <source src="/videos/responsive_type.mp4">
 </video>
-<figcaption><strong>Video Demo 5 </strong>//switching between breakpoints causes the type sizing, spacing and line height to adjust.</figcaption>
+<figcaption><strong>Video Demo 5</strong> Switching between breakpoints causes the type sizing, spacing and line height to adjust.</figcaption>
 </figure>
 
 ## Component Swap System
