@@ -115,4 +115,36 @@ function slideImagesSmall(done) {
         done()
 }
 
-exports.slideImages = series(parallel(slideImagesLarge, slideImagesMed, slideImagesSmall), series(moveSlides));
+// x-small images
+function slideImagesXSmall(done) {
+    return src(input)
+        .pipe(gm(function (gmfile) {
+            return gmfile.setFormat('jpg'),
+                gmfile.resample(72, 72),
+                gmfile.thumbnail(450, '265!'),
+                gmfile.quality(82),
+                gmfile.filter('triangle'),
+                gmfile.unsharp('0.25x0.25+8+0.065'),
+                gmfile.interlace('none'),
+                gmfile.colorspace('sRGB'),
+                gmfile.crop(450, 265, 0, 0);
+        }, {
+            imageMagick: true
+        }))
+
+        // Crunches images
+        .pipe(imagemin({
+            progressive: true,
+            use: [jpegtran()]
+        }))
+
+        // Renames images
+        .pipe(rename({
+            prefix: 'xsmall_'
+        }))
+
+        .pipe(dest(source));
+        done()
+}
+
+exports.slideImages = series(parallel(slideImagesLarge, slideImagesMed, slideImagesSmall, slideImagesXSmall), series(moveSlides));

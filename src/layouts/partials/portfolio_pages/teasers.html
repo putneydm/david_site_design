@@ -1,10 +1,11 @@
 {% if pageType == portfolio_entry and page.pageType != mil %}
 
-{% if site.design %}
-{% assign teasers = site.design %}
-{% endif %}
-{% if site.writing %}
-{% assign teasers = site.writing %}
+{% if page.collection == "design" %}
+  {% assign teasers = site.design %}
+  {% assign foobar = "design" %}
+{% elsif page.collection == "writing" %}
+  {% assign teasers = site.writing %}
+  {% assign foobar = "writing" %}
 {% endif %}
 
 {% for item in teasers %}
@@ -25,21 +26,56 @@
     {% endif %}  
 {% endfor %}
 
+{% if prev.thumb %}
+    {% assign thumbnailLeft = prev.thumb %}
+    {% assign thumbnailRight = next.thumb %}
+    {% assign url = "/siteart/slides/" %}
+{% else %} 
+    {% assign thumbnailLeft = prev.image %}
+    {% assign thumbnailRight = next.image %}
+    {% assign url = "/siteart/" %}
+{% endif %}    
+
 <div class="pagination-wrapper">
     <p class="page-number">Page {{ current }} of {{ teasers.size }}</p>
     <div class="pagination">
         <div class="pagination-direction back">
-            <svg class="teaser-arrow-icon arrow-icon-left">
-                <use xlink:href="#arrow-right" />
-            </svg>
-            <a href="{{ prev.url }}" rel="prev" class="">{{ prev.title }}</a>
-        </div>
+            <a href="{{ prev.url }}" rel="prev">
+                <figure class="med-photo-overlay">
+                    <img src="{{ url }}xsmall_{{ thumbnailLeft }}.jpg">
+                    {% if alt %}
+                        alt="{{ alt }}">
+                    {% endif%}
+                    </img>
+                </figure>
+
+                <svg class="teaser-arrow-icon arrow-icon-left">
+                    <use xlink:href="#arrow-right" />
+                </svg>
+                {{ prev.title }}
+            </a>
+        </div>   
+
         <div class="pagination-direction">
-            <a href="{{ next.url }}" rel="next" class="next">{{ next.title }}</a>
+            <a href="{{ next.url }}" rel="next" class="next">
+            <figure class="med-photo-overlay">
+                    <img src="{{ url }}xsmall_{{ thumbnailRight }}.jpg">
+                    {% if alt %}
+                    alt="{{ alt }}">
+                {% endif%}
+                </img>
+            </figure>
+                {{ next.title }}
             <svg class="teaser-arrow-icon">
                 <use xlink:href="#arrow-right" />
             </svg>
+            </a>
         </div>
     </div>
 </div>
 {% endif %}
+
+
+
+
+

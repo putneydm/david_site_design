@@ -11,6 +11,7 @@ slides: ['link_1', 'link_2', 'link_3', 'link_14', 'link_13', 'link_4', 'link_5',
 roleDes: [Founder, Design Director]
 myRole: Launching a colorful alternative to traditional newspapers
 design: [Branding, Prototypes, Content Strategy, Visual Design, Typography, Logo Design]
+thumb: link_1
 sequence: 6
 ---
 ## How might we ...

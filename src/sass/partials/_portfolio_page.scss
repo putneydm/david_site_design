@@ -74,7 +74,7 @@ hr {
 		border-color:$med;
 	}
 }
-pagination-wrapper {
+.pagination-wrapper {
     display: flex;
     align-content: center;
     flex-direction: column;
@@ -126,6 +126,22 @@ pagination-wrapper {
     transform: scaleX(-1);
     filter: FlipH;
 }   
+
+.pagination figure 
+{
+	padding:0px;
+	margin:0px 0 12px;
+	position: relative;
+}
+.pagination a:hover {
+	.med-photo-overlay::after {
+        box-shadow:0 0 rem(70) rgba($dark-aqua, .2) inset;
+	    @media (prefers-color-scheme: dark) {
+            box-shadow:0 0 rem(70) rgba($dark-aqua, .5) inset;
+        }
+    }
+}
+
 .button {
 	display:block;
 	width:100%;
