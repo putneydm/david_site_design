@@ -12,6 +12,7 @@ roleDev: [Developer]
 myRole: Creating a "Google for medical records" 
 developer: [HTML, CSS, JavaScript]
 slides: ['mib_1', 'mib_2', 'mib_3', 'mib_4', 'mib_5', 'mib_6', 'mib_7', 'mib_8', 'mib_9', 'mib_10', 'mib_11', 'mib_12', 'mib_13']
+thumb: mib_1
 sequence: 3
 ---
 ## How might we ...
@@ -20,7 +21,6 @@ sequence: 3
 * Reduce delivery time of records to a few days or even hours rather than the weeks or months it normally takes
 * Greatly reduce costs of medical records searches 
 * Combine the results of multiple records sources into a single, simple interface
-
 ___
 
 ## Unique Challenges

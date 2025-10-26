@@ -248,8 +248,15 @@ body {
     margin:0 rem(5);
     fill:$aqua;
     vertical-align: -5px;
+    transition: fill .2s ease-out;
     @media screen and (prefers-color-scheme: dark) {
         fill:$light-aqua;
+    } 
+}
+a:hover .teaser-arrow-icon {
+        fill:$dark-aqua;
+    @media screen and (prefers-color-scheme: dark) {
+        fill:$aqua;
     } 
 }
 

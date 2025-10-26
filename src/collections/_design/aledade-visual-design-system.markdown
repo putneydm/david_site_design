@@ -14,6 +14,7 @@ myRole: Working with the design team to build a new visual design system
 slides: [homepage-old, homepage-new, wellness-before, wellness-after, call-outcomes-old, call-outcomes-new, care-gaps-old, care-gaps-new, add-appts-old, add-appt-new, header-old, header-new, candy-icons-old, candy-icons-new, color-palette-old, color-palette-new, buttons-before, buttons-after, type-before, type-after]
 keyImage: homepage-old
 crossfadeImage: homepage-new
+thumb: homepage-new
 slidesCaps: [Home Page | Before, Home Page | After, Wellness Worklist | Before, Wellness Worklist | After,Call Outcomes | Before, Call Outcomes | After, Care Gaps | Before, Care Gaps | After,  Add Appointments | Before, Add Appointments | After, Site Header | Before, Site Header 
  After, Art Icons | Before, Art Icons | After, Color Palette | Before, Color Palette | After, Buttons | Before, Buttons | After, Typography | Before, Typography | After ]
 sequence: 1
