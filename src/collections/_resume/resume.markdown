@@ -13,9 +13,7 @@ subhead: I'm David, and this is the work I've done. I specialize UI/UX with expe
 Design Component Systems \| Figma \| UX Strategy \| Accessibility \| Design Engineering Collaboration \| Responsive Component Libraries \| Agile / Scrum \| Product Design Leadership \| Visual Design Systems \| Design System Governance
 
 ## Professional Experience
-
 ### Aledade
-
 #### Senior Designer | Design Systems & Infrastructure Team
 *Aug. 2022 – Present* | *Bethesda, MD (Remote)*
 
@@ -28,7 +26,7 @@ Design Component Systems \| Figma \| UX Strategy \| Accessibility \| Design Engi
 - **Set up and manage Agile backlog** for design, engineering and documentation tasks.
 
 ##### Case Studies
-- [Aledade Visual Design System][10]
+- [Aledade Visual Design System](/design/aledade-visual-design-system/)
 - [Aledade Responsive Design Component System][11] 
 
 ##### Related Article
@@ -112,10 +110,10 @@ Digital strategy, designed CMS UI/UX, led Pulitzer Prize-finalist multimedia pro
 
 ##### Case Study
 
-I built this portfolio website, including the slide shows, animations and build system. [My Github](https://github.com/putneydm/david_site_design).
+I built this portfolio website, including the slide shows, animations and build system. [My Github](https://github.com/putneydm).
 
 ## Writing
-* How to Build a Fully Responsive Component System in Figma” \| [Read][11]
+* How to Build a Fully Responsive Component System in Figma” \| [Read][10]
 * The Electronic Health Records Ecosystem is Complicated: Sorting It Out is Key to Building Great Experiences \| [Read][1]
 * Bring Your Design Version Control Under Control \| [Read][2]
 * Three Quick Tips to Writing Better Jira Tickets \| [Read][3]

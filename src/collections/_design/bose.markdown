@@ -1,5 +1,5 @@
 ---
-title:  "Bose"
+title:  "Bose Hearphones"
 subhead: Hardware Ui for breakthrough device to help with hearing loss 
 imageAlt: Screenshot of MIB Electronic Medical Records Portal
 layout: portfolio_entry
