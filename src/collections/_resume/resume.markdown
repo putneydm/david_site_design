@@ -1,13 +1,16 @@
 ---
 head: Resumé
-subhead: I'm David, and this is the work I've done. I've been a journalist, editor, designer, consultant and developer. Let's talk.
+subhead: I'm David, and this is the work I've done. I specialize UI/UX with expert-level experience using Figma to build advanced design systems. Let's talk.
 ---
 
 ## Professional Summary
-- **Senior Designer & Front-End Developer** with **20+ years** experience in design, user experience and design systems. 
-- Expert in advanced **Figma design systems**, strong experience in **CSS/HTML5**. 
+- **Senior Designer** with **20+ years** of experience in product design and UX strategy. 
+- Expert in advanced modular **design systems**, Figma, versioning and design tokens. 
 - Worked or led **cross-functional Agile** processes. 
-- Delivered **$MM enterprise projects** for Bose, Zip-car, & The Boston Globe.
+- Delivered or led **$MM enterprise projects** for Bose, Zipcar and The Boston Globe.
+
+## Core Competencies
+Design Component Systems \| Figma \| UX Strategy \| Accessibility \| Design Engineering Collaboration \| Responsive Component Libraries \| Agile / Scrum \| Product Design Leadership \| Visual Design Systems \| Design System Governance
 
 ## Professional Experience
 
@@ -16,105 +19,110 @@ subhead: I'm David, and this is the work I've done. I've been a journalist, edit
 #### Senior Designer | Design Systems & Infrastructure Team
 *Aug. 2022 – Present* | *Bethesda, MD (Remote)*
 
-- **Built Canonical Design System** in Figma/Storybook, delivering a new visual design, 50+ accessible components, semantic color system and display modes (Fall 2024–present). [Visual Design Case Study][10]
-- **Drove 589% adoption growth** (4K→30K instances) across design teams in one year, accelerating UI scalability and consistency.
-- **Engineered in Figma** a full responsive layouts system, components and responsive spacing and type system. [Responsive Design Case Study][XX] 
-- **Close collaboration** with engineering team to ensure alignment of Figma and Vue components.
-- **Led design team outreach/training**, onboarding of design team users.
-- **Authored 50+ documentation pages** of component/token/layout for Storybook.
-- **Set up and manage Agile backlog** for design, engineering, and documentation tasks.
+- **Build and maintain the Canonical Design System** in Figma and Storybook, which delivers a fresh visual design, 50+ accessible components, a semantic color system using design tokens and multiple display modes (Fall 2024–present). 
+- **Drove 589% adoption growth** measured by system adoption metrics (4K → 30K instances) across design teams in one year.
+- **Engineered a fully responsive, modular design system in Figma** of layouts, components, responsive spacing and type based on atomic principles. 
+- **Design engineering collaboration** to ensure close Figma → Storybook → Vue integration.
+- **Leader of design team outreach and training**, onboarding of design team users to the system.
+- **Authored 50+ design documentation, pages** for components, tokens and layouts in Storybook.
+- **Set up and manage Agile backlog** for design, engineering and documentation tasks.
 
-##### Related 
+##### Case Studies
+- [Aledade Visual Design System][10]
+- [Aledade Responsive Design Component System][11] 
 
-[How to Build a Responsive Design System in Figma](XX)
-
+##### Related Article
+- [How to Build a Fully Responsive Design System in Figma](/writing/figma-responsive-design/)
 
 ### Cantina
 #### Senior Designer & Front-End Developer
-*Jan. 2015 – July 2022* | *Boston, MA*
+*2015-2022* | *Boston, MA*
 
-**Led or was part of 7+ multimillion-dollar enterprise projects**, delivering **70% sales growth** and FDA-approved UIs for PPG, EstateSpace, MIB, Bose, Zipcar, Forrester, & Avid:
+**Contributed to 7+ multimillion-dollar enterprise projects** for PPG, EstateSpace, MIB, Bose, Zipcar, Forrester Research and Avid
 
 - **Drove 70% software sales increase** via Avid.com redesign (info architecture, UX, HTML/CSS).
-- **designed FDA-approved hearing aid hardware UI** for Bose—designed/documented hardware interface [Case Study][7].
-- **Designed and built enterprise search portal** for MIB (CSS & HTML), enabling new business unit launch and significant sales growth. [Case Study][6].
-- **Led design of end-to-end project app** for EstateSpace (budgeting, invoicing, inventory app).
-- **Redesigned and user tested iOS/Android apps** for Zipcar Mobile-first revamp of their products.
-- **Direct collaboration with Forrester CEO** for prototyping a real-time feedback app.
+- **Designed hardware UI for FDA-approved hearing aid** for Bose.
+- **Designed and built enterprise search portal** for MIB (CSS & HTML), enabling new business unit launch and significant sales growth.
+- **Led design of end-to-end project management app** for EstateSpace.
+- **Redesigned and user-tested** a mobile-first app for Zipcar.
+- **Collaborated directly with the Forrester CEO** to prototype a real-time feedback app.
+
+##### Case Studies
+- [Bose Hearphones Hardware UI][7]
+- [MIB Medical Records Search Portal][6]
+
+##### Related Article
+- [The Electronic Health Records Ecosystem is Complicated. Sorting It Out is Key to Building Great Experiences ][12]
 
 ### BostonGlobe.com
 #### UX/UI Designer & Front-End Developer
-*Nov. 2012 – Jan. 2015* | *Boston, MA*
+*2012-2015* | *Boston, MA*
 
-**Led new product innovation** Designed UX/UI and built front-end (CSS, HTML, JS) for Cruxnow.com (Catholic news/lifestyle) & BDCwire.com (mobile news sharing). [Cruxnow.com Case Study][8]
+**Led new product innovation** UX/UI, visual design and built front-end (CSS, HTML, JS) for Cruxnow.com (Catholic news/lifestyle) and BDCwire.com (mobile news sharing).
+
+##### Case Study
+
+- [Cruxnow.com Design & Development][8]
 
 ### PilotOnline.com
 #### Content Producer, Designer & Developer
-*May 2008 – Oct. 2012* | *Norfolk, VA* | *155M pageviews, 50% market share (2012)*
+*2008-2012* | *Norfolk, VA* | *155M pageviews*
 
-- **Led Pulitzer Prize-finalist multimedia project** *A Chance in Hell* (Winner: Photos of the Year Intl).
-- **Drove 155M page views** via breaking news coverage + CMS design/optimization.
-- **Planned digital strategy** for 21M monthly uniques (HTML/CSS/JS).
+Digital strategy, designed CMS UI/UX, led Pulitzer Prize-finalist multimedia project and worked on breaking news coverage. 
 
 ### Link Newspaper
 #### Co-Founder & Design Director
-*July 2006 – Sept. 2007* | *Norfolk, VA (Circ. 30K M-F)*
+*2006-2007* | *Norfolk, VA (Circ. 30K M-F)*
 
-**Co-founded award-winning free newspaper** for young adults, delivering strong visual design, groundbreaking content strategy and led daily production:
+**Designed and launched award-winning free newspaper** for young adults:
 
-- **Launched 30K-circulation paper**, winning multiple design honors.
+- **Content strategy and branding** for a groundbreaking traditional and new media product.
 - **Hired innovative staff** who disrupted traditional newspaper norms.
-- **Built design system & component libraries** Color, typography and branding.
+- **Built design system and component library** for color, typography and branding.
 
-[Link Case Study][9]
+##### Case Study
+- [Link Newspaper][9]
 
-### Additional Design & Editing
+### Additional Design 
 
-**The Virginian-Pilot**  \| *Page designer* \| Nov. 1999-July 2006 and **Sept. 2007-May 2008** \| Norfolk, Va.
-
-**Virgin Islands Daily News** \| *Designer* \| July 1999-Oct. 1999. \| St. Thomas, U.S.V.I.; circ. 20,000.
-
-**Sun Publications** \| *Designer* \| Feb. 1998-July 1999 \| Naperville, Ill.; weekly circ. 20,000. 
-
-**Designer/copy editor** \| Herald-Palladium \| June 1995-Jan. 1999 \| St. Joseph, Mich.; circ. 25,000.
+**The Virginian-Pilot** 1999-2008,  Norfolk, Va. \| **Virgin Islands Daily News** 1999, St. Thomas, U.S.V.I. \| **Sun Publications** 1998-1999, Naperville, Ill.\| **Herald-Palladium** 1995-1999, St. Joseph, Mich.
 
 ## Key Skills 
 ### Theory
-* Inclusive, human-centered design 
+* Inclusive, accessible, human-centered design 
 * Content-led information architecture and wireframing 
 * Mobile-first, resolution-independent responsive methodology 
 * Semantics and progressive enhancement 
-* Cross-browser compatibility and interoperability 
-* Qualitative and quantitative user testing
+* Qualitative and quantitative usability testing, user interviews and job stories
 * Iterative, data-driven research and design
 * Design thinking methodology 
-* Leading design or project teams
 
 ### Practice 
-* Figma and Sketch, Invision and Abstract
-* Mural or similar whiteboarding tools
-* VS Code, Atom, and other code editors
-* Git, GitHub / GitLab version control 
-* Agile development methods (JIRA, Trello, etc.) 
+* Expert in Figma prototyping and libraries
+* Design system governance, maintenance and versioning
+* Design system adoption strategy and change management
+* VS Code, Warp
+* Agile development methods, Git, GitHub / GitLab version control
 
 ### Languages
-* HTML5 & CSS, including preprocessor languages such as SASS and PostCSS 
-* Javascript
-* Jekyll / Liquid
-* Markdown
-* SVG 
-* Some React & React Native
+* HTML5, CSS (SASS, PostCSS)
+* JavaScript
+* SVG
+* React
 
-## Writings
+##### Case Study
+
+I built this portfolio website, including the slide shows, animations and build system. [My Github](https://github.com/putneydm/david_site_design).
+
+## Writing
+* How to Build a Fully Responsive Component System in Figma” \| [Read][11]
 * The Electronic Health Records Ecosystem is Complicated: Sorting It Out is Key to Building Great Experiences \| [Read][1]
 * Bring Your Design Version Control Under Control \| [Read][2]
 * Three Quick Tips to Writing Better Jira Tickets \| [Read][3]
-* How to build a PostCSS Plugin to Solve CSS Problems \| [Read][4]
+* How to Build a PostCSS Plugin to Solve CSS Problems \| [Read][4]
 
 ## Education
-**Eastern Illinois University** -- *August 1992 — May 1995*. Charleston, Ill. B.A. Journalism
-
-**Illinois Central College** -- *January 1990 — May 1992*. East Peoria, Ill.  A.A. Journalism 
+**Eastern Illinois University** – *1992-1995*, Charleston, Ill. –  B.A. Journalism
 
 [1]: /writing/understanding-electronic-health-records/
 [2]: /writing/design-version-control/
@@ -125,3 +133,5 @@ subhead: I'm David, and this is the work I've done. I've been a journalist, edit
 [8]: /design/crux/
 [9]: /design/link/
 [10]: /writing/figma-responsive-design/
+[11]: /design/aledade-responsive-redesign-system/
+[12]: /writing/understanding-electronic-health-records/
