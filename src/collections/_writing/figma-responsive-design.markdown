@@ -124,7 +124,7 @@ A layout component is made up of:
 - **Layout**  —  These are the outer containers that span the full width of the content area.
 - **Container** — These are inside the Layouts and span a specific number of columns, from one to six.
 
-For example, we have a One-Five Layout, which is a layout with a Container that spans one column and a Container that spans five. A Two-Three has a two-column container and a three-column container. The logic extends to a Three-Three, Two-Two-Two and any combination of Container widths that add up to fill a six-column span. This results in a large variety of components for each layout and breakpoints, shown in Image 1.
+For example, we have a One-Five Layout, which is a layout with a Container that spans one column and a Container that spans five. A Two-Three has a two-column container and a three-column container. The logic extends to a Three-Three, Two-Two-Two and any combination of Container widths that add up to fill a six-column span. This results in a large variety of components for each layout and breakpoints, shown in *Image 1*.
 
 <figure class="blog-image-insert">
   <picture>
@@ -153,10 +153,22 @@ This will take some math. The way to compute the max-widths of your containers i
 
 `(base width - gutter widths) / columns`
 
-The min widths for containers are computed by using the min-width of your Layout at each breakpoint. The result of all this math is a really big grid of variables full of min and max widths across each breakpoint, show in Image 2.
+The min widths for containers are computed by using the min-width of your Layout at each breakpoint. The result of all this math is a really big grid of variables full of min and max widths across each breakpoint, show in *Image 2*.
 
 <figure class="blog-image-insert">
-    <img src="/siteart/mins_and_max.jpg" alt="A Sketch file with the name homescreens-new-12/20/2019-updated-final-revised-final-final.sketch.">
+  <picture>
+    <source 
+      srcset="/siteart/large_mins_and_max.jpg" 
+      media="(min-width: 700px)">
+    <source 
+      srcset="/siteart/small_mins_and_max.jpg" 
+      media="(min-width: 450px)">
+    <img 
+      src="/siteart/small_mins_and_max.jpg" 
+      alt="Layouts and Containers require computing a min and max width for each container across each breakpoint."
+      srcset="/siteart/large_mins_and_max.jpg 700w, /siteart/small_mins_and_max.jpg 450w"
+      sizes="(min-width: 700px) 700px, 450px">
+  </picture>
     <figcaption><strong>Image 2</strong> Layouts and Containers require computing a min and max width for each container across each breakpoint.</figcaption>
 </figure>
 
@@ -179,7 +191,6 @@ The components closely replicate the structure and functions of the flexible gri
 </video>
 <figcaption><strong>Video Demo 3</strong> The Container components, with red outlines, have a flexible width and reflow into a wrap-and-stack layout at narrower widths.</figcaption>
 </figure>
-
 
 ## Responsive Spacing System
 
@@ -208,8 +219,6 @@ In their use, the exact amount is less important than "it looks good." Spacing o
 </video>
 <figcaption><strong>Video Demo 4</strong> The Calendar component can live-swap between breakpoints, going from a side-by-side layout to a wrap-and-stack and back to the original layout.</figcaption>
 </figure>
-
-
 
 ## Responsive Typography
 
@@ -263,12 +272,24 @@ Our variable set will look like this. It takes in all possible combinations of b
 | @med @narrow | Base | Medium | Medium | Narrow |
 | @med @small @narrow | Base | Medium | Small | Narrow |
 
-A component that will be live-swapped requires a variant for each breakpoint. As shown in Image 3 below, this calendar layout has a three-across layout for Base and Medium breakpoints, a two-across for Small and a wrap-and-stack for Narrow. This component has a prop `Breakpoint`. The value of the prop for the three-across is `base`, the two-across is `medium` and the stack is `narrow`.
-
+A component that will be live-swapped requires a variant for each breakpoint. As shown in *Image 3* below, this calendar layout has a three-across layout for Base and Medium breakpoints, a two-across for Small and a wrap-and-stack for Narrow. This component has a prop `Breakpoint`. The value of the prop for the three-across is `base`, the two-across is `medium` and the stack is `narrow`.
 <figure class="blog-image-insert">
-    <img src="/siteart/responsive_component.jpg" alt="A Sketch file with the name homescreens-new-12/20/2019-updated-final-revised-final-final.sketch.">
+  <picture>
+    <source 
+      srcset="/siteart/large_responsive_component.jpg" 
+      media="(min-width: 700px)">
+    <source 
+      srcset="/siteart/small_responsive_component.jpg" 
+      media="(min-width: 450px)">
+    <img 
+      src="/siteart/small_responsive_component.jpg" 
+      alt="Layouts and Containers require computing a min and max width for each container across each breakpoint."
+      srcset="/siteart/large_responsive_component.jpg 700w, /siteart/small_responsive_component.jpg 450w"
+      sizes="(min-width: 700px) 700px, 450px">
+  </picture>
     <figcaption><strong>Image 3</strong> This calendar component has layouts for three-across, two-across and stacked that will live-swap at each breakpoint.</figcaption>
 </figure>
+
 
 When the component is placed in the design, the Breakpoint prop is replaced with an @break variable. In this case, `@small @narrow`. Switching to the breakpoint of `small` causes the value of our @break variable to change from `base` to `small`, and the `small` variant is displayed in the prototype.
 
@@ -287,14 +308,24 @@ With these pieces in place, a designer can quickly build a prototype that is res
 
 Additionally, engineers will work from the same toolset in code, which means faster build times.
 
-So how does a page actually get built using these tools? They are structured so that components can be embedded within components. The page, layouts and cards come directly from the library. These all have "content slots" that can contain either library components or custom content.
+So how does a page actually get built using these tools? They are structured so that components can be embedded within components. The page, layouts and cards come directly from the library. These all have "content slots" that can contain either library components or custom content, as shown in *Image 4*.
 
 It's components all the way down.
 
-<!-- image of component slots -->
-
 <figure class="blog-image-insert">
-    <img src="/siteart/content_slots.jpg" alt="A Sketch file with the name homescreens-new-12/20/2019-updated-final-revised-final-final.sketch.">
+  <picture>
+    <source 
+      srcset="/siteart/large_content_slots.jpg" 
+      media="(min-width: 700px)">
+    <source 
+      srcset="/siteart/small_content_slots.jpg" 
+      media="(min-width: 450px)">
+    <img 
+      src="/siteart/small_content_slots.jpg" 
+      alt="A page template and with flyout that shows the multiple content slots in components."
+      srcset="/siteart/large_responsive_component.jpg 700w, /siteart/small_responsive_component 450w"
+      sizes="(min-width: 700px) 700px, 450px">
+  </picture>
     <figcaption><strong>Image 4</strong> A page template and with flyout that shows the multiple content slots in components.</figcaption>
 </figure>
 
