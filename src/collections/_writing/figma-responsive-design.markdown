@@ -127,8 +127,22 @@ A layout component is made up of:
 For example, we have a One-Five Layout, which is a layout with a Container that spans one column and a Container that spans five. A Two-Three has a two-column container and a three-column container. The logic extends to a Three-Three, Two-Two-Two and any combination of Container widths that add up to fill a six-column span. This results in a large variety of components for each layout and breakpoints, shown in Image 1.
 
 <figure class="blog-image-insert">
-    <img src="/siteart/layout_options.jpg" alt="A Sketch file with the name homescreens-new-12/20/2019-updated-final-revised-final-final.sketch.">
-    <figcaption><strong>Image 1</strong> The variety of Layouts and Containers for all four breakpoints allows for multiple choices for fast prototyping options.</figcaption>
+  <picture>
+    <source 
+      srcset="/siteart/large_layout_options.jpg" 
+      media="(min-width: 700px)">
+    <source 
+      srcset="/siteart/small_layout_options.jpg" 
+      media="(min-width: 450px)">
+    <img 
+      src="/siteart/small_layout_options.jpg" 
+      alt="The variety of Layouts and Containers for all four breakpoints allows for multiple choices for fast prototyping options."
+      srcset="/siteart/large_layout_options.jpg 700w, /siteart/small_layout_options.jpg 450w"
+      sizes="(min-width: 700px) 700px, 450px">
+  </picture>
+  <figcaption>
+    <strong>Image 1</strong> The variety of Layouts and Containers for all four breakpoints allows for multiple choices for fast prototyping options.
+  </figcaption>
 </figure>
 
 Setup for the Layout part is fairly straightforward. It's a frame with auto layouts with the content [Flow](https://help.figma.com/hc/en-us/articles/360040451373-Guide-to-auto-layout#flow) set to wrap.
