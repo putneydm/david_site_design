@@ -12,6 +12,7 @@ src/photos_in/
 src/svg/svgsprite.svg
 src/svg/port_svgsprite.svg
 node_modules/
+.jekyll-cache/
 src/sass/bourbon/
 bower_components/
 npm-debug.log
