@@ -16,20 +16,26 @@ const {
 } = paths;
 
 
+
 exports.moveSlides = moveSlides;
 
 function slideImagesLarge(done) {
     return src(input)
         .pipe(gm(function (gmfile) {
-            return gmfile.setFormat('jpg'),
-                gmfile.resample(72, 72),
-                gmfile.thumbnail(3600, '2120!'),
-                gmfile.quality(82),
-                gmfile.filter('triangle'),
-                gmfile.unsharp('0.25x0.25+8+0.065'),
-                gmfile.interlace('none'),
-                gmfile.colorspace('sRGB'),
-                gmfile.crop(3600, 2120, 0, 0);
+         return gmfile
+                .setFormat('jpg')
+                .resample(72, 72)
+                // 1. Force width to 3600 px, height auto (≥ 2120 after this)
+                .resize(3600, null)
+                // Ensure crop starts from top-left corner
+                .gravity('NorthWest')
+                // 2. Hard crop to exactly 3600×2120 from top-left (0,0)
+                .crop(3600, 2120, 0, 0)
+                .quality(82)
+                .filter('Triangle')
+                .unsharp(0.25, 0.25, 8, 0.065)
+                .interlace('None')
+                .colorspace('sRGB');
         }, {
             imageMagick: true
         }
@@ -54,15 +60,20 @@ function slideImagesLarge(done) {
 function slideImagesMed(done) {
     return src(input)
         .pipe(gm(function (gmfile) {
-            return gmfile.setFormat('jpg'),
-                gmfile.resample(72, 72),
-                gmfile.thumbnail(1800, '1060!'),
-                gmfile.quality(82),
-                gmfile.filter('triangle'),
-                gmfile.unsharp('0.25x0.25+8+0.065'),
-                gmfile.interlace('none'),
-                gmfile.colorspace('sRGB'),
-                gmfile.crop(1800, 1060, 0, 0);
+            return gmfile
+               .setFormat('jpg')
+                .resample(72, 72)
+                // 1. Force width to 3600 px, height auto (≥ 2120 after this)
+                .resize(1800, null)
+                // Ensure crop starts from top-left corner
+                .gravity('NorthWest')
+                // 2. Hard crop to exactly 3600×2120 from top-left (0,0)
+                .crop(1800, 1060, 0, 0)
+                .quality(82)
+                .filter('Triangle')
+                .unsharp(0.25, 0.25, 8, 0.065)
+                .interlace('None')
+                .colorspace('sRGB');
         }, {
             imageMagick: true
         }
@@ -87,15 +98,20 @@ function slideImagesMed(done) {
 function slideImagesSmall(done) {
     src(input)
         .pipe(gm(function (gmfile) {
-            return gmfile.setFormat('jpg'),
-                gmfile.resample(72, 72),
-                gmfile.thumbnail(900, '530!'),
-                gmfile.quality(82),
-                gmfile.filter('triangle'),
-                gmfile.unsharp('0.25x0.25+8+0.065'),
-                gmfile.interlace('none'),
-                gmfile.colorspace('sRGB'),
-                gmfile.crop(900, 530, 0, 0);
+            return gmfile
+                .setFormat('jpg')
+                .resample(72, 72)
+                // 1. Force width to 3600 px, height auto (≥ 2120 after this)
+                .resize(900, null)
+                // Ensure crop starts from top-left corner
+                .gravity('NorthWest')
+                // 2. Hard crop to exactly 3600×2120 from top-left (0,0)
+                .crop(900, 530, 0, 0)
+                .quality(82)
+                .filter('Triangle')
+                .unsharp(0.25, 0.25, 8, 0.065)
+                .interlace('None')
+                .colorspace('sRGB');
         }, {
             imageMagick: true
         }))
@@ -119,15 +135,20 @@ function slideImagesSmall(done) {
 function slideImagesXSmall(done) {
     return src(input)
         .pipe(gm(function (gmfile) {
-            return gmfile.setFormat('jpg'),
-                gmfile.resample(72, 72),
-                gmfile.thumbnail(450, '265!'),
-                gmfile.quality(82),
-                gmfile.filter('triangle'),
-                gmfile.unsharp('0.25x0.25+8+0.065'),
-                gmfile.interlace('none'),
-                gmfile.colorspace('sRGB'),
-                gmfile.crop(450, 265, 0, 0);
+            return gmfile
+                .setFormat('jpg')
+                .resample(72, 72)
+                // 1. Force width to 3600 px, height auto (≥ 2120 after this)
+                .resize(450, null)
+                // Ensure crop starts from top-left corner
+                .gravity('NorthWest')
+                // 2. Hard crop to exactly 3600×2120 from top-left (0,0)
+                .crop(450, 265, 0, 0)
+                .quality(82)
+                .filter('Triangle')
+                .unsharp(0.25, 0.25, 8, 0.065)
+                .interlace('None')
+                .colorspace('sRGB'); 
         }, {
             imageMagick: true
         }))
