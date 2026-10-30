@@ -18,6 +18,7 @@ thumb: homepage-new
 slidesCaps: [Home Page | Before, Home Page | After, Wellness Worklist | Before, Wellness Worklist | After,Call Outcomes | Before, Call Outcomes | After, Care Gaps | Before, Care Gaps | After,  Add Appointments | Before, Add Appointments | After, Site Header | Before, Site Header 
  After, Art Icons | Before, Art Icons | After, Color Palette | Before, Color Palette | After, Buttons | Before, Buttons | After, Typography | Before, Typography | After ]
 sequence: 1
+published: false
 ---
 
 ## The Project 

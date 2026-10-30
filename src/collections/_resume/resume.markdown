@@ -1,39 +1,40 @@
 ---
 head: Resumé
-subhead: I'm David, and this is the work I've done. I specialize UI/UX with expert-level experience using Figma to build advanced design systems. Let's talk.
+subhead: I'm David, and this my work. I specialize in UI/UX, and I use Figma and AI to design, check, and maintain design systems. Let's talk.
 ---
 
 ## Professional Summary
-- **Senior Designer** with **20+ years** of experience in product design and UX strategy. 
-- Expert in advanced modular **design systems**, Figma, versioning and design tokens. 
-- Worked or led **cross-functional Agile** processes. 
-- Delivered or led **$MM enterprise projects** for Bose, Zipcar and The Boston Globe.
+- **Expert at building AI-driven workflows for design systems** that greatly increase efficiency and design system integrity. 
+- **Expert in modular, responsive design systems,** built in Figma with design tokens, modes, and versioning that mirror production layout and slot easily into AI workflows. 
+- Delivered or led **multimillion-dollar enterprise projects** for Bose, Zipcar and The Boston Globe.
 
 ## Core Competencies
-Design Component Systems \| Figma \| UX Strategy \| Accessibility \| Design Engineering Collaboration \| Responsive Component Libraries \| Agile / Scrum \| Product Design Leadership \| Visual Design Systems \| Design System Governance
+AI-Driven Design Systems • AI-Assisted Workflows • Claude Code • AI Agents • AI Skills • Design-to-Code • Design Tokens • Figma • Storybook • Component Libraries • Accessibility • WCAG • Design Engineering Collaboration • Responsive Component Libraries • Design System Governance • CSS • HTML • JavaScript • Vue • UX Strategy • Product Design Leadership
 
 ## Professional Experience
 ### Aledade
-#### Senior Designer | Design Systems & Infrastructure Team
+#### Senior Designer, AI-Driven Design Systems
 *Aug. 2022 – Present* | *Bethesda, MD (Remote)*
 
-- **Build and maintain the Canonical Design System** in Figma and Storybook, which delivers a fresh visual design, 50+ accessible components, a semantic color system using design tokens and multiple display modes (Fall 2024–present). 
-- **Drove 589% adoption growth** measured by system adoption metrics (4K → 30K instances) across design teams in one year.
-- **Engineered a fully responsive, modular design system in Figma** of layouts, components, responsive spacing and type based on atomic principles. 
-- **Design engineering collaboration** to ensure close Figma → Storybook → Vue integration.
-- **Leader of design team outreach and training**, onboarding of design team users to the system.
-- **Authored 50+ design documentation, pages** for components, tokens and layouts in Storybook.
-- **Set up and manage Agile backlog** for design, engineering and documentation tasks.
+**Originated design systems as a practice at Aledade and completely revamped the role around AI-driven workflows.** Built every Figma component and am sole maintainer of the Pulse Design System, the interface component set for a medical information technology web app for medical professionals.
+
+- **Built AI-driven library and component testing.** Figma-to-code QA, visual regression, and a library check on every publish catch problems before they reach users.
+- **Conceived, built, and released AI-driven workflows for release and maintenance.** AI agents now handle documentation, acceptance criteria, versioning, and changelogs, which doubled my Agile sprint outputs.
+- **Took components from Figma to code with Claude Code.** Code updates were published straight into the Vue codebase of the Pulse Design System. This cross-functional handoff improved engineering velocity.
+- **Replaced a decade of overlapping UI with Pulse.** Component library was created in Figma and launched fall 2024. It has 100+ components with auto layout, variants, design tokens, modes, and responsive sizing. A semantic color system was built with Figma design tokens. Usage and accessibility guidelines are fully documented in Storybook.
+- **Advocated for and built accessibility into Pulse.** Every text component meets WCAG 2.2 AAA on any fill color, and every component in the library is fully compliant.
+- **Set the governance for how Pulse changes.** Each component is tested in beta and on release carries a semantic version. Deprecated components are marked and point to replacements. 
+- **Mentored design teams through Figma Day Camp and Design System Office Hours.** That outreach and training grew adoption 5,434% in two years, to 230,978 instances from 4,174.
 
 ##### Case Studies
-- [Aledade Visual Design System](/design/aledade-visual-design-system/)
+- [Aledade AI Workflows](/design/aledade-ai-workflows/)
 - [Aledade Responsive Design Component System][11] 
 
 ##### Related Article
 - [How to Build a Fully Responsive Design System in Figma](/writing/figma-responsive-design/)
 
 ### Cantina
-#### Senior Designer & Front-End Developer
+#### Senior Consultant, Designer & Front-End Developer
 *2015-2022* | *Boston, MA*
 
 **Contributed to 7+ multimillion-dollar enterprise projects** for PPG, EstateSpace, MIB, Bose, Zipcar, Forrester Research and Avid
@@ -52,7 +53,7 @@ Design Component Systems \| Figma \| UX Strategy \| Accessibility \| Design Engi
 ##### Related Article
 - [The Electronic Health Records Ecosystem is Complicated. Sorting It Out is Key to Building Great Experiences ][12]
 
-### BostonGlobe.com
+### Boston Globe
 #### UX/UI Designer & Front-End Developer
 *2012-2015* | *Boston, MA*
 
@@ -74,8 +75,6 @@ Digital strategy, designed CMS UI/UX, led Pulitzer Prize-finalist multimedia pro
 
 **Designed and launched award-winning free newspaper** for young adults:
 
-- **Content strategy and branding** for a groundbreaking traditional and new media product.
-- **Hired innovative staff** who disrupted traditional newspaper norms.
 - **Built design system and component library** for color, typography and branding.
 
 ##### Case Study
@@ -87,20 +86,22 @@ Digital strategy, designed CMS UI/UX, led Pulitzer Prize-finalist multimedia pro
 
 ## Key Skills 
 ### Theory
-* Inclusive, accessible, human-centered design 
-* Content-led information architecture and wireframing 
-* Mobile-first, resolution-independent responsive methodology 
-* Semantics and progressive enhancement 
-* Qualitative and quantitative usability testing, user interviews and job stories
-* Iterative, data-driven research and design
-* Design thinking methodology 
+* Inclusive, accessible, human-centered design held to WCAG
+* Semantic tokens, modes, and component architecture
+* Mobile-first responsive systems that mirror production layout
+* System rules encoded for AI skills and agents
+* Design-to-code parity, with drift caught before release
+* Content-led information architecture
+* Usability research through interviews and qualitative and quantitative testing 
 
 ### Practice 
-* Expert in Figma prototyping and libraries
-* Design system governance, maintenance and versioning
-* Design system adoption strategy and change management
-* VS Code, Warp
-* Agile development methods, Git, GitHub / GitLab version control
+* Figma libraries, variables, modes, auto layout, variants, and Dev Mode
+* Claude Code workflows for Pulse design, QA, documentation, release, and maintenance
+* Design-to-code in Vue, documented in Storybook, connected with Code Connect
+* Visual regression, Figma-to-code QA, and a library check before publish
+* Design system governance, versioning, and deprecation
+* Design system adoption, training, and change management
+* Git, GitHub, and GitLab
 
 ### Languages
 * HTML5, CSS (SASS, PostCSS)
